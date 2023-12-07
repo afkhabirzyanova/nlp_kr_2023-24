@@ -1,0 +1,51 @@
+# text EN: Is it going to rain today?/бүген яңгыр булырмы?
+# text TAT: Бүген яңгыр явар микән?/бүген яңгыр булырмы?
+# intent: weather/find
+1	Бүген	reminder/show_reminders	B-datetime
+2	яңгыр	reminder/show_reminders	B-weather/attribute
+3	явар	reminder/show_reminders	O
+4 микән reminder/show_reminders	O
+
+
+# text EN: Remind me to call Stephanie on Tuesday
+# text TAT: Сишәмбе көнне Стефанига шалтыратырга миңа искә төшер
+# intent: reminder/set_reminder
+1	Сишәмбе	reminder/set_reminder	B-datetime
+2	көнне	reminder/set_reminder	O
+3	Стефанига	reminder/set_reminder	I-reminder/todo
+4	шалтыратырга	reminder/set_reminder	B-reminder/todo
+5	миңа	reminder/set_reminder	O
+6	искә	reminder/set_reminder	O
+7	төшер	reminder/set_reminder	O
+
+
+# text EN: weather update Los Angeles
+# text TAT: Лос-Анджелеста һава торышы яңартыла
+# intent: weather/find
+1	Лос-Анджелест	weather/find	B-location
+2	һава	weather/find	O
+3	торышы	weather/find	O
+4	яңартыла	weather/find	O
+
+
+# text EN: do I need to bring an umbrella today?
+# text TAT: бүген миңа кирәкме зотник/кул чатырын үзем белән алырга?
+# intent: weather/find
+1	бүген	weather/find	B-datetime
+2	миңа	weather/find	O
+3	кирәкме	weather/find	O
+4	зотник/кул чатырын	weather/find	B-weather/attribute
+5	үзем 	weather/find	O
+6	белән	weather/find	O
+7	алырга	weather/find	B-weather/attribute
+
+
+# text EN: Can I wear shorts today?
+# text TAT: Мин бүген шорты кия аламмы?
+# intent: weather/find
+1	Мин	weather/find	O
+2	бүген	weather/find	B-datetime
+3	шорты	weather/find	B-weather/attribute
+4	кия	weather/find	O
+5	аламмы	weather/find	O
+6	?	weather/find	O
