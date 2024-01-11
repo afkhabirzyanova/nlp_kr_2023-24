@@ -411,7 +411,7 @@
 1   барлык  alarm/cancel_alarm  B-reference
 2   уяткыч  alarm/cancel_alarm  O
 3   сәгатьне    alarm/cancel_alarm  O
-4	бетер   alarm/cancel_alarm  O
+4	  бетер   alarm/cancel_alarm  O
 
 
 # text EN: Show me my reminders
