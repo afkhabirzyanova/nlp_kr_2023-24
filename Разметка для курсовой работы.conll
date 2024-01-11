@@ -1,0 +1,1077 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue;\f2\fnil\fcharset0 Tahoma;
+\f3\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;\f4\fnil\fcharset0 HelveticaNeue-Bold;\f5\fnil\fcharset0 .AppleSystemUIFontMonospaced-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red24\green24\blue24;
+\red24\green24\blue24;\red255\green255\blue254;\red81\green59\blue178;\red10\green22\blue51;\red24\green24\blue24;
+\red255\green255\blue254;\red10\green22\blue51;\red81\green59\blue178;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c12157\c12157\c12157;
+\cssrgb\c12549\c12549\c12549;\cssrgb\c100000\c100000\c99608;\cssrgb\c39608\c32941\c75294;\cssrgb\c3529\c11765\c25882;\cssrgb\c12549\c12549\c12549;
+\cssrgb\c100000\c100000\c99608;\cssrgb\c3529\c11765\c25882;\cssrgb\c39608\c32941\c75294;}
+\margl1440\margr1440\vieww10500\viewh18000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # text EN: Is it going to rain today?\
+# text TAT: \uc0\u1041 \u1199 \u1075 \u1077 \u1085  \u1103 \u1187 \u1075 \u1099 \u1088  \u1103 \u1074 \u1072 \u1088  \u1084 \u1080 \u1082 \u1241 \u1085 ?\
+# intent: weather/find\
+1	\uc0\u1041 \u1199 \u1075 \u1077 \u1085 	reminder/show_reminders		B-datetime\
+2	\uc0\u1103 \u1187 \u1075 \u1099 \u1088 	reminder/show_reminders		B-weather/attribute\
+3	\uc0\u1103 \u1074 \u1072 \u1088 		reminder/show_reminders		O\
+4	\uc0\u1084 \u1080 \u1082 \u1241 \u1085  	reminder/show_reminders		O\
+5	?		reminder/show_reminders		O\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 # text EN: Is it going to rain today?\
+# text TAT: \uc0\u1041 \u1199 \u1075 \u1077 \u1085  \u1103 \u1187 \u1075 \u1099 \u1088  \u1073 \u1091 \u1083 \u1099 \u1088 \u1084 \u1099 ?\
+# intent: weather/find\
+1	\uc0\u1041 \u1199 \u1075 \u1077 \u1085 	reminder/show_reminders		B-datetime\
+2	\uc0\u1103 \u1187 \u1075 \u1099 \u1088 	reminder/show_reminders		B-weather/attribute\
+3	\uc0\u1073 \u1091 \u1083 \u1099 \u1088 \u1084 \u1099 	reminder/show_reminders		O\
+4	?		reminder/show_reminders		O\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+# text EN: Remind me to call Stephanie on Tuesday\
+# text TAT: \uc0\u1057 \u1080 \u1096 \u1241 \u1084 \u1073 \u1077  \u1082 \u1257 \u1085 \u1085 \u1077  \uc0\u1084 \u1080 \u1187 \u1072  \uc0\u1057 \u1090 \u1077 \u1092 \u1072 \u1085 \u1080 \u1075 \u1072  \u1096 \u1072 \u1083 \u1090 \u1099 \u1088 \u1072 \u1090 \u1099 \u1088 \u1075 \u1072  \u1080 \u1089 \u1082 \u1241  \u1090 \u1257 \u1096 \u1077 \u1088 \
+# intent: reminder/set_reminder\
+1	\uc0\u1057 \u1080 \u1096 \u1241 \u1084 \u1073 \u1077 	reminder/set_reminder	B-datetime\
+2	\uc0\u1082 \u1257 \u1085 \u1085 \u1077 	reminder/set_reminder	O\
+3	\uc0\u1084 \u1080 \u1187 \u1072 	reminder/set_reminder	O\
+4	\uc0\u1057 \u1090 \u1077 \u1092 \u1072 \u1085 \u1080 \u1075 \u1072 	reminder/set_reminder	B-reminder/todo\
+5	\uc0\u1096 \u1072 \u1083 \u1090 \u1099 \u1088 \u1072 \u1090 \u1099 \u1088 \u1075 \u1072 		reminder/set_reminder	I-reminder/todo\
+6	\uc0\u1080 \u1089 \u1082 \u1241 		reminder/set_reminder	O\
+7	\uc0\u1090 \u1257 \u1096 \u1077 \u1088 	reminder/set_reminder	O\
+\
+\
+# text EN: weather update Los Angeles\
+# text TAT: \uc0\u1051 \u1086 \u1089 -\u1040 \u1085 \u1076 \u1078 \u1077 \u1083 \u1077 \u1089 \u1090 \u1072  \u1211 \u1072 \u1074 \u1072  \u1090 \u1086 \u1088 \u1099 \u1096 \u1099 \
+# intent: weather/find\
+1	\uc0\u1051 \u1086 \u1089 		weather/find	B-location\
+2	-	weather/find	I-location\
+3	\uc0\u1040 \u1085 \u1076 \u1078 \u1077 \u1083 \u1077 \u1089 \u1090 \u1072 	weather/find	I-location\
+4	\uc0\u1211 \u1072 \u1074 \u1072 		weather/find	O\
+5	\uc0\u1090 \u1086 \u1088 \u1099 \u1096 \u1099 	weather/find	O\
+\
+\
+# text EN: do I need to bring an umbrella today?\
+# text TAT: \uc0\u1073 \u1199 \u1075 \u1077 \u1085  \u1084 \u1080 \u1187 \u1072  \u1079 \u1086 \u1085 \u1090 \u1080 \u1082  \uc0\u1082 \u1080 \u1088 \u1241 \u1082 \u1084 \u1099 ?\
+# intent: weather/find\
+1	\uc0\u1073 \u1199 \u1075 \u1077 \u1085 	weather/find	B-datetime\
+2	\uc0\u1084 \u1080 \u1187 \u1072 	weather/find	O\
+3	\uc0\u1082 \u1080 \u1088 \u1241 \u1082 \u1084 \u1077 	weather/find	O\
+4	\uc0\u1079 \u1086 \u1090 \u1085 \u1080 \u1082 	weather/find	B-weather/attribute\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 5	\uc0\u1082 \u1080 \u1088 \u1241 \u1082 \u1084 \u1099 	weather/find	O\
+6	?	weather/find	O\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 # text EN: do I need to bring an umbrella today?\
+# text TAT: \uc0\u1082 \u1091 \u1083  \u1095 \u1072 \u1090 \u1099 \u1088 \u1099 \u1085  \u1199 \u1079 \u1077 \u1084  \u1073 \u1077 \u1083 \u1241 \u1085  \u1072 \u1083 \u1099 \u1084 \u1084 \u1099 ?\
+# intent: weather/find\
+1	\uc0\u1073 \u1199 \u1075 \u1077 \u1085 	weather/find	B-datetime\
+2	\uc0\u1084 \u1080 \u1187 \u1072 	weather/find	O\
+3	\uc0\u1082 \u1080 \u1088 \u1241 \u1082 \u1084 \u1077 	weather/find	O\
+4	\uc0\u1082 \u1091 \u1083 		weather/find	B-weather/attribute\
+5	\uc0\u1095 \u1072 \u1090 \u1099 \u1088 \u1099 \u1085 	weather/find	I-weather/attribute\
+6	\uc0\u1199 \u1079 \u1077 \u1084  	weather/find	O\
+7	\uc0\u1073 \u1077 \u1083 \u1241 \u1085 	weather/find	O\
+8	\uc0\u1072 \u1083 \u1099 \u1084 \u1084 \u1099 	weather/find	O\
+9	?	weather/find	O\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+# text EN: Can I wear shorts today?\
+# text TAT: \uc0\u1052 \u1080 \u1085  \u1073 \u1199 \u1075 \u1077 \u1085  \u1096 \u1086 \u1088 \u1090 \u1099  \u1082 \u1080 \u1103  \u1072 \u1083 \u1072 \u1084 \u1084 \u1099 ?\
+# intent: weather/find\
+1	\uc0\u1052 \u1080 \u1085 		weather/find	O\
+2	\uc0\u1073 \u1199 \u1075 \u1077 \u1085 	weather/find	B-datetime\
+3	\uc0\u1096 \u1086 \u1088 \u1090 \u1099 	weather/find	B-weather/attribute\
+4	\uc0\u1082 \u1080 \u1103 		weather/find	O\
+5	\uc0\u1072 \u1083 \u1072 \u1084 	\uc0\u1084 \u1099 	weather/find	O\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 6	?	weather/find	O\
+\
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\fs26 \cf0 # text EN: show all reminders\
+# text TAT: \uc0\u1073 \u1072 \u1088 \u1083 \u1099 \u1082  
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1080 \u1089 \u1082 \u1241  \u1090 \u1257 \u1096 \u1077 \u1088 \u1199 \u1085 \u1077 
+\f1\fs26 \kerning1\expnd0\expndtw0  \uc0\u1082 \u1199 \u1088 \u1089 \u1241 \u1090 \
+# intent: reminder/show_reminders\
+# slots: 5:8:reminder/reference,9:18:reminder/noun\
+1	\uc0\u1073 \u1072 \u1088 \u1083 \u1099 \u1082 	reminder/show_reminders	B-reference\
+2	\uc0\u1080 \u1089 \u1082 \u1241 \u1088 \u1090 \u1084 \u1241 \u1083 \u1241 \u1088 \u1085 \u1077 	reminder/show_reminders	O\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f2\fs28 \cf0 \expnd0\expndtw0\kerning0
+3	\uc0\u1090 \u1257 \u1096 \u1077 \u1088 \u1199 \u1085 \u1077 	r
+\f1\fs26 \kerning1\expnd0\expndtw0 eminder/show_reminders	O\
+4	\uc0\u1082 \u1199 \u1088 \u1089 \u1241 \u1090 	reminder/show_reminders	O
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\fs26 \cf0 # text EN: Do I need a sweater?\
+# text TAT: \uc0\u1052 \u1080 \u1187 \u1072  \u1089 \u1074 \u1080 \u1090 \u1077 \u1088  \u1082 \u1080 \u1088 \u1241 \u1082 \u1084 \u1099 ?\
+# intent: weather/find\
+# slots: 12:19:weather/attribute\
+1	\uc0\u1052 \u1080 \u1187 \u1072 	weather/find	O\
+2	\uc0\u1089 \u1074 \u1080 \u1090 \u1077 \u1088 	weather/find	B-weather/attribute\
+3	\uc0\u1082 \u1080 \u1088 \u1241 \u1082 \u1084 \u1099 	weather/find	O\
+4	?	weather/find	O\
+\
+\
+# text EN: Add a reminder 
+\f4\b for
+\f1\b0  today at 4pm\
+# text TAT: \uc0\u1041 \u1199 \u1075 \u1077 \u1085 \u1075 \u1241  
+\f2\fs28 \expnd0\expndtw0\kerning0
+16 \uc0\u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1082 \u1241  \u1093 \u1241 \u1090 \u1077 \u1088 \u1083 \u1241 \u1090 \u1199 \u1085 \u1077  \u1257 \u1089 \u1090 \u1241 
+\f1\fs26 \kerning1\expnd0\expndtw0 \
+# intent: reminder/set_reminder\
+# slots: 6:14:reminder/noun,15:31:datetime\
+1	\uc0\u1041 \u1199 \u1075 \u1077 \u1085 \u1075 \u1241 	reminder/set_reminder	B-datetime\
+2\'a0	
+\f2\fs28 \expnd0\expndtw0\kerning0
+16
+\f1\fs26 \kerning1\expnd0\expndtw0 	reminder/set_reminder	I-datetime\
+3\'a0	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1082 \u1241 
+\f1\fs26 \kerning1\expnd0\expndtw0 		reminder/set_reminder	I-datetime\
+4\'a0	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1093 \u1241 \u1090 \u1077 \u1088 \u1083 \u1241 \u1090 \u1199 \u1085 \u1077 
+\f1\fs26 \kerning1\expnd0\expndtw0 \'a0reminder/set_reminder	O\
+5\'a0	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1257 \u1089 \u1090 \u1241 
+\f1\fs26 \kerning1\expnd0\expndtw0 		reminder/set_reminder		O\
+\
+\
+# text EN: Add a reminder 
+\f4\b for
+\f1\b0  today at 4pm\
+# text TAT: \uc0\u1041 \u1199 \u1075 \u1077 \u1085 \u1075 \u1241  
+\f2\fs28 \expnd0\expndtw0\kerning0
+16 \uc0\u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1082 \u1241  \u1093 \u1241 \u1090 \u1077 \u1088 \u1083 \u1241 \u1090 \u1199 \u1085 \u1077  \u1257 \u1089 \u1090 \u1241 
+\f1\fs26 \kerning1\expnd0\expndtw0 \
+# intent: reminder/set_reminder\
+# slots: 6:14:reminder/noun,15:31:datetime\
+1	\uc0\u1041 \u1199 \u1075 \u1077 \u1085 \u1075 \u1241 	reminder/set_reminder	B-datetime\
+2\'a0	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1091 \u1085 	
+\f1\fs26 \kerning1\expnd0\expndtw0 reminder/set_reminder	I-datetime
+\f2\fs28 \expnd0\expndtw0\kerning0
+\
+3	\uc0\u1072 \u1083 \u1090 \u1099 \u1085 \u1095 \u1099 
+\f1\fs26 \kerning1\expnd0\expndtw0 	reminder/set_reminder	I-datetime\
+4\'a0	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1082 \u1241 
+\f1\fs26 \kerning1\expnd0\expndtw0 		reminder/set_reminder	I-datetime\
+5\'a0	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1093 \u1241 \u1090 \u1077 \u1088 \u1083 \u1241 \u1090 \u1199 \u1085 \u1077 
+\f1\fs26 \kerning1\expnd0\expndtw0 \'a0reminder/set_reminder	O\
+6\'a0	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1257 \u1089 \u1090 \u1241 
+\f1\fs26 \kerning1\expnd0\expndtw0 		reminder/set_reminder		O\
+\
+\
+# text EN: Cancel my reminder\
+# text TAT: \uc0\u1052 \u1080 \u1085 \u1077 \u1084  
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1093 \u1241 \u1090 \u1077 \u1088 \u1083 \u1241 \u1090 \u1199 \u1085 \u1077 
+\f1\fs26 \kerning1\expnd0\expndtw0  
+\f2\fs32 \cb3 \expnd0\expndtw0\kerning0
+\uc0\u1075 \u1072 \u1084 \u1241 \u1083 \u1076 \u1241 \u1085  \u1095 \u1099 \u1075 \u1072 \u1088 \u1099 \u1075 \u1099 \u1079 \
+
+\f1\fs26 \cb1 \kerning1\expnd0\expndtw0 # intent: reminder/cancel_reminder\
+# slots: 10:18:reminder/noun\
+1	\uc0\u1052 \u1080 \u1085 \u1077 \u1084 \'a0\'a0reminder/cancel_reminder\'a0\'a0\'a0B-reference\
+2	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1093 \u1241 \u1090 \u1077 \u1088 \u1083 \u1241 \u1090 \u1199 \u1085 \u1077 
+\f1\fs26 \kerning1\expnd0\expndtw0 \'a0\'a0reminder/cancel_reminder\'a0\'a0\'a0\'a0O\
+3\'a0	
+\f2\fs32 \cb3 \expnd0\expndtw0\kerning0
+\uc0\u1075 \u1072 \u1084 \u1241 \u1083 \u1076 \u1241 \u1085 
+\f1\fs26 \cb1 \kerning1\expnd0\expndtw0 \'a0\'a0\'a0\'a0reminder/cancel_reminder	O\
+4 	
+\f2\fs32 \cb3 \expnd0\expndtw0\kerning0
+\uc0\u1095 \u1099 \u1075 \u1072 \u1088 \u1099 \u1075 \u1099 \u1079 	
+\f1\fs26 \cb1 \kerning1\expnd0\expndtw0 \'a0reminder/cancel_reminder	O\
+\
+\
+# text EN: Remind me to 
+\f4\b get
+\f1\b0  gas.\
+# text TAT: \uc0\u1052 \u1080 \u1187 \u1072  \u1103 \u1075 \u1091 \u1083 \u1099 \u1082  \u1089 \u1072 \u1083 \u1099 \u1088 \u1075 \u1072  
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1080 \u1089 \u1082 \u1241  \u1090 \u1257 \u1096 \u1077 \u1088 .
+\f1\fs26 \kerning1\expnd0\expndtw0 \
+# intent: reminder/set_reminder\
+# slots: 13:20:reminder/todo\
+1	\uc0\u1052 \u1080 \u1187 \u1072 		reminder/set_reminder	O\
+2	\uc0\u1103 \u1075 \u1091 \u1083 \u1099 \u1082 	reminder/set_reminder	B-reminder/todo\
+3	\uc0\u1089 \u1072 \u1083 \u1099 \u1088 \u1075 \u1072 \'a0\'a0	reminder/set_reminder	I-reminder/todo\
+4	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1080 \u1089 \u1082 \u1241 
+\f1\fs26 \kerning1\expnd0\expndtw0 		reminder/set_reminder	O\
+5	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1090 \u1257 \u1096 \u1077 \u1088 
+\f1\fs26 \kerning1\expnd0\expndtw0 	reminder/set_reminder	O\
+6	.	reminder/set_reminder	O\
+\
+\
+# text EN:  Do I need an umbrella on Wednesday?\
+# text TAT: \uc0\u1063 \u1241 \u1088 \u1096 \u1241 \u1084 \u1073 \u1077 \u1075 \u1241  \u1084 \u1080 \u1187 \u1072  \u1079 \u1086 \u1085 \u1090 \u1080 \u1082  \u1082 \u1080 \u1088 \u1241 \u1082 \u1084 \u1099 ?\
+# intent: weather/find\
+# slots: 13:21:weather/attribute,22:34:datetime\
+1	Do\'a0\'a0weather/find\'a0\'a0\'a0\'a0O\
+2	I\'a0\'a0\'a0weather/find\'a0\'a0\'a0\'a0O\
+3	need\'a0\'a0\'a0\'a0weather/find\'a0\'a0\'a0\'a0O\
+4	an\'a0\'a0weather/find\'a0\'a0\'a0\'a0O\
+5	umbrella\'a0\'a0\'a0\'a0weather/find\'a0\'a0\'a0\'a0B-weather/attribute\
+6	on\'a0\'a0weather/find\'a0\'a0\'a0\'a0O\
+7	Wednesday\'a0\'a0\'a0weather/find\'a0\'a0\'a0\'a0B-datetime\
+8	?\'a0\'a0\'a0weather/find\'a0\'a0\'a0\'a0O\
+\
+\
+# text EN:  Do I need an umbrella on Wednesday?\
+# text TAT: \uc0\u1063 \u1241 \u1088 \u1096 \u1241 \u1084 \u1073 \u1077 \u1075 \u1241  \u1084 \u1080 \u1187 \u1072  
+\f0\fs24  \uc0\u1082 \u1091 \u1083  \u1095 \u1072 \u1090 \u1099 \u1088 \u1099 
+\f1\fs26  \uc0\u1082 \u1080 \u1088 \u1241 \u1082 \u1084 \u1099 ?\
+# intent: weather/find\
+# slots: 13:21:weather/attribute,22:34:datetime\
+1	\uc0\u1063 \u1241 \u1088 \u1096 \u1241 \u1084 \u1073 \u1077 \u1075 \u1241 \'a0\'a0weather/find\'a0\'a0\'a0\'a0B-datetime\
+2	\uc0\u1084 \u1080 \u1187 \u1072 \'a0\'a0weather/find\'a0\'a0\'a0\'a0O\
+3	
+\f0\fs24 \uc0\u1082 \u1091 \u1083 
+\f1\fs26 \'a0\'a0\'a0weather/find\'a0\'a0\'a0\'a0B-weather/attribute\
+4	
+\f0\fs24 \uc0\u1095 \u1072 \u1090 \u1099 \u1088 \u1099 
+\f1\fs26 \'a0\'a0weather/find\'a0\'a0\'a0\'a0I-weather/attribute\
+5	\uc0\u1082 \u1080 \u1088 \u1241 \u1082 \u1084 \u1099 \'a0\'a0\'a0\'a0weather/find\'a0\'a0\'a0\'a0O\
+6	?\'a0\'a0\'a0weather/find\'a0\'a0\'a0\'a0O   \
+\
+\
+# text EN: snooze my alarms 
+\f4\b for
+\f1\b0  five minutes\
+# text TAT: \uc0\u1073 \u1080 \u1096  \u1084 \u1080 \u1085 \u1091 \u1090 \u1090 \u1072 \u1085  \u1089 \u1086 \u1187  \u1084 \u1080 \u1085 \u1077 \u1084  \u1091 \u1103 \u1090 \u1082 \u1099 \u1095  \u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077  \u1082 \u1072 \u1073 \u1072 \u1090 \u1083 \u1072 \
+# intent: alarm/snooze_alarm\
+# slots: 17:33:datetime\
+1	\uc0\u1073 \u1080 \u1096 \'a0\'a0alarm/snooze_alarm\'a0\'a0B-datetime\
+2	\uc0\u1084 \u1080 \u1085 \u1091 \u1090 \u1090 \u1072 \u1085 \'a0\'a0alarm/snooze_alarm	B-reference\
+3	\uc0\u1089 \u1086 \u1187 \'a0\'a0alarm/snooze_alarm	O\
+4	\uc0\u1084 \u1080 \u1085 \u1077 \u1084 	alarm/snooze_alarm	I-datetime\
+5	\uc0\u1091 \u1103 \u1090 \u1082 \u1099 \u1095 \'a0alarm/snooze_alarm		O\
+6	\uc0\u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077 \'a0\'a0alarm/snooze_alarm	O\
+7	\uc0\u1082 \u1072 \u1073 \u1072 \u1090 \u1083 \u1072 \'a0alarm/snooze_alarm	O\
+\
+\
+# text EN: snooze my alarms 
+\f4\b for
+\f1\b0  five minutes\
+# text TAT: \uc0\u1073 \u1080 \u1096  \u1084 \u1080 \u1085 \u1091 \u1090 \u1090 \u1072 \u1085  \u1089 \u1086 \u1187  \u1084 \u1080 \u1085 \u1077 \u1084  \u1091 \u1103 \u1090 \u1082 \u1099 \u1095  \u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077  \u1082 \u1072 \u1073 \u1072 \u1090 \u1083 \u1072 \
+# intent: alarm/snooze_alarm\
+# slots: 17:33:datetime\
+1	5\'a0\'a0alarm/snooze_alarm\'a0\'a0B-datetime\
+2	\uc0\u1084 \u1080 \u1085 \u1091 \u1090 \u1090 \u1072 \u1085 \'a0\'a0alarm/snooze_alarm	B-reference\
+3	\uc0\u1089 \u1086 \u1187 \'a0\'a0alarm/snooze_alarm	O\
+4	\uc0\u1084 \u1080 \u1085 \u1077 \u1084 	alarm/snooze_alarm	I-datetime\
+5	\uc0\u1091 \u1103 \u1090 \u1082 \u1099 \u1095 \'a0alarm/snooze_alarm		O\
+6	\uc0\u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077 \'a0\'a0\'a0alarm/snooze_alarm	O\
+7	\uc0\u1082 \u1072 \u1073 \u1072 \u1090 \u1083 \u1072 \'a0alarm/snooze_alarm	O\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1\fs26 \cf0 # text EN: 
+\f4\b set
+\f1\b0  a birthday reminder 
+\f4\b for
+\f1\b0  max\
+# text TAT: \uc0\u1052 \u1072 \u1082 \u1089 \u1085 \u1099 \u1187  \u1090 \u1091 \u1075 \u1072 \u1085  \u1082 \u1257 \u1085 \u1077 \u1085  
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1093 \u1241 \u1090 \u1077 \u1088 \u1083 \u1241 \u1090 \u1199 \u1085 \u1077  \u1103 \u1089 \u1072  
+\f1\fs26 \kerning1\expnd0\expndtw0 \
+# intent: reminder/set_reminder\
+# slots: 6:14:reminder/todo,15:23:reminder/noun\
+1	\uc0\u1052 \u1072 \u1082 \u1089 \u1085 \u1099 \u1187  reminder/set_reminder\'a0\'a0\'a0B-reminder/todo\
+2	\uc0\u1090 \u1091 \u1075 \u1072 \u1085 \'a0\'a0\'a0reminder/set_reminder\'a0\'a0\'a0I-reminder/todo\
+3	\uc0\u1082 \u1257 \u1085 \u1077 \u1085 \'a0\'a0\'a0\'a0reminder/set_reminder\'a0\'a0\'a0I-reminder/todo\
+4	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1093 \u1241 \u1090 \u1077 \u1088 \u1083 \u1241 \u1090 \u1199 \u1085 \u1077 
+\f1\fs26 \kerning1\expnd0\expndtw0 \'a0\'a0\'a0\'a0reminder/set_reminder\'a0\'a0\'a0O\
+5	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1103 \u1089 \u1072 	
+\f1\fs26 \kerning1\expnd0\expndtw0 reminder/set_reminder\'a0\'a0\'a0O\
+\
+\
+# text EN: 
+\f4\b set
+\f1\b0  a birthday reminder 
+\f4\b for
+\f1\b0  max\
+# text TAT: \uc0\u1052 \u1072 \u1082 \u1089 \u1085 \u1099 \u1187  \u1090 \u1091 \u1075 \u1072 \u1085  \u1082 \u1257 \u1085 \u1077 \u1085  \u1080 \u1089 \u1082 \u1241  \u1090 \u1257 \u1096 \u1077 \u1088 \
+# intent: reminder/set_reminder\
+# slots: 6:14:reminder/todo,15:23:reminder/noun\
+1	\uc0\u1052 \u1072 \u1082 \u1089 \u1085 \u1099 \u1187  reminder/set_reminder\'a0\'a0\'a0B-reminder/todo\
+2	\uc0\u1090 \u1091 \u1075 \u1072 \u1085 \'a0\'a0\'a0reminder/set_reminder\'a0\'a0\'a0I-reminder/todo\
+3	\uc0\u1082 \u1257 \u1085 \u1077 \u1085 \'a0\'a0\'a0\'a0reminder/set_reminder\'a0\'a0\'a0I-reminder/todo\
+4	\uc0\u1080 \u1089 \u1082 \u1241 \'a0\'a0reminder/set_reminder\'a0\'a0\'a0O\
+5	\uc0\u1090 \u1257 \u1096 \u1077 \u1088 \'a0\'a0reminder/set_reminder\'a0\'a0\'a0\'a0O\
+\
+\
+# text EN: Show me all reminders\
+# text TAT: \uc0\u1052 \u1080 \u1187 \u1072  \u1073 \u1072 \u1088 \u1083 \u1099 \u1082 
+\f2\fs28 \expnd0\expndtw0\kerning0
+ \uc0\u1093 \u1241 \u1090 \u1077 \u1088 \u1083 \u1241 \u1090 \u1199 
+\f0\fs40 \cf4 \cb3 \uc0\u1083 \u1241 \u1088 
+\f2\fs28 \cf0 \cb1 \uc0\u1085 \u1077 
+\f1\fs26 \kerning1\expnd0\expndtw0  \uc0\u1082 \u1199 \u1088 \u1089 \u1241 \u1090 \
+# intent: reminder/show_reminders\
+# slots: 12:21:reminder/noun\
+1	\uc0\u1052 \u1080 \u1187 \u1072 \'a0\'a0\'a0\'a0reminder/show_reminders\'a0O\
+2	\uc0\u1073 \u1072 \u1088 \u1083 \u1099 \u1082 \'a0\'a0reminder/show_reminders\'a0
+\f3 \cf5 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 B\cf2 \strokec2 -\cf5 \strokec5 reference
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+3	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1093 \u1241 \u1090 \u1077 \u1088 \u1083 \u1241 \u1090 \u1199 
+\f0\fs40 \cf4 \cb3 \uc0\u1083 \u1241 \u1088 
+\f2\fs28 \cf0 \cb1 \uc0\u1085 \u1077 
+\f1\fs26 \kerning1\expnd0\expndtw0 \'a0reminder/show_reminders\'a0O\
+4	\uc0\u1082 \u1199 \u1088 \u1089 \u1241 \u1090 \'a0\'a0\'a0reminder/show_reminders\'a0O\
+\
+\
+# text EN: 
+\f3 \cf5 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 Show\cf2 \strokec2  \cf5 \strokec5 all\cf2 \strokec2  \cf5 \strokec5 alarms\cf2 \strokec2 .
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+# text TAT: \uc0\u1041 \u1072 \u1088 \u1083 \u1099 \u1082  
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1091 \u1103 \u1090 \u1082 \u1099 \u1095  \u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077  
+\f1\fs26 \kerning1\expnd0\expndtw0 \uc0\u1082 \u1199 \u1088 \u1089 \u1241 \u1090 .
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 intent\cf2 \strokec2 : \cf5 \strokec5 alarm\cf2 \strokec2 /\cf5 \strokec5 show_alarms\cf2 \cb1 \strokec2 \
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 slots\cf2 \strokec2 :
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 1	\uc0\u1073 \u1072 \u1088 \u1083 \u1099 \u1082 	reminder/show_reminders	B-reference\
+2	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1091 \u1103 \u1090 \u1082 \u1099 \u1095 	
+\f1\fs26 \kerning1\expnd0\expndtw0 	reminder/show_reminders	O\
+3	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077 		r
+\f1\fs26 \kerning1\expnd0\expndtw0 eminder/show_reminders	O\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f2\fs28 \cf0 \expnd0\expndtw0\kerning0
+4	
+\f1\fs26 \kerning1\expnd0\expndtw0 \uc0\u1082 \u1199 \u1088 \u1089 \u1241 \u1090 
+\f2\fs28 \expnd0\expndtw0\kerning0
+		r
+\f1\fs26 \kerning1\expnd0\expndtw0 eminder/show_reminders	O
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf7 \cb6 \strokec7 5\cf2 \strokec2 \'a0\'a0\'a0.\'a0\'a0\'a0\cf5 \strokec5 alarm\cf2 \strokec2 /\cf5 \strokec5 show_alarms\cf2 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 \
+
+\f1 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+# text EN:
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  \cf5 \strokec5 Set\cf2 \strokec2  \cf5 \strokec5 alarm\cf2 \strokec2  
+\f5\b \cf8 \strokec8 for
+\f3\b0 \cf2 \strokec2  \cf7 \strokec7 8\cf5 \strokec5 am\
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text TAT: \uc0\u1059 \u1103 \u1090 \u1082 \u1099 \u1095  \u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077  \u1080 \u1088 \u1090 \u1241 \u1085 \u1075 \u1077  \u1089 \u1080 \u1075 \u1077 \u1079 \u1075 \u1241  \u1103 \u1089 \u1072 
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 intent\cf2 \strokec2 : \cf5 \strokec5 alarm\cf2 \strokec2 /\cf5 \strokec5 set_alarm\cf2 \cb1 \strokec2 \
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 slots\cf2 \strokec2 : \cf7 \strokec7 10\cf2 \strokec2 :\cf7 \strokec7 17\cf2 \strokec2 :\cf5 \strokec5 datetime\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 1\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1059 \u1103 \u1090 \u1082 \u1099 \u1095 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \strokec5 alarm\cf2 \strokec2 /\cf5 \strokec5 set_alarm\cf2 \strokec2 \'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 2\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 alarm\cf2 \strokec2 /\cf5 \strokec5 set_alarm\cf2 \strokec2 \'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 3\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1080 \u1088 \u1090 \u1241 \u1085 \u1075 \u1077 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \strokec5 alarm\cf2 \strokec2 /\cf5 \strokec5 set_alarm\cf2 \strokec2 \'a0\cf9 \cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 B\cf2 -\cf9 datetime\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\cf7 \cb6 \strokec7 4\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1089 \u1080 \u1075 \u1077 \u1079 \u1075 \u1241 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \strokec5 alarm\cf2 \strokec2 /\cf5 \strokec5 set_alarm\cf2 \strokec2 \'a0\cf5 \strokec5 I\cf2 \strokec2 -\cf5 \strokec5 datetime\
+5	
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1103 \u1089 \u1072 	
+\f3 \cf9 \cb10 \expnd0\expndtw0\kerning0
+alarm\cf2 /\cf9 set_alarm\cf2 \'a0\cf9 O\
+\
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 # text EN:
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+ \cf9 Set\cf2  \cf9 alarm\cf2  
+\f5\b \cf11 for
+\f3\b0 \cf2  \cf12 8\cf9 am\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 # text TAT: \uc0\u1059 \u1103 \u1090 \u1082 \u1099 \u1095  \u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077  \u1080 \u1088 \u1090 \u1241 \u1085 \u1075 \u1077  8 \u1103 \u1089 \u1072 
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf9 \cb10 #\cf2  \cf9 intent\cf2 : \cf9 alarm\cf2 /\cf9 set_alarm\cf2 \cb1 \
+\cf9 \cb10 #\cf2  \cf9 slots\cf2 : \cf12 10\cf2 :\cf12 17\cf2 :\cf9 datetime\cf2 \cb1 \
+\cf12 \cb10 1\cf2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1059 \u1103 \u1090 \u1082 \u1099 \u1095 
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\cf9 alarm\cf2 /\cf9 set_alarm\cf2 \'a0\cf9 O\cf2 \cb1 \
+\cf12 \cb10 2\cf2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077 
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\cf9 alarm\cf2 /\cf9 set_alarm\cf2 \'a0\cf9 O\cf2 \cb1 \
+\cf12 \cb10 3\cf2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1080 \u1088 \u1090 \u1241 \u1085 \u1075 \u1077 
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\cf9 alarm\cf2 /\cf9 set_alarm\cf2 \'a0\cf9 \cb10 B\cf2 \cb10 -\cf9 \cb10 datetime\cf2 \cb1 \
+\cf12 \cb10 4\cf2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 8
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\cf9 alarm\cf2 /\cf9 set_alarm\cf2 \'a0\cf9 I\cf2 -\cf9 datetime\
+5	
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1103 \u1089 \u1072 	
+\f3 \cf9 \cb10 \expnd0\expndtw0\kerning0
+alarm\cf2 \cb10 /\cf9 \cb10 set_alarm\cf2 \cb10 \'a0\cf9 \cb10 O\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text EN:
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  \cf5 \strokec5 What\cf2 \strokec2  
+\f5\b \cf8 \strokec8 is
+\f3\b0 \cf2 \strokec2  \cf5 \strokec5 the\cf2 \strokec2  \cf5 \strokec5 temperature\cf2 \strokec2  \cf5 \strokec5 today\cf2 \strokec2 ?\
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text TAT: 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \uc0\u1041 \u1199 \u1075 \u1077 \u1085  \u1090 \u1077 \u1084 \u1087 \u1077 \u1088 \u1072 \u1090 \u1091 \u1088 \u1072  \u1085 \u1080 \u1085 \u1076 \u1080 ?\cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 intent\cf2 \strokec2 : \cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \cb1 \strokec2 \
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 slots\cf2 \strokec2 : \cf7 \strokec7 12\cf2 \strokec2 :\cf7 \strokec7 23\cf2 \strokec2 :\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 noun\cf2 \strokec2 ,\cf7 \strokec7 24\cf2 \strokec2 :\cf7 \strokec7 29\cf2 \strokec2 :\cf5 \strokec5 datetime\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 1\cf2 \strokec2 \'a0\'a0\'a0\cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u1041 \u1199 \u1075 \u1077 \u1085 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \'a0\'a0\'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf9 \cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 B\cf2 -\cf9 datetime\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\cf7 \cb6 \strokec7 2\cf2 \strokec2 \'a0\'a0\'a0\cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u1090 \u1077 \u1084 \u1087 \u1077 \u1088 \u1072 \u1090 \u1091 \u1088 \u1072 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf9 \cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 B\cf2 -\cf9 weather\cf2 /\cf9 attribute\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\cf7 \cb6 \strokec7 3\cf2 \strokec2 \'a0\'a0\'a0\cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u1085 \u1080 \u1085 \u1076 \u1080 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 4\cf2 \strokec2 \'a0\'a0\'a0?\'a0\'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 \
+
+\f1 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text EN:
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  \cf5 \strokec5 Show\cf2 \strokec2  \cf5 \strokec5 my\cf2 \strokec2  \cf5 \strokec5 reminder\
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text TAT: \uc0\u1052 \u1080 \u1085 \u1077 \u1084  
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1093 \u1241 \u1090 \u1077 \u1088 \u1083 \u1241 \u1090 \u1199 \u1085 \u1077 
+\f1\fs26 \kerning1\expnd0\expndtw0  \uc0\u1082 \u1199 \u1088 \u1089 \u1241 \u1090 
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 intent\cf2 \strokec2 : \cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 show_reminders\cf2 \cb1 \strokec2 \
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 slots\cf2 \strokec2 : \cf7 \strokec7 5\cf2 \strokec2 :\cf7 \strokec7 7\cf2 \strokec2 :\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 reference\cf2 \strokec2 ,\cf7 \strokec7 8\cf2 \strokec2 :\cf7 \strokec7 16\cf2 \strokec2 :\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 noun\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 1\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1052 \u1080 \u1085 \u1077 \u1084 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 show_reminders\cf2 \strokec2 \'a0\cf9 \cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 B\cf2 -\cf9 reference\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\cf7 \cb6 \strokec7 2\cf2 \strokec2 \'a0\'a0\'a0
+\f2\fs28 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u1093 \u1241 \u1090 \u1077 \u1088 \u1083 \u1241 \u1090 \u1199 \u1085 \u1077 
+\f3\fs26 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 show_reminders\cf2 \strokec2 \'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 3\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1082 \u1199 \u1088 \u1089 \u1241 \u1090 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 show_reminders\cf2 \strokec2 \'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 \
+\
+
+\f1 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text EN: 
+\f3 \cf9 \cb10 \expnd0\expndtw0\kerning0
+Show\cf2  \cf9 all\cf2  \cf9 alarms
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+# text TAT: \uc0\u1041 \u1072 \u1088 \u1083 \u1099 \u1082  
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1093 \u1241 \u1073 \u1241 \u1088 \u1083 \u1241 \u1084 \u1241 \u1085 \u1077 
+\f1\fs26 \kerning1\expnd0\expndtw0  \uc0\u1082 \u1199 \u1088 \u1089 \u1241 \u1090 
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf9 \cb10 #\cf2  \cf9 intent\cf2 : \cf9 alarm\cf2 /\cf9 show_alarms\cf2 \cb1 \
+\cf9 \cb10 #\cf2  \cf9 slots\cf2 :
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 1	\uc0\u1073 \u1072 \u1088 \u1083 \u1099 \u1082 	reminder/show_reminders	B-reference\
+2	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1091 \u1103 \u1090 \u1082 \u1099 \u1095 
+\f1\fs26 \kerning1\expnd0\expndtw0 	reminder/show_reminders	O\
+3	
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077 		
+\f1\fs26 \kerning1\expnd0\expndtw0 reminder/show_reminders	O\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f2\fs28 \cf0 \expnd0\expndtw0\kerning0
+4	
+\f1\fs26 \kerning1\expnd0\expndtw0 \uc0\u1082 \u1199 \u1088 \u1089 \u1241 \u1090 
+\f2\fs28 \expnd0\expndtw0\kerning0
+	r
+\f1\fs26 \kerning1\expnd0\expndtw0 eminder/show_reminders	O
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\
+\
+\
+
+\f1 \cf0 \kerning1\expnd0\expndtw0 # text EN:
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  \cf5 \strokec5 Remind\cf2 \strokec2  \cf5 \strokec5 me\cf2 \strokec2  \cf5 \strokec5 to\cf2 \strokec2  \cf5 \strokec5 talk\cf2 \strokec2  \cf5 \strokec5 to\cf2 \strokec2  \cf5 \strokec5 Ben\cf2 \strokec2  \cf5 \strokec5 about\cf2 \strokec2  \cf5 \strokec5 Georgia\
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text TAT: 
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1048 \u1089 \u1082 \u1241  \u1090 \u1257 \u1096 \u1077 \u1088 
+\f1\fs26 \kerning1\expnd0\expndtw0  \uc0\u1084 \u1080 \u1187 \u1072  \u1041 \u1077 \u1085  \u1073 \u1077 \u1083 \u1241 \u1085  \u1044 \u1078 \u1086 \u1088 \u1076 \u1078 \u1080 \u1103  \u1090 \u1091 \u1088 \u1099 \u1085 \u1076 \u1072  \u1089 \u1257 \u1081 \u1083 \u1241 \u1096 \u1077 \u1088 \u1075 \u1241 
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 intent\cf2 \strokec2 : \cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 set_reminder\cf2 \cb1 \strokec2 \
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 slots\cf2 \strokec2 : \cf7 \strokec7 13\cf2 \strokec2 :\cf7 \strokec7 38\cf2 \strokec2 :\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 todo\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 1\cf2 \strokec2 \'a0\'a0\'a0
+\f2\fs28 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u1048 \u1089 \u1082 \u1241 
+\f3\fs26 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 set_reminder\cf2 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 2\cf2 \strokec2 \'a0\'a0\'a0
+\f2\fs28 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u1090 \u1257 \u1096 \u1077 \u1088 
+\f3\fs26 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 set_reminder\cf2 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 3\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1084 \u1080 \u1187 \u1072 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 set_reminder\cf2 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 4\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1041 \u1077 \u1085 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 set_reminder\cf2 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 B\cf2 \strokec2 -\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 todo\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 5\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1073 \u1077 \u1083 \u1241 \u1085 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 set_reminder\cf2 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 I\cf2 \strokec2 -\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 todo\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 6\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1044 \u1078 \u1086 \u1088 \u1076 \u1078 \u1080 \u1103 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 set_reminder\cf2 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 I\cf2 \strokec2 -\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 todo\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 7\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1090 \u1091 \u1088 \u1099 \u1085 \u1076 \u1072 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 set_reminder\cf2 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 I\cf2 \strokec2 -\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 todo\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 8\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1089 \u1257 \u1081 \u1083 \u1241 \u1096 \u1077 \u1088 \u1075 \u1241 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 set_reminder\cf2 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 I\cf2 \strokec2 -\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 todo\
+\
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text EN:
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+ \cf9 Set\cf2  \cf9 alarm\cf2  
+\f5\b \cf11 for
+\f3\b0 \cf2  \cf12 5 \cf9 am\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 # text TAT: \uc0\u1059 \u1103 \u1090 \u1082 \u1099 \u1095  \u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077  \u1080 \u1088 \u1090 \u1241 \u1085 \u1075 \u1077  \uc0\u1073 \u1080 \u1096 \u1082 \u1241  \uc0\u1103 \u1089 \u1072 
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf9 \cb10 #\cf2  \cf9 intent\cf2 : \cf9 alarm\cf2 /\cf9 set_alarm\cf2 \cb1 \
+\cf9 \cb10 #\cf2  \cf9 slots\cf2 : \cf12 10\cf2 :\cf12 17\cf2 :\cf9 datetime\cf2 \cb1 \
+\cf12 \cb10 1\cf2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1059 \u1103 \u1090 \u1082 \u1099 \u1095 
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\cf9 alarm\cf2 /\cf9 set_alarm\cf2 \'a0\cf9 O\cf2 \cb1 \
+\cf12 \cb10 2\cf2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077 
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\cf9 alarm\cf2 /\cf9 set_alarm\cf2 \'a0\cf9 O\cf2 \cb1 \
+\cf12 \cb10 3\cf2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1080 \u1088 \u1090 \u1241 \u1085 \u1075 \u1077 
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\cf9 alarm\cf2 /\cf9 set_alarm\cf2 \'a0\cf9 \cb10 B\cf2 \cb10 -\cf9 \cb10 datetime\cf2 \cb1 \
+\cf12 \cb10 4\cf2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1073 \u1080 \u1096 \u1082 \u1241 
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\cf9 alarm\cf2 /\cf9 set_alarm\cf2 \'a0\cf9 I\cf2 -\cf9 datetime\
+5	
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1103 \u1089 \u1072 	
+\f3 \cf9 \cb10 \expnd0\expndtw0\kerning0
+alarm\cf2 \cb10 /\cf9 \cb10 set_alarm\cf2 \cb10 \'a0\cf9 \cb10 O\
+\
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 # text EN:
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+ \cf9 \cb10 Set\cf2 \cb10  \cf9 \cb10 alarm\cf2 \cb10  
+\f5\b \cf11 for
+\f3\b0 \cf2  \cf12 5 \cf9 \cb10 am\
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 # text TAT: \uc0\u1059 \u1103 \u1090 \u1082 \u1099 \u1095  \u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077  \u1080 \u1088 \u1090 \u1241 \u1085 \u1075 \u1077  5 \u1103 \u1089 \u1072 
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf9 \cb10 #\cf2 \cb10  \cf9 \cb10 intent\cf2 \cb10 : \cf9 \cb10 alarm\cf2 \cb10 /\cf9 \cb10 set_alarm\cf2 \cb1 \
+\cf9 \cb10 #\cf2 \cb10  \cf9 \cb10 slots\cf2 \cb10 : \cf12 \cb10 10\cf2 \cb10 :\cf12 \cb10 17\cf2 \cb10 :\cf9 \cb10 datetime\cf2 \cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf12 \cb10 1\cf2 \cb10 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1059 \u1103 \u1090 \u1082 \u1099 \u1095 
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\cf9 \cb10 alarm\cf2 \cb10 /\cf9 \cb10 set_alarm\cf2 \cb10 \'a0\cf9 \cb10 O\cf2 \cb1 \
+\cf12 \cb10 2\cf2 \cb10 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077 
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\cf9 \cb10 alarm\cf2 \cb10 /\cf9 \cb10 set_alarm\cf2 \cb10 \'a0\cf9 \cb10 O\cf2 \cb1 \
+\cf12 \cb10 3\cf2 \cb10 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1080 \u1088 \u1090 \u1241 \u1085 \u1075 \u1077 
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\cf9 \cb10 alarm\cf2 \cb10 /\cf9 \cb10 set_alarm\cf2 \cb10 \'a0\cf9 \cb10 B\cf2 \cb10 -\cf9 \cb10 datetime\cf2 \cb1 \
+\cf12 \cb10 4\cf2 \cb10 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 5
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\cf9 \cb10 alarm\cf2 \cb10 /\cf9 \cb10 set_alarm\cf2 \cb10 \'a0\cf9 \cb10 I\cf2 \cb10 -\cf9 \cb10 datetime\
+5	
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1103 \u1089 \u1072 	
+\f3 \cf9 \cb10 \expnd0\expndtw0\kerning0
+alarm\cf2 \cb10 /\cf9 \cb10 set_alarm\cf2 \cb10 \'a0\cf9 \cb10 O\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 \
+\
+
+\f1 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text EN:
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  
+\f5\b \cf8 \strokec8 is
+\f3\b0 \cf2 \strokec2  \cf5 \strokec5 it\cf2 \strokec2  \cf5 \strokec5 cloudy\cf2 \strokec2  \cf5 \strokec5 today\
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text TAT: \uc0\u1073 \u1199 \u1075 \u1077 \u1085  \u1073 \u1086 \u1083 \u1099 \u1090 \u1083 \u1099 \u1084 \u1099 ?
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 intent\cf2 \strokec2 : \cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \cb1 \strokec2 \
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 slots\cf2 \strokec2 : \cf7 \strokec7 6\cf2 \strokec2 :\cf7 \strokec7 12\cf2 \strokec2 :\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 attribute\cf2 \strokec2 ,\cf7 \strokec7 13\cf2 \strokec2 :\cf7 \strokec7 18\cf2 \strokec2 :\cf5 \strokec5 datetime\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 1\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1073 \u1199 \u1075 \u1077 \u1085 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf9 \cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 B\cf2 -\cf9 datetime\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\cf7 \cb6 \strokec7 2\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0  \uc0\u1073 \u1086 \u1083 \u1099 \u1090 \u1083 \u1099 \u1084 \u1099 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf9 \cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 B\cf2 -\cf9 weather\cf2 /\cf9 attribute\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\cf7 \cb6 \strokec7 \
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text EN:
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  \cf5 \strokec5 How\cf2 \strokec2  \cf5 \strokec5 many\cf2 \strokec2  \cf5 \strokec5 inches\cf2 \strokec2  
+\f5\b \cf8 \strokec8 of
+\f3\b0 \cf2 \strokec2  \cf5 \strokec5 rain\cf2 \strokec2  \cf5 \strokec5 will\cf2 \strokec2  \cf5 \strokec5 we\cf2 \strokec2  
+\f5\b \cf8 \strokec8 get
+\f3\b0 \cf2 \strokec2  \cf5 \strokec5 today\cf2 \strokec2 ?\
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text TAT: \uc0\u1041 \u1199 \u1075 \u1077 \u1085  \u1073 \u1077 \u1079 \u1076 \u1241  \u1085 \u1080 \u1095 \u1241  \u1076 \u1102 \u1081 \u1084  \u1103 \u1187 \u1075 \u1099 \u1088  \u1103 \u1074 \u1072 ?
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 intent\cf2 \strokec2 : \cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \cb1 \strokec2 \
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 slots\cf2 \strokec2 : \cf7 \strokec7 19\cf2 \strokec2 :\cf7 \strokec7 23\cf2 \strokec2 :\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 attribute\cf2 \strokec2 ,\cf7 \strokec7 36\cf2 \strokec2 :\cf7 \strokec7 41\cf2 \strokec2 :\cf5 \strokec5 datetime\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 1\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1041 \u1199 \u1075 \u1077 \u1085 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 B\cf2 \strokec2 -\cf5 \strokec5 datetime\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 2\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1073 \u1077 \u1079 \u1076 \u1241 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 3\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1085 \u1080 \u1095 \u1241 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf9 \cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 O\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\cf7 \cb6 \strokec7 4\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1076 \u1102 \u1081 \u1084 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 B\cf2 \strokec2 -\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 attribute\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 5\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1103 \u1187 \u1075 \u1099 \u1088 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 I\cf2 \strokec2 -\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 attribute\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 6\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1103 \u1074 \u1072 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf9 \cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 O\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\cf7 \cb6 \strokec7 7\cf2 \strokec2 	?\'a0\'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text EN:
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  \cf5 \strokec5 Remind\cf2 \strokec2  \cf5 \strokec5 me\cf2 \strokec2  \cf5 \strokec5 to\cf2 \strokec2  \cf5 \strokec5 call\cf2 \strokec2  \cf5 \strokec5 my\cf2 \strokec2  \cf5 \strokec5 sister\cf2 \strokec2  \cf5 \strokec5 tomorrow\
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text TAT: 
+\f0\fs24 \uc0\u1048 \u1088 \u1090 \u1241 \u1075 \u1241  \u1084 \u1080 \u1187 \u1072  \u1072 \u1087 \u1072 \u1075 \u1072  \u1096 \u1072 \u1083 \u1090 \u1099 \u1088 \u1072 \u1090 \u1099 \u1088 \u1075 \u1072  \u1080 \u1089 \u1082 \u1241  \u1090 \u1257 \u1096 \u1077 \u1088 
+\f3\fs26 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 intent\cf2 \strokec2 : \cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 set_reminder\cf2 \cb1 \strokec2 \
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 slots\cf2 \strokec2 : \cf7 \strokec7 13\cf2 \strokec2 :\cf7 \strokec7 27\cf2 \strokec2 :\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 todo\cf2 \strokec2 ,\cf7 \strokec7 28\cf2 \strokec2 :\cf7 \strokec7 36\cf2 \strokec2 :\cf5 \strokec5 datetime\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 1\cf2 \strokec2 \'a0\'a0\'a0
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1048 \u1088 \u1090 \u1241 \u1075 \u1241 
+\f3\fs26 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 set_reminder\cf2 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 B\cf2 \strokec2 -\cf5 \strokec5 datetime\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 2\cf2 \strokec2 \'a0\'a0\'a0
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1084 \u1080 \u1187 \u1072 
+\f3\fs26 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 set_reminder\cf2 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 3\cf2 \strokec2 \'a0\'a0\'a0
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1072 \u1087 \u1072 \u1075 \u1072 
+\f3\fs26 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 set_reminder\cf2 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 B\cf2 \strokec2 -\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 todo\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 4\cf2 \strokec2 \'a0\'a0\'a0
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1096 \u1072 \u1083 \u1090 \u1099 \u1088 \u1072 \u1090 \u1099 \u1088 \u1075 \u1072 
+\f3\fs26 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 set_reminder\cf2 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 I\cf2 \strokec2 -\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 todo\cf2 \cb1 \strokec2 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 5	\uc0\u1080 \u1089 \u1082 \u1241 		reminder/set_reminder	O\
+6	\uc0\u1090 \u1257 \u1096 \u1077 \u1088 	reminder/set_reminder	O\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f3\fs26 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text EN:
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  \cf5 \strokec5 stop\cf2 \strokec2  \cf5 \strokec5 alarm\
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text TAT: 
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1090 \u1091 \u1082 \u1090 \u1072 \u1090 
+\f1\fs26 \kerning1\expnd0\expndtw0  
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1091 \u1103 \u1090 \u1082 \u1099 \u1095  \u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077 
+\f3\fs26 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 intent\cf2 \strokec2 : \cf5 \strokec5 alarm\cf2 \strokec2 /\cf5 \strokec5 cancel_alarm\cf2 \cb1 \strokec2 \
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 slots\cf2 \strokec2 :\cb1 \
+\cf7 \cb6 \strokec7 1\cf2 \strokec2 \'a0\'a0\'a0
+\f2\fs28 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u1090 \u1091 \u1082 \u1090 \u1072 \u1090 
+\f3\fs26 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 alarm\cf2 \strokec2 /\cf5 \strokec5 cancel_alarm\cf2 \strokec2 \'a0\'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 2\cf2 \strokec2 \'a0\'a0\'a0
+\f2\fs28 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u1091 \u1103 \u1090 \u1082 \u1099 \u1095 
+\f3\fs26 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 alarm\cf2 \strokec2 /\cf5 \strokec5 cancel_alarm\cf2 \strokec2 \'a0\'a0\cf5 \strokec5 O\
+3	
+\f2\fs28 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077 	
+\f3\fs26 \cf9 \cb10 alarm\cf2 /\cf9 cancel_alarm\cf2 \'a0\'a0\cf9 O\
+\
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 # text EN:
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  \cf5 \strokec5 Is\cf2 \strokec2  \cf5 \strokec5 it\cf2 \strokec2  \cf5 \strokec5 going\cf2 \strokec2  \cf5 \strokec5 to\cf2 \strokec2  \cf5 \strokec5 be\cf2 \strokec2  \cf5 \strokec5 hot\cf2 \strokec2  
+\f5\b \cf8 \strokec8 this
+\f3\b0 \cf2 \strokec2  \cf5 \strokec5 week\cf2 \strokec2 ?\
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text TAT: \uc0\u1041 \u1091  \u1072 \u1090 \u1085 \u1072 \u1076 \u1072  \u1082 \u1099 \u1079 \u1091  \u1073 \u1091 \u1083 \u1099 \u1088 \u1084 \u1099 ?
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 intent\cf2 \strokec2 : \cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \cb1 \strokec2 \
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 slots\cf2 \strokec2 : \cf7 \strokec7 18\cf2 \strokec2 :\cf7 \strokec7 21\cf2 \strokec2 :\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 attribute\cf2 \strokec2 ,\cf7 \strokec7 22\cf2 \strokec2 :\cf7 \strokec7 31\cf2 \strokec2 :\cf5 \strokec5 datetime\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 1\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1041 \u1091 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf9 \cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 B\cf2 -\cf9 datetime\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\cf7 \cb6 \strokec7 2\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1072 \u1090 \u1085 \u1072 \u1076 \u1072 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf9 \cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 I\cf2 -\cf9 datetime\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\cf7 \cb6 \strokec7 3\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1082 \u1099 \u1079 \u1091 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf9 \cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 B\cf2 -\cf9 weather\cf2 /\cf9 attribute\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\cf7 \cb6 \strokec7 4\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1073 \u1091 \u1083 \u1099 \u1088 \u1084 \u1099 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 5\cf2 \strokec2 \'a0\'a0\'a0?\'a0\'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text EN:
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  \cf5 \strokec5 Set\cf2 \strokec2  \cf5 \strokec5 alarm\cf2 \strokec2  
+\f5\b \cf8 \strokec8 for
+\f3\b0 \cf2 \strokec2  \cf7 \strokec7 3\cf5 \strokec5 pm\cf2 \strokec2 .\
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text TAT: \uc0\u1059 \u1103 \u1090 \u1082 \u1099 \u1095  \u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077  \u1082 \u1257 \u1085 \u1076 \u1077 \u1079 \u1075 \u1077  3 \u1103 \u1089 \u1072 .
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 intent\cf2 \strokec2 : \cf5 \strokec5 alarm\cf2 \strokec2 /\cf5 \strokec5 set_alarm\cf2 \cb1 \strokec2 \
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 slots\cf2 \strokec2 : \cf7 \strokec7 10\cf2 \strokec2 :\cf7 \strokec7 17\cf2 \strokec2 :\cf5 \strokec5 datetime\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf12 \cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 1\cf2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1059 \u1103 \u1090 \u1082 \u1099 \u1095 
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\cf9 alarm\cf2 /\cf9 set_alarm\cf2 \'a0\cf9 O\cf2 \cb1 \
+\cf12 \cb10 2\cf2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077 
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\cf9 alarm\cf2 /\cf9 set_alarm\cf2 \'a0\cf9 O\cf2 \cb1 \
+\cf12 \cb10 3\cf2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1082 \u1257 \u1085 \u1076 \u1077 \u1079 \u1075 \u1077 
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\cf9 alarm\cf2 /\cf9 set_alarm\cf2 \'a0\cf9 B\cf2 -\cf9 datetime\cf2 \cb1 \
+\cf12 \cb10 4\cf2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 3
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\cf9 alarm\cf2 /\cf9 set_alarm\cf2 \'a0\cf9 I\cf2 -\cf9 datetime\
+5	
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1103 \u1089 \u1072 	
+\f3 \cf9 \cb10 \expnd0\expndtw0\kerning0
+alarm\cf2 /\cf9 set_alarm\cf2 \'a0\cf9 O\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf7 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec7 6\cf2 \strokec2 \'a0\'a0\'a0.\'a0\'a0\'a0\cf5 \strokec5 alarm\cf2 \strokec2 /\cf5 \strokec5 set_alarm\cf2 \strokec2 \'a0\cf5 \strokec5 O\
+\
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text EN:
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  \cf5 \strokec5 will\cf2 \strokec2  \cf5 \strokec5 it\cf2 \strokec2  \cf5 \strokec5 snow\cf2 \strokec2  \cf5 \strokec5 today\
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text TAT: \uc0\u1073 \u1199 \u1075 \u1077 \u1085  \u1082 \u1072 \u1088  \u1073 \u1091 \u1083 \u1099 \u1088 \u1084 \u1099 
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 intent\cf2 \strokec2 : \cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \cb1 \strokec2 \
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 slots\cf2 \strokec2 : \cf7 \strokec7 8\cf2 \strokec2 :\cf7 \strokec7 12\cf2 \strokec2 :\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 attribute\cf2 \strokec2 ,\cf7 \strokec7 13\cf2 \strokec2 :\cf7 \strokec7 18\cf2 \strokec2 :\cf5 \strokec5 datetime\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 1\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1073 \u1199 \u1075 \u1077 \u1085 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf9 \cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 B\cf2 -\cf9 datetime\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\cf7 \cb6 \strokec7 2\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1082 \u1072 \u1088 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf9 \cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 B\cf2 -\cf9 weather\cf2 /\cf9 attribute\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\cf7 \cb6 \strokec7 3\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1073 \u1091 \u1083 \u1099 \u1088 \u1084 \u1099 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 find\cf2 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 O\
+\
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text EN:
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+ \cf9 will\cf2  \cf9 it\cf2  \cf9 snow\cf2  \cf9 today\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 # text TAT: 
+\f3 \cf9 \cb10 \expnd0\expndtw0\kerning0
+\uc0\u1073 \u1199 \u1075 \u1077 \u1085  \u1082 \u1072 \u1088  \u1103 \u1074 \u1072 \u1088 \u1084 \u1099 \cf2 \cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf9 \cb10 #\cf2  \cf9 intent\cf2 : \cf9 weather\cf2 /\cf9 find\cf2 \cb1 \
+\cf9 \cb10 #\cf2  \cf9 slots\cf2 : \cf12 8\cf2 :\cf12 12\cf2 :\cf9 weather\cf2 /\cf9 attribute\cf2 ,\cf12 13\cf2 :\cf12 18\cf2 :\cf9 datetime\cf2 \cb1 \
+\cf12 \cb10 1\cf2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1073 \u1199 \u1075 \u1077 \u1085 
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\'a0\'a0\'a0\cf9 weather\cf2 /\cf9 find\cf2 \'a0\'a0\'a0\'a0\cf9 \cb10 B\cf2 \cb10 -\cf9 \cb10 datetime\cf2 \cb1 \
+\cf12 \cb10 2\cf2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \uc0\u1082 \u1072 \u1088 
+\f3 \cf2 \cb10 \expnd0\expndtw0\kerning0
+\'a0\'a0\cf9 weather\cf2 /\cf9 find\cf2 \'a0\'a0\'a0\'a0\cf5 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 B\cf2 \strokec2 -\cf5 \strokec5 weather\cf2 \strokec2 /\cf5 \strokec5 attribute\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\cf12 \cb10 3\cf2 \'a0\'a0\'a0\cf9 \cb10 \uc0\u1103 \u1074 \u1072 \u1088 \u1084 \u1099 \cf2 \cb10 \'a0\'a0\'a0\'a0\cf9 weather\cf2 /\cf9 find\cf2 \'a0\'a0\'a0\'a0\cf9 O\
+\
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 # text EN:
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  
+\f5\b \cf8 \strokec8 delete
+\f3\b0 \cf2 \strokec2  \cf5 \strokec5 all\cf2 \strokec2  \cf5 \strokec5 alarms\
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text TAT: \uc0\u1073 \u1072 \u1088 \u1083 \u1099 \u1082  \u1091 \u1103 \u1090 \u1082 \u1099 \u1095  \u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077  \u1073 \u1077 \u1090 \u1077 \u1088 
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 intent\cf2 \strokec2 : \cf5 \strokec5 alarm\cf2 \strokec2 /\cf5 \strokec5 cancel_alarm\cf2 \cb1 \strokec2 \
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 slots\cf2 \strokec2 :\cb1 \
+\cf7 \cb6 \strokec7 1\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1073 \u1072 \u1088 \u1083 \u1099 \u1082 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 alarm\cf2 \strokec2 /\cf5 \strokec5 cancel_alarm\cf2 \strokec2 \'a0\'a0\cf5 \strokec5 B\cf2 \strokec2 -\cf5 \strokec5 reference\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 2\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1091 \u1103 \u1090 \u1082 \u1099 \u1095 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\cf5 \strokec5 alarm\cf2 \strokec2 /\cf5 \strokec5 cancel_alarm\cf2 \strokec2 \'a0\'a0\cf9 \cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 O\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\cf7 \cb6 \strokec7 3\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1089 \u1241 \u1075 \u1072 \u1090 \u1100 \u1085 \u1077 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 alarm\cf2 \strokec2 /\cf5 \strokec5 cancel_alarm\cf2 \strokec2 \'a0\'a0\cf5 \strokec5 O\
+4	
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1073 \u1077 \u1090 \u1077 \u1088 		
+\f3 \cf9 \cb10 \expnd0\expndtw0\kerning0
+alarm\cf2 /\cf9 cancel_alarm\cf2 \'a0\'a0\cf9 O\
+\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f1 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text EN:
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2  \cf5 \strokec5 Show\cf2 \strokec2  \cf5 \strokec5 me\cf2 \strokec2  \cf5 \strokec5 my\cf2 \strokec2  \cf5 \strokec5 reminders\
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 # text TAT: \uc0\u1052 \u1080 \u1187 \u1072  \u1084 \u1080 \u1085 \u1077 \u1084  
+\f2\fs28 \expnd0\expndtw0\kerning0
+\uc0\u1093 \u1241 \u1090 \u1077 \u1088 \u1083 \u1241 \u1090 \u1199 
+\f0\fs40 \cf4 \cb3 \uc0\u1083 \u1241 \u1088 
+\f2\fs28 \cf0 \cb1 \uc0\u1085 \u1077 
+\f1\fs26 \kerning1\expnd0\expndtw0  \uc0\u1082 \u1199 \u1088 \u1089 \u1241 \u1090 
+\f3 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 intent\cf2 \strokec2 : \cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 show_reminders\cf2 \cb1 \strokec2 \
+\cf5 \cb6 \strokec5 #\cf2 \strokec2  \cf5 \strokec5 slots\cf2 \strokec2 : \cf7 \strokec7 11\cf2 \strokec2 :\cf7 \strokec7 20\cf2 \strokec2 :\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 noun\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 1\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1052 \u1080 \u1187 \u1072 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 show_reminders\cf2 \strokec2 \'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 2\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1084 \u1080 \u1085 \u1077 \u1084 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 show_reminders\cf2 \strokec2 \'a0\cf5 \strokec5 B\cf2 \strokec2 -\cf5 \strokec5 reference\cf2 \cb1 \strokec2 \
+\cf7 \cb6 \strokec7 3\cf2 \strokec2 \'a0\'a0\'a0
+\f2\fs28 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u1093 \u1241 \u1090 \u1077 \u1088 \u1083 \u1241 \u1090 \u1199 \u1083 
+\f0\fs40 \cf4 \cb3 \uc0\u1241 
+\f2\fs28 \cf0 \cb1 \uc0\u1088 \u1085 \u1077 
+\f3\fs26 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 show_reminders\cf2 \strokec2 \'a0\cf9 \cb10 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 O\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\cf7 \cb6 \strokec7 4\cf2 \strokec2 \'a0\'a0\'a0
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \uc0\u1082 \u1199 \u1088 \u1089 \u1241 \u1090 
+\f3 \cf2 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0\'a0\'a0\cf5 \strokec5 reminder\cf2 \strokec2 /\cf5 \strokec5 show_reminders\cf2 \strokec2 \'a0\cf5 \strokec5 O\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 \
+}
