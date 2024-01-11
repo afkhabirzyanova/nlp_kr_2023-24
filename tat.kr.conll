@@ -1,42 +1,42 @@
 # text EN: Is it going to rain today?
 # text TAT: Бүген яңгыр явар микән?
 # intent: weather/find
-1	Бүген   reminder/show_reminders B-datetime
-2	яңгыр	reminder/show_reminders B-weather/attribute
-3	явар    reminder/show_reminders O
-4	микән   reminder/show_reminders O
-5	?   reminder/show_reminders O
+1  Бүген  reminder/show_reminders  B-datetime
+2  яңгыр  reminder/show_reminders  B-weather/attribute
+3  явар  reminder/show_reminders  O
+4  микән  reminder/show_reminders  O
+5  ?  reminder/show_reminders  O
 
 
 # text EN: Is it going to rain today?
 # text TAT: Бүген яңгыр булырмы?
 # intent: weather/find
-1	Бүген	reminder/show_reminders B-datetime
-2	яңгыр	reminder/show_reminders B-weather/attribute
-3	булырмы reminder/show_reminders O
-4	?   reminder/show_reminders O
+1  Бүген  reminder/show_reminders  B-datetime
+2  яңгыр  reminder/show_reminders  B-weather/attribute
+3  булырмы  reminder/show_reminders  O
+4  ?  reminder/show_reminders  O
 
 
 # text EN: Remind me to call Stephanie on Tuesday
 # text TAT: Сишәмбе көнне миңа Стефанига шалтыратырга искә төшер
 # intent: reminder/set_reminder
-1	Сишәмбе	reminder/set_reminder   B-datetime
-2	көнне   reminder/set_reminder   O
-3	миңа    reminder/set_reminder	O
-4	Стефанига   reminder/set_reminder   B-reminder/todo
-5	шалтыратырга    reminder/set_reminder	I-reminder/todo
-6	искә    reminder/set_reminder   O
-7	төшер	reminder/set_reminder	O
+1  Сишәмбе  reminder/set_reminder  B-datetime
+2  көнне  reminder/set_reminder  O
+3  миңа  reminder/set_reminder  O
+4  Стефанига  reminder/set_reminder  B-reminder/todo
+5  шалтыратырга  reminder/set_reminder  I-reminder/todo
+6  искә  reminder/set_reminder  O
+7  төшер  reminder/set_reminder  O
 
 
 # text EN: weather update Los Angeles
 # text TAT: Лос-Анджелеста һава торышы
 # intent: weather/find
-1	Лос weather/find    B-location
-2	-   weather/find    I-location
-3	Анджелеста  weather/find    I-location
-4	һава    weather/find    O
-5	торышы  weather/find    O
+1  Лос  weather/find  B-location
+2  -  weather/find  I-location
+3  Анджелеста  weather/find  I-location
+4  һава  weather/find  O
+5  торышы  weather/find  O
 
 
 # text EN: do I need to bring an umbrella today?
