@@ -88,10 +88,10 @@
 # text TAT: Миңа свитер кирәкмы?
 # intent: weather/find
 # slots: 12:19:weather/attribute
-1  Миңа	weather/find  O
-2  свитер	weather/find  B-weather/attribute
+1  Миңа  weather/find  O
+2  свитер  weather/find  B-weather/attribute
 3  кирәкмы	weather/find  O
-4  ?   weather/find  O
+4  ?  weather/find  O
 
 
 # text EN: Add a reminder for today at 4pm
