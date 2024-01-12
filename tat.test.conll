@@ -1,50 +1,149 @@
-# text EN: Is it going to rain today?/бүген яңгыр булырмы?
-# text TAT: Бүген яңгыр явар микән?/бүген яңгыр булырмы?
+# text: How much time is left on alarm
+# intent: alarm/time_left_on_alarm
+# slots:
+1	How	alarm/time_left_on_alarm	O
+2	much	alarm/time_left_on_alarm	O
+3	time	alarm/time_left_on_alarm	O
+4	is	alarm/time_left_on_alarm	O
+5	left	alarm/time_left_on_alarm	O
+6	on	alarm/time_left_on_alarm	O
+7	alarm	alarm/time_left_on_alarm	O
+
+# text: What are my reminders?
+# intent: reminder/show_reminders
+# slots: 12:21:reminder/noun
+1	What	reminder/show_reminders	O
+2	are	reminder/show_reminders	O
+3	my	reminder/show_reminders	B-reference
+4	reminders	reminder/show_reminders	O
+5	?	reminder/show_reminders	O
+
+# text: Set an alarm for 8am daily
+# intent: alarm/set_alarm
+# slots: 13:26:datetime
+1	Set	alarm/set_alarm	O
+2	an	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	for	alarm/set_alarm	O
+5	8am	alarm/set_alarm	B-recurring_datetime
+6	daily	alarm/set_alarm	I-recurring_datetime
+
+# text: can you show me the alarms?
+# intent: alarm/show_alarms
+# slots:
+1	can	alarm/show_alarms	O
+2	you	alarm/show_alarms	O
+3	show	alarm/show_alarms	O
+4	me	alarm/show_alarms	O
+5	the	alarm/show_alarms	O
+6	alarms	alarm/show_alarms	O
+7	?	alarm/show_alarms	O
+
+# text: Is Disney world expecting storms today?
 # intent: weather/find
-1	Бүген	reminder/show_reminders	B-datetime
-2	яңгыр	reminder/show_reminders	B-weather/attribute
-3	явар	reminder/show_reminders	O
-4 микән reminder/show_reminders	O
+# slots: 26:32:weather/attribute,33:38:datetime
+1	Is	weather/find	O
+2	Disney	weather/find	B-location
+3	world	weather/find	I-location
+4	expecting	weather/find	O
+5	storms	weather/find	B-weather/attribute
+6	today	weather/find	B-datetime
+7	?	weather/find	O
 
-
-# text EN: Remind me to call Stephanie on Tuesday
-# text TAT: Сишәмбе көнне Стефанига шалтыратырга миңа искә төшер
-# intent: reminder/set_reminder
-1	Сишәмбе	reminder/set_reminder	B-datetime
-2	көнне	reminder/set_reminder	O
-3	Стефанига	reminder/set_reminder	I-reminder/todo
-4	шалтыратырга	reminder/set_reminder	B-reminder/todo
-5	миңа	reminder/set_reminder	O
-6	искә	reminder/set_reminder	O
-7	төшер	reminder/set_reminder	O
-
-
-# text EN: weather update Los Angeles
-# text TAT: Лос-Анджелеста һава торышы яңартыла
+# text: will it snow today
 # intent: weather/find
-1	Лос-Анджелест	weather/find	B-location
-2	һава	weather/find	O
-3	торышы	weather/find	O
-4	яңартыла	weather/find	O
+# slots: 8:12:weather/attribute,13:18:datetime
+1	will	weather/find	O
+2	it	weather/find	O
+3	snow	weather/find	B-weather/attribute
+4	today	weather/find	B-datetime
 
+# text: show all alarms
+# intent: alarm/show_alarms
+# slots:
+1	show	alarm/show_alarms	O
+2	all	alarm/show_alarms	B-reference
+3	alarms	alarm/show_alarms	O
 
-# text EN: do I need to bring an umbrella today?
-# text TAT: бүген миңа кирәкме зотник/кул чатырын үзем белән алырга?
+# text: Is it cold today?
 # intent: weather/find
-1	бүген	weather/find	B-datetime
-2	миңа	weather/find	O
-3	кирәкме	weather/find	O
-4	зотник/кул чатырын	weather/find	B-weather/attribute
-5	үзем 	weather/find	O
-6	белән	weather/find	O
-7	алырга	weather/find	B-weather/attribute
+# slots: 6:10:weather/attribute,11:16:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	cold	weather/find	B-weather/attribute
+4	today	weather/find	B-datetime
+5	?	weather/find	O
 
+# text: Please cancel the alarm for Thursday morning.
+# intent: alarm/cancel_alarm
+# slots: 24:44:datetime
+1	Please	alarm/cancel_alarm	O
+2	cancel	alarm/cancel_alarm	O
+3	the	alarm/cancel_alarm	O
+4	alarm	alarm/cancel_alarm	O
+5	for	alarm/cancel_alarm	O
+6	Thursday	alarm/cancel_alarm	B-datetime
+7	morning	alarm/cancel_alarm	I-datetime
+8	.	alarm/cancel_alarm	O
 
-# text EN: Can I wear shorts today?
-# text TAT: Мин бүген шорты кия аламмы?
+# text: Is it going to rain today?
 # intent: weather/find
-1	Мин	weather/find	O
-2	бүген	weather/find	B-datetime
+# slots: 15:19:weather/attribute,20:25:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	rain	weather/find	B-weather/attribute
+6	today	weather/find	B-datetime
+7	?	weather/find	O
+
+# text: is it snowing in canada
+# intent: weather/find
+# slots: 6:13:weather/attribute,17:23:location
+1	is	weather/find	O
+2	it	weather/find	O
+3	snowing	weather/find	B-weather/attribute
+4	in	weather/find	O
+5	canada	weather/find	B-location
+
+# text: What will the high be today?
+# intent: weather/find
+# slots: 22:27:datetime
+1	What	weather/find	O
+2	will	weather/find	O
+3	the	weather/find	O
+4	high	weather/find	B-weather/attribute
+5	be	weather/find	O
+6	today	weather/find	B-datetime
+7	?	weather/find	O
+
+# text: Will it snow enough tonight to make travelling hazardous?
+# intent: weather/find
+# slots: 8:12:weather/attribute,20:27:datetime
+1	Will	weather/find	O
+2	it	weather/find	O
+3	snow	weather/find	B-weather/attribute
+4	enough	weather/find	O
+5	tonight	weather/find	B-datetime
+6	to	weather/find	O
+7	make	weather/find	O
+8	travelling	weather/find	O
+9	hazardous	weather/find	O
+10	?	weather/find	O
+
+# text: show all reminders
+# intent: reminder/show_reminders
+# slots: 5:8:reminder/reference,9:18:reminder/noun
+1	show	reminder/show_reminders	O
+2	all	reminder/show_reminders	B-reference
+3	reminders	reminder/show_reminders	O
+
+# text: delete all reminders
+# intent: reminder/cancel_reminder
+# slots: 11:20:reminder/noun
+1	delete	reminder/cancel_reminder	O
+2	all	reminder/cancel_reminder	B-reference
+3	reminders	reminder/cancel_reminder	O
 3	шорты	weather/find	B-weather/attribute
 4	кия	weather/find	O
 5	аламмы	weather/find	O
