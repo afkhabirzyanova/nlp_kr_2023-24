@@ -1,0 +1,155 @@
+# text EN: How much time is left on alarm
+# text TAT: Уяткыч сәгать эшләтеп җибәргәнче күпме вакыт калды
+# intent: alarm/time_left_on_alarm
+# slots:
+1  Уяткыч  alarm/time_left_on_alarm  O
+2  сәгать  alarm/time_left_on_alarm  O
+3  эшләтеп	alarm/time_left_on_alarm	O
+4  җибәргәнче  alarm/time_left_on_alarm  O
+5  күпме	alarm/time_left_on_alarm	O
+6  вакыт	alarm/time_left_on_alarm	O
+7  калды	alarm/time_left_on_alarm	O
+
+# text EN: What are my reminders?
+# text TAT: Минем нинди искә төшерүләрем бар?
+# intent:  reminder/show_reminders
+# slots:
+1  Минем	reminder/show_reminders  B-reference
+2  нинди	reminder/show_reminders  O
+3  искә  reminder/show_reminders  O
+4  төшерүләрем	reminder/show_reminders  O
+5  бар	reminder/show_reminders  O
+6  ?  reminder/show_reminders  O
+
+# text EN: Set an alarm for 8am daily
+# text TAT: Уяткыч сәгатьне көн саен иртәнге 8 яса
+# intent: alarm/set_alarm
+# slots:
+1  Уяткыч  alarm/set_alarm  O
+2  сәгатьне  alarm/set_alarm  O
+3  көн	alarm/set_alarm  O
+4  саен  alarm/set_alarm	O
+5  иртәнге  alarm/set_alarm  B-recurring_datetime
+6  8  alarm/set_alarm  I-recurring_datetime
+7  яса	alarm/set_alarm  I-recurring_datetime
+
+# text EN: can you show me the alarms?
+# text TAT: син миңа уяткыч сәгатьләрне күрсәтә аласыңмы?
+# intent: alarm/show_alarms
+# slots:
+1  син	alarm/show_alarms  O
+2  миңа  alarm/show_alarms  O
+3  уяткыч  alarm/show_alarms  O
+4  сәгатьләрне	alarm/show_alarms  O
+5  күрсәтә	alarm/show_alarms  O
+6  аласыңмы  alarm/show_alarms  O
+7  ?	alarm/show_alarms  O
+
+# text EN: Is Disney world expecting storms today?
+# text TAT: Бүген Диснейуорлд бураннар көтәме?
+# intent: weather/find
+# slots:
+1  Бүген  weather/find	B-datetime
+2  Диснейуорлд  weather/find	B-location
+3  бураннар  weather/find  B-weather/attribute
+4  көтәме  weather/find  O
+5  ?	weather/find	O
+
+# text EN: will it snow today
+# text TAT: бүген кар булырмы
+# intent: weather/find
+# slots:
+1  бүген	weather/find	B-datetime
+2  кар	weather/find	B-weather/attribute
+3  булырмы	weather/find	O
+
+# text EN: show all alarms
+# text TAT: барлык уяткыч сәгатьне күрсәт
+# intent: alarm/show_alarms
+# slots:
+1  барлык  reminder/show_reminders  B-reference
+2  уяткыч  reminder/show_reminders  O
+3  сәгатьне  reminder/show_reminders  O
+4  күрсәт  reminder/show_reminders  O
+
+# text EN: Is it cold today?
+# text TAT: Бүген салкынмы?
+# intent: weather/find
+# slots:
+1  Бүген	weather/find	B-datetime
+2  салкынмы	weather/find	B-weather/attribute
+3  ?	weather/find	O
+
+# text EN: Please cancel the alarm for Thursday morning.
+# text TAT: Зинһар, пәнҗешәмбе иртәсендә уяткыч сәгатьне гамәлдән чыгарыгыз.
+# intent: alarm/cancel_alarm
+# slots:
+1  Зинһар  alarm/cancel_alarm  O
+2  ,  alarm/cancel_alarm	O
+2  пәнҗешәмбе  alarm/cancel_alarm  B-datetime
+3  иртәсендә	alarm/cancel_alarm	I-datetime
+4  уяткыч  alarm/cancel_alarm  O
+5  сәгатьне  alarm/cancel_alarm  O
+6  гамәлдән  alarm/cancel_alarm  B-datetime
+7  чыгарыгыз	alarm/cancel_alarm	I-datetime
+8  .	alarm/cancel_alarm	O 
+
+# text EN: Is it going to rain today?
+# text TAT: Бүген яңгыр булырмы?
+# intent: weather/find
+# slots:
+1  Бүген  reminder/show_reminders  B-datetime
+2  яңгыр  reminder/show_reminders  B-weather/attribute
+3  булырмы  reminder/show_reminders  O
+4  ?  reminder/show_reminders  O
+
+# text EN: is it snowing in canada
+# text TAT: канадада кар явармы
+# intent: weather/find
+# slots:
+1  канадада	weather/find	B-location
+2  кар  weather/find	B-weather/attribute
+3  явармы	weather/find	I-weather/attribute
+
+# text EN: What will the high be today?
+# text TAT: Бүген нинди югары температура булачак?
+# intent: weather/find
+# slots:
+1  Бүген	weather/find	B-datetime
+2  нинди	weather/find	O
+3  югары	weather/find	B-weather/attribute
+4  температура	weather/find	I-weather/attribute
+5  булачак	weather/find	O
+6  ?	weather/find	O
+
+# text EN: Will it snow enough tonight to make travelling hazardous?
+# text TAT: Төнлә шулкадәр кар яуармы, ки сәяхәт куркыныч булырмы?
+# intent: weather/find
+# slots:
+1  Төнлә  weather/find	B-datetime
+2  шулкадәр  weather/find  O
+3  кар  weather/find	B-weather/attribute
+4  яуармы  weather/find	I-weather/attribute
+5  ,  weather/find	O
+6  ки  weather/find  O
+7  сәяхәт  weather/find  O
+8  куркыныч  weather/find  O
+9  булырмы	weather/find	O
+10  ?  weather/find  O
+
+# text EN: show all reminders
+# text TAT: барлык хәтерләтүләрне  күрсәт
+# intent: reminder/show_reminders
+# slots:
+1  барлык  reminder/show_reminders  B-reference
+2  хәтерләтүләрне  reminder/show_reminders  O
+3  күрсәт  reminder/show_reminders  O
+
+# text EN: delete all alarms
+# text TAT: барлык уяткыч сәгатьне бетер
+# intent: alarm/cancel_alarm
+# slots:
+1  барлык  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьне  alarm/cancel_alarm  O
+4  бетер  alarm/cancel_alarm  O
