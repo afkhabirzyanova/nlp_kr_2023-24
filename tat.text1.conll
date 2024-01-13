@@ -123,18 +123,18 @@
 6  ?	weather/find	O
 
 # text EN: Will it snow enough tonight to make travelling hazardous?
-# text TAT: Төнлә шулкадәр кар яуармы, ки сәяхәт куркыныч булырмы?
+# text TAT: Төнлә шулкадәр кар яуармы ки, сәяхәт куркыныч булыр?
 # intent: weather/find
 # slots:
 1  Төнлә  weather/find	B-datetime
 2  шулкадәр  weather/find  O
 3  кар  weather/find	B-weather/attribute
 4  яуармы  weather/find	I-weather/attribute
-5  ,  weather/find	O
-6  ки  weather/find  O
+5  ки  weather/find  O
+6  ,  weather/find	O
 7  сәяхәт  weather/find  O
 8  куркыныч  weather/find  O
-9  булырмы	weather/find	O
+9  булыр	weather/find	O
 10  ?  weather/find  O
 
 # text EN: show all reminders
