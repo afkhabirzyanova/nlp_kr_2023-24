@@ -1,0 +1,166 @@
+# text EN: remind me to go to the doctors on august 21st 3 pm
+# text TAT: 21 августта көндезге 3 табибларга барырга искә төшер
+# intent: reminder/set_reminder
+# slots:
+1  21  reminder/set_reminder	O
+2  августта  reminder/set_reminder	O
+3  көндезге  reminder/set_reminder	O
+4  3	reminder/set_reminder	B-reminder/todo
+5  табибларга  reminder/set_reminder	I-reminder/todo
+6  барырга	reminder/set_reminder  I-reminder/todo
+7  искә  reminder/set_reminder	I-reminder/todo
+8  төшер	reminder/set_reminder  O
+
+# text EN: cancel my recurring reminder to take meds daily at 7 am
+# text TAT:
+# intent: reminder/cancel_reminder
+# slots: 20:28:reminder/noun,32:41:reminder/todo,42:55:reminder/recurring_period
+1	cancel	reminder/cancel_reminder	O
+2	my	reminder/cancel_reminder	O
+3	recurring	reminder/cancel_reminder	O
+4	reminder	reminder/cancel_reminder	O
+5	to	reminder/cancel_reminder	O
+6	take	reminder/cancel_reminder	B-reminder/todo
+7	meds	reminder/cancel_reminder	I-reminder/todo
+8	daily	reminder/cancel_reminder	B-recurring_datetime
+9	at	reminder/cancel_reminder	I-recurring_datetime
+10	7	reminder/cancel_reminder	I-recurring_datetime
+11	am	reminder/cancel_reminder	I-recurring_datetime
+
+# text: when does the forecast next show rain
+# intent: weather/find
+# slots: 14:22:weather/noun,33:37:weather/attribute
+1	when	weather/find	O
+2	does	weather/find	O
+3	the	weather/find	O
+4	forecast	weather/find	O
+5	next	weather/find	O
+6	show	weather/find	O
+7	rain	weather/find	B-weather/attribute
+
+# text: What time is my alarm set for tomorrow morning?
+# intent: alarm/show_alarms
+# slots: 26:46:datetime
+1	What	alarm/show_alarms	O
+2	time	alarm/show_alarms	O
+3	is	alarm/show_alarms	O
+4	my	alarm/show_alarms	B-reference
+5	alarm	alarm/show_alarms	O
+6	set	alarm/show_alarms	O
+7	for	alarm/show_alarms	O
+8	tomorrow	alarm/show_alarms	B-datetime
+9	morning	alarm/show_alarms	I-datetime
+10	?	alarm/show_alarms	O
+
+# text: will it snow today
+# intent: weather/find
+# slots: 8:12:weather/attribute,13:18:datetime
+1	will	weather/find	O
+2	it	weather/find	O
+3	snow	weather/find	B-weather/attribute
+4	today	weather/find	B-datetime
+
+# text: Turn off my alarm.
+# intent: alarm/cancel_alarm
+# slots:
+1	Turn	alarm/cancel_alarm	O
+2	off	alarm/cancel_alarm	O
+3	my	alarm/cancel_alarm	B-reference
+4	alarm	alarm/cancel_alarm	O
+5	.	alarm/cancel_alarm	O
+
+# text: Cancel all alarms
+# intent: alarm/cancel_alarm
+# slots:
+1	Cancel	alarm/cancel_alarm	O
+2	all	alarm/cancel_alarm	B-reference
+3	alarms	alarm/cancel_alarm	O
+
+# text: remind me to buy groceries
+# intent: reminder/set_reminder
+# slots: 13:26:reminder/todo
+1	remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	buy	reminder/set_reminder	B-reminder/todo
+5	groceries	reminder/set_reminder	I-reminder/todo
+
+# text: I need an alarm set for a 9 am breakfast
+# intent: alarm/set_alarm
+# slots: 26:30:datetime
+1	I	alarm/set_alarm	O
+2	need	alarm/set_alarm	O
+3	an	alarm/set_alarm	O
+4	alarm	alarm/set_alarm	O
+5	set	alarm/set_alarm	O
+6	for	alarm/set_alarm	O
+7	a	alarm/set_alarm	O
+8	9	alarm/set_alarm	B-datetime
+9	am	alarm/set_alarm	I-datetime
+10	breakfast	alarm/set_alarm	O
+
+# text: set reminder to watch the Colts one hour before game starts
+# intent: reminder/set_reminder
+# slots: 4:12:reminder/noun,16:59:reminder/todo
+1	set	reminder/set_reminder	O
+2	reminder	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	watch	reminder/set_reminder	B-reminder/todo
+5	the	reminder/set_reminder	I-reminder/todo
+6	Colts	reminder/set_reminder	I-reminder/todo
+7	one	reminder/set_reminder	B-datetime
+8	hour	reminder/set_reminder	I-datetime
+9	before	reminder/set_reminder	I-datetime
+10	game	reminder/set_reminder	I-datetime
+11	starts	reminder/set_reminder	I-datetime
+
+# text: cancel all alarms
+# intent: alarm/cancel_alarm
+# slots:
+1	cancel	alarm/cancel_alarm	O
+2	all	alarm/cancel_alarm	B-reference
+3	alarms	alarm/cancel_alarm	O
+
+# text: Cancel my third reminder on this list.
+# intent: reminder/cancel_reminder
+# slots: 10:15:reminder/reference,16:24:reminder/noun
+1	Cancel	reminder/cancel_reminder	O
+2	my	reminder/cancel_reminder	B-reference
+3	third	reminder/cancel_reminder	I-reference
+4	reminder	reminder/cancel_reminder	O
+5	on	reminder/cancel_reminder	O
+6	this	reminder/cancel_reminder	O
+7	list	reminder/cancel_reminder	O
+8	.	reminder/cancel_reminder	O
+
+# text: set alarm for 6 am
+# intent: alarm/set_alarm
+# slots: 10:18:datetime
+1	set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	am	alarm/set_alarm	I-datetime
+
+# text: Reset this alarm now and start at 2 pm
+# intent: alarm/cancel_alarm
+# slots: 31:38:datetime
+1	Reset	alarm/cancel_alarm	O
+2	this	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+4	now	alarm/cancel_alarm	B-datetime
+5	and	alarm/cancel_alarm	O
+6	start	alarm/cancel_alarm	O
+7	at	alarm/cancel_alarm	O
+8	2	alarm/cancel_alarm	B-datetime
+9	pm	alarm/cancel_alarm	I-datetime
+
+# text: Is it going to snow?
+# intent: weather/find
+# slots: 15:19:weather/attribute
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	snow	weather/find	B-weather/attribute
+6	?	weather/find	O
