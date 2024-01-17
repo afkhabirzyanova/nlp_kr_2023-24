@@ -75,13 +75,13 @@
 5  .  alarm/cancel_alarm  O
 
 # text: Cancel all alarms
-# text TAT: Барлык уяткыч сәгатьләрне юкка чыгар
+# text TAT: Барлык уяткыч сәгатьләрне гамәлдән чыгар
 # intent: alarm/cancel_alarm
 # slots:
 1  Барлык  alarm/cancel_alarm  B-reference
 2  уяткыч  alarm/cancel_alarm  O
 3  сәгатьләрне	alarm/cancel_alarm	O
-4  юкка  alarm/cancel_alarm  O
+4  гамәлдән  alarm/cancel_alarm  O
 5  чыгар  alarm/cancel_alarm  O
 
 # text: remind me to buy groceries
@@ -126,11 +126,14 @@
 11  куй  reminder/set_reminder  O
 
 # text: cancel all alarms
+# text TAT: барлык уяткыч сәгатьләрне гамәлдән чыгар
 # intent: alarm/cancel_alarm
 # slots:
-1	cancel	alarm/cancel_alarm	O
-2	all	alarm/cancel_alarm	B-reference
-3	alarms	alarm/cancel_alarm	O
+1  барлык  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьләрне	alarm/cancel_alarm	O
+4  гамәлдән  alarm/cancel_alarm  O
+5  чыгар  alarm/cancel_alarm  O
 
 # text: Cancel my third reminder on this list.
 # intent: reminder/cancel_reminder
@@ -167,11 +170,9 @@
 9	pm	alarm/cancel_alarm	I-datetime
 
 # text: Is it going to snow?
+# text TAT: Кар булырмы?
 # intent: weather/find
-# slots: 15:19:weather/attribute
-1	Is	weather/find	O
-2	it	weather/find	O
-3	going	weather/find	O
-4	to	weather/find	O
-5	snow	weather/find	B-weather/attribute
-6	?	weather/find	O
+# slots:
+1  Кар	weather/find	B-weather/attribute
+2  булырмы	weather/find	O
+3  ?  weather/find	O
