@@ -13,20 +13,22 @@
 
 # text EN: cancel my recurring reminder to take meds daily at 7 am
 # text TAT: көн саен иртәнге сәгать 7 дарулар эчәргә турында минем даими искә төшерүне юкка чыгар 
-Иртәнге сәгать 7дә
 # intent: reminder/cancel_reminder
-# slots: 20:28:reminder/noun,32:41:reminder/todo,42:55:reminder/recurring_period
-1	cancel	reminder/cancel_reminder	O
-2	my	reminder/cancel_reminder	O
-3	recurring	reminder/cancel_reminder	O
-4	reminder	reminder/cancel_reminder	O
-5	to	reminder/cancel_reminder	O
-6	take	reminder/cancel_reminder	B-reminder/todo
-7	meds	reminder/cancel_reminder	I-reminder/todo
-8	daily	reminder/cancel_reminder	B-recurring_datetime
-9	at	reminder/cancel_reminder	I-recurring_datetime
-10	7	reminder/cancel_reminder	I-recurring_datetime
-11	am	reminder/cancel_reminder	I-recurring_datetime
+# slots:
+1  көн	reminder/cancel_reminder	B-recurring_datetime
+2  саен  reminder/cancel_reminder  I-recurring_datetime
+3  иртәнге	reminder/cancel_reminder	I-recurring_datetime
+4  сәгать	reminder/cancel_reminder	I-recurring_datetime
+5  7	reminder/cancel_reminder	I-recurring_datetime
+6  дарулар	reminder/cancel_reminder	B-reminder/todo
+7  эчәргә	reminder/cancel_reminder	I-reminder/todo
+8  турында	reminder/cancel_reminder	O
+9  минем	reminder/cancel_reminder	O
+10  даими	reminder/cancel_reminder	O
+11  искә	reminder/cancel_reminder	O
+12	төшерүне	reminder/cancel_reminder	O
+13  юкка  reminder/cancel_reminder  O
+14  чыгар  reminder/cancel_reminder  O
 
 # text: when does the forecast next show rain
 # intent: weather/find
