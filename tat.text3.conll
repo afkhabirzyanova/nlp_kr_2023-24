@@ -95,18 +95,19 @@
 5  төшер	reminder/set_reminder  O
 
 # text: I need an alarm set for a 9 am breakfast
+# text TAT: Миңа иртәнге сәгать 9 иртәнге аш өчен уяткыч сәгать кирәк
 # intent: alarm/set_alarm
-# slots: 26:30:datetime
-1	I	alarm/set_alarm	O
-2	need	alarm/set_alarm	O
-3	an	alarm/set_alarm	O
-4	alarm	alarm/set_alarm	O
-5	set	alarm/set_alarm	O
-6	for	alarm/set_alarm	O
-7	a	alarm/set_alarm	O
-8	9	alarm/set_alarm	B-datetime
-9	am	alarm/set_alarm	I-datetime
-10	breakfast	alarm/set_alarm	O
+# slots:
+1  Миңа  alarm/set_alarm	O
+2  иртәнге	alarm/set_alarm  B-datetime
+3  сәгать  alarm/set_alarm	I-datetime
+4  9	alarm/set_alarm	I-datetime
+5  иртәнге	alarm/set_alarm  O
+6  аш  alarm/set_alarm	O
+7  өчен  alarm/set_alarm	O
+8  уяткыч  alarm/set_alarm	O
+9  сәгать  alarm/set_alarm	O
+10  кирәк  alarm/set_alarm	O
 
 # text: set reminder to watch the Colts one hour before game starts
 # intent: reminder/set_reminder
