@@ -14,11 +14,11 @@
 # text TAT: нинди иртәгә иң түбән температура
 # intent: weather/find
 # slots:
-1	нинди  weather/find	O
-2	иртәгә	weather/find	B-datetime
-3	иң	weather/find	B-weather/attribute
-4	түбән  weather/find  I-weather/attribute
-5	температура  weather/find  O
+1  нинди  weather/find	O
+2  иртәгә  weather/find  B-datetime
+3  иң  weather/find  B-weather/attribute
+4  түбән  weather/find  I-weather/attribute
+5  температура  weather/find  O
 
 # text EN: Is it going to be sunny today?
 # text TAT: Бүген кояшлы булырмы?
@@ -42,8 +42,9 @@
 7  ?	reminder/show_reminders  O
 
 # text EN: What are my reminders for tomorrow?
+# text TAT:
 # intent: reminder/show_reminders
-# slots: 12:21:reminder/noun,22:34:datetime
+# slots:
 1	What	reminder/show_reminders	O
 2	are	reminder/show_reminders	O
 3	my	reminder/show_reminders	B-reference
