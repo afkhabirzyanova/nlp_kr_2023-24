@@ -11,8 +11,9 @@
 7  .  reminder/set_reminder  O
 
 # text EN: whats the low for tomorrow
+# text TAT: нинди иртәгә иң түбән температура
 # intent: weather/find
-# slots: 14:26:datetime
+# slots:
 1	whats	weather/find	O
 2	the	weather/find	O
 3	low	weather/find	B-weather/attribute
