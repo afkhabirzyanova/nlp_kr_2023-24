@@ -85,13 +85,14 @@
 5  чыгар  alarm/cancel_alarm  O
 
 # text: remind me to buy groceries
+# text TAT: миңа продуктларне алырга искә төшер
 # intent: reminder/set_reminder
-# slots: 13:26:reminder/todo
-1	remind	reminder/set_reminder	O
-2	me	reminder/set_reminder	O
-3	to	reminder/set_reminder	O
-4	buy	reminder/set_reminder	B-reminder/todo
-5	groceries	reminder/set_reminder	I-reminder/todo
+# slots:
+1  миңа  reminder/set_reminder	O
+2  продуктларне  reminder/set_reminder	B-reminder/todo
+3  алырга  reminder/set_reminder	I-reminder/todo
+4  искә  reminder/set_reminder	O
+5  төшер	reminder/set_reminder  O
 
 # text: I need an alarm set for a 9 am breakfast
 # intent: alarm/set_alarm
