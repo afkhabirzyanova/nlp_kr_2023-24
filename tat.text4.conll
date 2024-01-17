@@ -77,13 +77,14 @@
 6  куй  alarm/set_alarm  O
 
 # text EN: Set alarm for 30 minutes
+# text TAT: Уяткыч сәгатьне 30 минутка куй
 # intent: alarm/set_alarm
-# slots: 10:24:datetime
-1	Set	alarm/set_alarm	O
-2	alarm	alarm/set_alarm	O
-3	for	alarm/set_alarm	O
-4	30	alarm/set_alarm	B-datetime
-5	minutes	alarm/set_alarm	I-datetime
+# slots:
+1  Уяткыч  alarm/set_alarm	O
+2  сәгатьне  alarm/set_alarm	O
+3  30  alarm/set_alarm	B-datetime
+4  минутка	alarm/set_alarm  I-datetime
+5  куй	alarm/set_alarm  O
 
 # text EN: Set an alarm for an hour from now.
 # intent: alarm/set_alarm
