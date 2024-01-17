@@ -66,13 +66,15 @@
 7  .	reminder/cancel_reminder	O
 
 # text EN: set alarm for 6am tomorrow
+# text TAT: иртәге уяткыч сәгатьне иртәнге 6 куй
 # intent: alarm/set_alarm
-# slots: 10:26:datetime
-1	set	alarm/set_alarm	O
-2	alarm	alarm/set_alarm	O
-3	for	alarm/set_alarm	O
-4	6am	alarm/set_alarm	B-datetime
-5	tomorrow	alarm/set_alarm	I-datetime
+# slots:
+1  иртәге  alarm/set_alarm  B-datetime
+2  уяткыч  alarm/set_alarm  O
+3  сәгатьне  alarm/set_alarm  O
+4  иртәнге  alarm/set_alarm  I-datetime
+5  6  alarm/set_alarm  I-datetime
+6  куй  alarm/set_alarm  O
 
 # text EN: Set alarm for 30 minutes
 # intent: alarm/set_alarm
