@@ -110,6 +110,7 @@
 10  кирәк  alarm/set_alarm	O
 
 # text: set reminder to watch the Colts one hour before game starts
+# text TAT: уен башланганчы бер сәгать алдан Кольтларны карау турында искә төшерүне куй
 # intent: reminder/set_reminder
 # slots: 4:12:reminder/noun,16:59:reminder/todo
 1	set	reminder/set_reminder	O
