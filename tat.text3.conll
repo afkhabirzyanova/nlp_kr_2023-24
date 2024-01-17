@@ -31,8 +31,9 @@
 14  чыгар  reminder/cancel_reminder  O
 
 # text: when does the forecast next show rain
+# text TAT: кайчан киләсе тапкыр фараз яңгырны күрсәтә?
 # intent: weather/find
-# slots: 14:22:weather/noun,33:37:weather/attribute
+# slots:
 1	when	weather/find	O
 2	does	weather/find	O
 3	the	weather/find	O
