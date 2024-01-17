@@ -17,17 +17,14 @@
 4	for	weather/find	O
 5	tomorrow	weather/find	B-datetime
 
-# text: Is it going to be sunny today?
+# text EN: Is it going to be sunny today?
+# text TAT: Бүген кояшлы булырмы?
 # intent: weather/find
 # slots: 18:23:weather/attribute,24:29:datetime
-1	Is	weather/find	O
-2	it	weather/find	O
-3	going	weather/find	O
-4	to	weather/find	O
-5	be	weather/find	O
-6	sunny	weather/find	B-weather/attribute
-7	today	weather/find	B-datetime
-8	?	weather/find	O
+1  Бүген	weather/find	B-datetime
+2  кояшлы  weather/find  B-weather/attribute
+3  булырмы	weather/find	O
+4  ?	weather/find	O
 
 # text: How many reminders do I have today?
 # intent: reminder/show_reminders
