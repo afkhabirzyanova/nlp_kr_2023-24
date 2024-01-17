@@ -1,0 +1,150 @@
+# text: Remind me to pay rent.
+# intent: reminder/set_reminder
+# slots: 13:21:reminder/todo
+1	Remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	pay	reminder/set_reminder	B-reminder/todo
+5	rent	reminder/set_reminder	I-reminder/todo
+6	.	reminder/set_reminder	O
+
+# text: whats the low for tomorrow
+# intent: weather/find
+# slots: 14:26:datetime
+1	whats	weather/find	O
+2	the	weather/find	O
+3	low	weather/find	B-weather/attribute
+4	for	weather/find	O
+5	tomorrow	weather/find	B-datetime
+
+# text: Is it going to be sunny today?
+# intent: weather/find
+# slots: 18:23:weather/attribute,24:29:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	be	weather/find	O
+6	sunny	weather/find	B-weather/attribute
+7	today	weather/find	B-datetime
+8	?	weather/find	O
+
+# text: How many reminders do I have today?
+# intent: reminder/show_reminders
+# slots: 9:18:reminder/noun,29:34:datetime
+1	How	reminder/show_reminders	O
+2	many	reminder/show_reminders	O
+3	reminders	reminder/show_reminders	O
+4	do	reminder/show_reminders	O
+5	I	reminder/show_reminders	O
+6	have	reminder/show_reminders	O
+7	today	reminder/show_reminders	B-datetime
+8	?	reminder/show_reminders	O
+
+# text: What are my reminders for tomorrow?
+# intent: reminder/show_reminders
+# slots: 12:21:reminder/noun,22:34:datetime
+1	What	reminder/show_reminders	O
+2	are	reminder/show_reminders	O
+3	my	reminder/show_reminders	B-reference
+4	reminders	reminder/show_reminders	O
+5	for	reminder/show_reminders	O
+6	tomorrow	reminder/show_reminders	B-datetime
+7	?	reminder/show_reminders	O
+
+# text: Cancel all my reminders.
+# intent: reminder/cancel_reminder
+# slots: 14:23:reminder/noun
+1	Cancel	reminder/cancel_reminder	O
+2	all	reminder/cancel_reminder	B-reference
+3	my	reminder/cancel_reminder	I-reference
+4	reminders	reminder/cancel_reminder	O
+5	.	reminder/cancel_reminder	O
+
+# text: set alarm for 6am tomorrow
+# intent: alarm/set_alarm
+# slots: 10:26:datetime
+1	set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	6am	alarm/set_alarm	B-datetime
+5	tomorrow	alarm/set_alarm	I-datetime
+
+# text: Set alarm for 30 minutes
+# intent: alarm/set_alarm
+# slots: 10:24:datetime
+1	Set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	30	alarm/set_alarm	B-datetime
+5	minutes	alarm/set_alarm	I-datetime
+
+# text: Set an alarm for an hour from now.
+# intent: alarm/set_alarm
+# slots: 13:24:datetime
+1	Set	alarm/set_alarm	O
+2	an	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	for	alarm/set_alarm	O
+5	an	alarm/set_alarm	B-datetime
+6	hour	alarm/set_alarm	I-datetime
+7	from	alarm/set_alarm	I-datetime
+8	now	alarm/set_alarm	I-datetime
+9	.	alarm/set_alarm	O
+
+# text: cancel all alarms
+# intent: alarm/cancel_alarm
+# slots:
+1	cancel	alarm/cancel_alarm	O
+2	all	alarm/cancel_alarm	B-reference
+3	alarms	alarm/cancel_alarm	O
+
+# text: weather update Los Angeles
+# intent: weather/find
+# slots: 0:7:weather/noun,15:26:location
+1	weather	weather/find	O
+2	update	weather/find	O
+3	Los	weather/find	B-location
+4	Angeles	weather/find	I-location
+
+# text: cancel all alarms
+# intent: alarm/cancel_alarm
+# slots:
+1	cancel	alarm/cancel_alarm	O
+2	all	alarm/cancel_alarm	B-reference
+3	alarms	alarm/cancel_alarm	O
+
+# text: How many reminders do I have today?
+# intent: reminder/show_reminders
+# slots: 9:18:reminder/noun,29:34:datetime
+1	How	reminder/show_reminders	O
+2	many	reminder/show_reminders	O
+3	reminders	reminder/show_reminders	O
+4	do	reminder/show_reminders	O
+5	I	reminder/show_reminders	O
+6	have	reminder/show_reminders	O
+7	today	reminder/show_reminders	B-datetime
+8	?	reminder/show_reminders	O
+
+# text: Remind me to get paper towels at the store tomorrow
+# intent: reminder/set_reminder
+# slots: 13:42:reminder/todo,43:51:datetime
+1	Remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	get	reminder/set_reminder	B-reminder/todo
+5	paper	reminder/set_reminder	I-reminder/todo
+6	towels	reminder/set_reminder	I-reminder/todo
+7	at	reminder/set_reminder	I-reminder/todo
+8	the	reminder/set_reminder	I-reminder/todo
+9	store	reminder/set_reminder	I-reminder/todo
+10	tomorrow	reminder/set_reminder	B-datetime
+
+# text: show me all my reminders
+# intent: reminder/show_reminders
+# slots: 8:11:reminder/reference,15:24:reminder/noun
+1	show	reminder/show_reminders	O
+2	me	reminder/show_reminders	O
+3	all	reminder/show_reminders	B-reference
+4	my	reminder/show_reminders	I-reference
+5	reminders	reminder/show_reminders	O
