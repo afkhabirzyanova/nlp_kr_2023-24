@@ -42,16 +42,16 @@
 7  ?	reminder/show_reminders  O
 
 # text EN: What are my reminders for tomorrow?
-# text TAT:
+# text TAT: Минем иртәгә нинди искә төшерүләрем бар?
 # intent: reminder/show_reminders
 # slots:
-1	What	reminder/show_reminders	O
-2	are	reminder/show_reminders	O
-3	my	reminder/show_reminders	B-reference
-4	reminders	reminder/show_reminders	O
-5	for	reminder/show_reminders	O
-6	tomorrow	reminder/show_reminders	B-datetime
-7	?	reminder/show_reminders	O
+1  Минем	reminder/show_reminders  B-reference
+2  иртәгә  reminder/show_reminders	B-datetime
+3  нинди	reminder/show_reminders  O
+4  искә  reminder/show_reminders	O
+5  төшерүләрем	reminder/show_reminders  O
+6  бар	reminder/show_reminders  O
+7  ?	reminder/show_reminders  O
 
 # text EN: Cancel all my reminders.
 # text TAT: Минем барлык искә төшерүләрне гамәлдән чыгар.
