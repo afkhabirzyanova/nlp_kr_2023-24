@@ -136,16 +136,18 @@
 5  чыгар  alarm/cancel_alarm  O
 
 # text: Cancel my third reminder on this list.
+# text TAT: Бу исемлектән минем өченче искә төшерүне юкка чыгарыгыз.
 # intent: reminder/cancel_reminder
 # slots: 10:15:reminder/reference,16:24:reminder/noun
-1	Cancel	reminder/cancel_reminder	O
-2	my	reminder/cancel_reminder	B-reference
-3	third	reminder/cancel_reminder	I-reference
-4	reminder	reminder/cancel_reminder	O
-5	on	reminder/cancel_reminder	O
-6	this	reminder/cancel_reminder	O
-7	list	reminder/cancel_reminder	O
-8	.	reminder/cancel_reminder	O
+1  Бу  reminder/cancel_reminder  O
+2  исемлектән  reminder/cancel_reminder  O
+3  минем	reminder/cancel_reminder  B-reference
+4  өченче  reminder/cancel_reminder  I-reference
+5  искә  reminder/cancel_reminder  O
+6  төшерүне  reminder/cancel_reminder  O
+7  юкка  reminder/cancel_reminder  O
+8  чыгарыгыз  reminder/cancel_reminder  O
+8  .  reminder/cancel_reminder  O
 
 # text: set alarm for 6 am
 # text TAT: Уяткыч сәгатьне иртәнге 6 куй
