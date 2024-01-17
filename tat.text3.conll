@@ -42,8 +42,9 @@
 6  күрсәтә	weather/find	O
 
 # text: What time is my alarm set for tomorrow morning?
+# text TAT: Иртәгә иртә белән минем уяткыч сәгать нинди вакытка куелган?
 # intent: alarm/show_alarms
-# slots: 26:46:datetime
+# slots:
 1	What	alarm/show_alarms	O
 2	time	alarm/show_alarms	O
 3	is	alarm/show_alarms	O
