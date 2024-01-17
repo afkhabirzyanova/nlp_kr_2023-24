@@ -138,7 +138,7 @@
 # text: Cancel my third reminder on this list.
 # text TAT: Бу исемлектән минем өченче искә төшерүне юкка чыгарыгыз.
 # intent: reminder/cancel_reminder
-# slots: 10:15:reminder/reference,16:24:reminder/noun
+# slots:
 1  Бу  reminder/cancel_reminder  O
 2  исемлектән  reminder/cancel_reminder  O
 3  минем	reminder/cancel_reminder  B-reference
@@ -160,17 +160,19 @@
 5  куй  alarm/set_alarm  O
 
 # text: Reset this alarm now and start at 2 pm
+# text TAT: Бу уяткыч сәгатьне хәзер ташла һәм көндезге 2 башлап җибәр
 # intent: alarm/cancel_alarm
-# slots: 31:38:datetime
-1	Reset	alarm/cancel_alarm	O
-2	this	alarm/cancel_alarm	B-reference
-3	alarm	alarm/cancel_alarm	O
-4	now	alarm/cancel_alarm	B-datetime
-5	and	alarm/cancel_alarm	O
-6	start	alarm/cancel_alarm	O
-7	at	alarm/cancel_alarm	O
-8	2	alarm/cancel_alarm	B-datetime
-9	pm	alarm/cancel_alarm	I-datetime
+# slots:
+1  Бу  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьне  alarm/cancel_alarm  O
+4  хәзер	alarm/cancel_alarm	B-datetime
+5  ташла	alarm/cancel_alarm	O
+6  һәм	alarm/cancel_alarm	O
+7  көндезге  alarm/cancel_alarm  B-datetime
+8  2	alarm/cancel_alarm	I-datetime
+9  башлап  alarm/cancel_alarm  O
+10  җибәр  alarm/cancel_alarm  O
 
 # text: Is it going to snow?
 # text TAT: Кар булырмы?
