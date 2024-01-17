@@ -87,8 +87,9 @@
 5  куй	alarm/set_alarm  O
 
 # text EN: Set an alarm for an hour from now.
+# text TAT: Уяткыч сәгатьне бер сәгать алга куй.
 # intent: alarm/set_alarm
-# slots: 13:24:datetime
+# slots:
 1	Set	alarm/set_alarm	O
 2	an	alarm/set_alarm	O
 3	alarm	alarm/set_alarm	O
