@@ -45,16 +45,16 @@
 # text TAT: Иртәгә иртә белән минем уяткыч сәгать нинди вакытка куелган?
 # intent: alarm/show_alarms
 # slots:
-1	What	alarm/show_alarms	O
-2	time	alarm/show_alarms	O
-3	is	alarm/show_alarms	O
-4	my	alarm/show_alarms	B-reference
-5	alarm	alarm/show_alarms	O
-6	set	alarm/show_alarms	O
-7	for	alarm/show_alarms	O
-8	tomorrow	alarm/show_alarms	B-datetime
-9	morning	alarm/show_alarms	I-datetime
-10	?	alarm/show_alarms	O
+1  Иртәгә  alarm/show_alarms	B-datetime
+2  иртә  alarm/show_alarms	I-datetime
+3  белән	alarm/show_alarms  O
+4  минем	alarm/show_alarms  B-reference
+5  уяткыч  alarm/show_alarms	O
+6  сәгать  alarm/show_alarms	O
+7  нинди	alarm/show_alarms  O
+8  вакытка	alarm/show_alarms  O
+9  куелган	alarm/show_alarms  O
+10  ?  alarm/show_alarms  O
 
 # text: will it snow today
 # intent: weather/find
