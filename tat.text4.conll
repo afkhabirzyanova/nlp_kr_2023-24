@@ -141,10 +141,11 @@
 10	tomorrow	reminder/set_reminder	B-datetime
 
 # text EN: show me all my reminders
+# text TAT: Миңа минем барлык искә төшерүне күрсәт
 # intent: reminder/show_reminders
-# slots: 8:11:reminder/reference,15:24:reminder/noun
-1	show	reminder/show_reminders	O
-2	me	reminder/show_reminders	O
-3	all	reminder/show_reminders	B-reference
-4	my	reminder/show_reminders	I-reference
-5	reminders	reminder/show_reminders	O
+# slots:
+1  Миңа  reminder/show_reminders  O
+2  минем  reminder/show_reminders  B-reference
+2  барлык  reminder/show_reminders  I-reference
+3  хәтерләтүләрне  reminder/show_reminders  O
+4  күрсәт  reminder/show_reminders  O
