@@ -14,11 +14,11 @@
 # text TAT: нинди иртәгә иң түбән температура
 # intent: weather/find
 # slots:
-1	whats	weather/find	O
-2	the	weather/find	O
-3	low	weather/find	B-weather/attribute
-4	for	weather/find	O
-5	tomorrow	weather/find	B-datetime
+1	нинди  weather/find	O
+2	иртәгә	weather/find	B-datetime
+3	иң	weather/find	B-weather/attribute
+4	түбән  weather/find  I-weather/attribute
+5	температура  weather/find  O
 
 # text EN: Is it going to be sunny today?
 # text TAT: Бүген кояшлы булырмы?
