@@ -1,12 +1,14 @@
 # text EN: Remind me to pay rent.
+# text TAT: Миңа фатир өчен түләргә искә төшер.
 # intent: reminder/set_reminder
-# slots: 13:21:reminder/todo
-1	Remind	reminder/set_reminder	O
-2	me	reminder/set_reminder	O
-3	to	reminder/set_reminder	O
-4	pay	reminder/set_reminder	B-reminder/todo
-5	rent	reminder/set_reminder	I-reminder/todo
-6	.	reminder/set_reminder	O
+# slots:
+1  Миңа  reminder/set_reminder	O
+2  фатир	reminder/set_reminder  B-reminder/todo
+3  өчен  reminder/set_reminder	I-reminder/todo
+4  түләргә	reminder/set_reminder  I-reminder/todo
+5  искә  reminder/set_reminder	O
+6  төшер  reminder/set_reminder  O
+7  .  reminder/set_reminder  O
 
 # text EN: whats the low for tomorrow
 # intent: weather/find
@@ -93,11 +95,14 @@
 9	.	alarm/set_alarm	O
 
 # text EN: cancel all alarms
+# text TAT: барлык уяткыч сәгатьләрне гамәлдән чыгар
 # intent: alarm/cancel_alarm
 # slots:
-1	cancel	alarm/cancel_alarm	O
-2	all	alarm/cancel_alarm	B-reference
-3	alarms	alarm/cancel_alarm	O
+1  барлык  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьләрне	alarm/cancel_alarm	O
+4  гамәлдән  alarm/cancel_alarm  O
+5  чыгар  alarm/cancel_alarm  O
 
 # text EN: weather update Los Angeles
 # intent: weather/find
