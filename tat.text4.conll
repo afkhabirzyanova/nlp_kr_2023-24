@@ -20,7 +20,7 @@
 # text EN: Is it going to be sunny today?
 # text TAT: Бүген кояшлы булырмы?
 # intent: weather/find
-# slots: 18:23:weather/attribute,24:29:datetime
+# slots:
 1  Бүген	weather/find	B-datetime
 2  кояшлы  weather/find  B-weather/attribute
 3  булырмы	weather/find	O
@@ -105,11 +105,14 @@
 4	Angeles	weather/find	I-location
 
 # text EN: cancel all alarms
+# text TAT: барлык уяткыч сәгатьләрне гамәлдән чыгар
 # intent: alarm/cancel_alarm
 # slots:
-1	cancel	alarm/cancel_alarm	O
-2	all	alarm/cancel_alarm	B-reference
-3	alarms	alarm/cancel_alarm	O
+1  барлык  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьләрне	alarm/cancel_alarm	O
+4  гамәлдән  alarm/cancel_alarm  O
+5  чыгар  alarm/cancel_alarm  O
 
 # text EN: How many reminders do I have today?
 # intent: reminder/show_reminders
