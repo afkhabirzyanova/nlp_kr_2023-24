@@ -30,16 +30,16 @@
 4  ?	weather/find	O
 
 # text EN: How many reminders do I have today?
+# text TAT: Бүген минем ничә искә төшерүләрем бар?
 # intent: reminder/show_reminders
-# slots: 9:18:reminder/noun,29:34:datetime
-1	How	reminder/show_reminders	O
-2	many	reminder/show_reminders	O
-3	reminders	reminder/show_reminders	O
-4	do	reminder/show_reminders	O
-5	I	reminder/show_reminders	O
-6	have	reminder/show_reminders	O
-7	today	reminder/show_reminders	B-datetime
-8	?	reminder/show_reminders	O
+# slots:
+1  Бүген  reminder/show_reminders  B-datetime
+2  минем	reminder/show_reminders  O
+3  ничә  reminder/show_reminders	O
+4  искә  reminder/show_reminders	O
+5  төшерүләрем	reminder/show_reminders  O
+6  бар	reminder/show_reminders  O
+7  ?	reminder/show_reminders  O
 
 # text EN: What are my reminders for tomorrow?
 # intent: reminder/show_reminders
