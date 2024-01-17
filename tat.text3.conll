@@ -112,18 +112,18 @@
 # text: set reminder to watch the Colts one hour before game starts
 # text TAT: уен башланганчы бер сәгать алдан Кольтларны карау турында искә төшерүне куй
 # intent: reminder/set_reminder
-# slots: 4:12:reminder/noun,16:59:reminder/todo
-1	set	reminder/set_reminder	O
-2	reminder	reminder/set_reminder	O
-3	to	reminder/set_reminder	O
-4	watch	reminder/set_reminder	B-reminder/todo
-5	the	reminder/set_reminder	I-reminder/todo
-6	Colts	reminder/set_reminder	I-reminder/todo
-7	one	reminder/set_reminder	B-datetime
-8	hour	reminder/set_reminder	I-datetime
-9	before	reminder/set_reminder	I-datetime
-10	game	reminder/set_reminder	I-datetime
-11	starts	reminder/set_reminder	I-datetime
+# slots:
+1  уен	reminder/set_reminder  B-datetime
+2  башланганчы	reminder/set_reminder  I-datetime
+3  бер	reminder/set_reminder  I-datetime
+4  сәгать  reminder/set_reminder  I-datetime
+5  алдан	reminder/set_reminder  I-datetime
+6  Кольтларны  reminder/set_reminder  B-reminder/todo
+7  карау  reminder/set_reminder  I-reminder/todo
+8  турында	reminder/set_reminder  O
+9  искә  reminder/set_reminder  O
+10  төшерүне	reminder/set_reminder  O
+11  куй  reminder/set_reminder  O
 
 # text: cancel all alarms
 # intent: alarm/cancel_alarm
