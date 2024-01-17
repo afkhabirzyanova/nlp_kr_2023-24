@@ -12,7 +12,8 @@
 8  төшер	reminder/set_reminder  O
 
 # text EN: cancel my recurring reminder to take meds daily at 7 am
-# text TAT:
+# text TAT: көн саен иртәнге сәгать 7 дарулар эчәргә турында минем даими искә төшерүне юкка чыгар 
+Иртәнге сәгать 7дә
 # intent: reminder/cancel_reminder
 # slots: 20:28:reminder/noun,32:41:reminder/todo,42:55:reminder/recurring_period
 1	cancel	reminder/cancel_reminder	O
