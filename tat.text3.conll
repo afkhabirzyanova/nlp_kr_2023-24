@@ -30,7 +30,7 @@
 13  юкка  reminder/cancel_reminder  O
 14  чыгар  reminder/cancel_reminder  O
 
-# text: when does the forecast next show rain
+# text EN: when does the forecast next show rain
 # text TAT: кайчан киләсе тапкыр фараз яңгырны күрсәтә
 # intent: weather/find
 # slots:
@@ -41,7 +41,7 @@
 5  яңгырны	weather/find	B-weather/attribute
 6  күрсәтә	weather/find	O
 
-# text: What time is my alarm set for tomorrow morning?
+# text EN: What time is my alarm set for tomorrow morning?
 # text TAT: Иртәгә иртә белән минем уяткыч сәгать нинди вакытка куелган?
 # intent: alarm/show_alarms
 # slots:
@@ -56,7 +56,7 @@
 9  куелган	alarm/show_alarms  O
 10  ?  alarm/show_alarms  O
 
-# text: will it snow today
+# text EN: will it snow today
 # text TAT: бүген кар булырмы
 # intent: weather/find
 # slots:
@@ -64,7 +64,7 @@
 2  кар	weather/find	B-weather/attribute
 3  булырмы	weather/find	O
 
-# text: Turn off my alarm.
+# text EN: Turn off my alarm.
 # text TAT: Минем уяткыч сәгатьне сүндер.
 # intent: alarm/cancel_alarm
 # slots:
@@ -74,7 +74,7 @@
 4  сүндер  alarm/cancel_alarm  O
 5  .  alarm/cancel_alarm  O
 
-# text: Cancel all alarms
+# text EN: Cancel all alarms
 # text TAT: Барлык уяткыч сәгатьләрне гамәлдән чыгар
 # intent: alarm/cancel_alarm
 # slots:
@@ -84,7 +84,7 @@
 4  гамәлдән  alarm/cancel_alarm  O
 5  чыгар  alarm/cancel_alarm  O
 
-# text: remind me to buy groceries
+# text EN: remind me to buy groceries
 # text TAT: миңа продуктларне алырга искә төшер
 # intent: reminder/set_reminder
 # slots:
@@ -94,7 +94,7 @@
 4  искә  reminder/set_reminder	O
 5  төшер	reminder/set_reminder  O
 
-# text: I need an alarm set for a 9 am breakfast
+# text EN: I need an alarm set for a 9 am breakfast
 # text TAT: Миңа иртәнге сәгать 9 иртәнге аш өчен уяткыч сәгать кирәк
 # intent: alarm/set_alarm
 # slots:
@@ -109,7 +109,7 @@
 9  сәгать  alarm/set_alarm	O
 10  кирәк  alarm/set_alarm	O
 
-# text: set reminder to watch the Colts one hour before game starts
+# text EN: set reminder to watch the Colts one hour before game starts
 # text TAT: уен башланганчы бер сәгать алдан Кольтларны карау турында искә төшерүне куй
 # intent: reminder/set_reminder
 # slots:
@@ -125,7 +125,7 @@
 10  төшерүне	reminder/set_reminder  O
 11  куй  reminder/set_reminder  O
 
-# text: cancel all alarms
+# text EN: cancel all alarms
 # text TAT: барлык уяткыч сәгатьләрне гамәлдән чыгар
 # intent: alarm/cancel_alarm
 # slots:
@@ -135,7 +135,7 @@
 4  гамәлдән  alarm/cancel_alarm  O
 5  чыгар  alarm/cancel_alarm  O
 
-# text: Cancel my third reminder on this list.
+# text EN: Cancel my third reminder on this list.
 # text TAT: Бу исемлектән минем өченче искә төшерүне юкка чыгарыгыз.
 # intent: reminder/cancel_reminder
 # slots:
@@ -149,7 +149,7 @@
 8  чыгарыгыз  reminder/cancel_reminder  O
 8  .  reminder/cancel_reminder  O
 
-# text: set alarm for 6 am
+# text EN: set alarm for 6 am
 # text TAT: Уяткыч сәгатьне иртәнге 6 куй
 # intent: alarm/set_alarm
 # slots:
@@ -159,7 +159,7 @@
 4  6  alarm/set_alarm  I-datetime
 5  куй  alarm/set_alarm  O
 
-# text: Reset this alarm now and start at 2 pm
+# text EN: Reset this alarm now and start at 2 pm
 # text TAT: Бу уяткыч сәгатьне хәзер ташла һәм көндезге 2 башлап җибәр
 # intent: alarm/cancel_alarm
 # slots:
@@ -174,7 +174,7 @@
 9  башлап  alarm/cancel_alarm  O
 10  җибәр  alarm/cancel_alarm  O
 
-# text: Is it going to snow?
+# text EN: Is it going to snow?
 # text TAT: Кар булырмы?
 # intent: weather/find
 # slots:
