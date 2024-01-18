@@ -143,7 +143,7 @@
 6  ?  weather/find  O
 
 # text EN: snooze my alarms for five minutes
-# text TAT: биш минуттан соң минем уяткыч сәгатьне кабатла
+# text TAT: биш минуттан соң минем уяткыч сәгатьләрне кабатла
 # intent: alarm/snooze_alarm
 # slots:
 1  биш  alarm/snooze_alarm  B-datetime
@@ -151,11 +151,11 @@
 3  соң  alarm/snooze_alarm  O
 4  минем  alarm/snooze_alarm  B-reference
 5  уяткыч  alarm/snooze_alarm  O
-6  сәгатьне  alarm/snooze_alarm  O
+6  сәгатьләрне  alarm/snooze_alarm  O
 7  кабатла  alarm/snooze_alarm  O
 
 # text EN: snooze my alarms for five minutes
-# text TAT: 5 минуттан соң минем уяткыч сәгатьне кабатла
+# text TAT: 5 минуттан соң минем уяткыч сәгатьләрне кабатла
 # intent: alarm/snooze_alarm
 # slots:
 1  5  alarm/snooze_alarm  B-datetime
@@ -163,7 +163,7 @@
 3  соң  alarm/snooze_alarm  O
 4  минем  alarm/snooze_alarm  B-reference
 5  уяткыч  alarm/snooze_alarm  O
-6  сәгатьне  alarm/snooze_alarm  O
+6  сәгатьләрне  alarm/snooze_alarm  O
 7  кабатла  alarm/snooze_alarm  O
 
 # text EN: set a birthday reminder for max
@@ -197,12 +197,12 @@
 4  күрсәт  reminder/show_reminders  O
 
 # text EN: Show all alarms.
-# text TAT: Барлык уяткыч сәгатьне күрсәт.
+# text TAT: Барлык уяткыч сәгатьләрне күрсәт.
 # intent: alarm/show_alarms
 # slots:
 1  Барлык  reminder/show_reminders  B-reference
 2  уяткыч  reminder/show_reminders  O
-3  сәгатьне  reminder/show_reminders  O
+3  сәгатьләрне  reminder/show_reminders  O
 4  күрсәт  reminder/show_reminders  O
 5  .  alarm/show_alarms  O
 
