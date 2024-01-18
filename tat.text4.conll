@@ -111,12 +111,14 @@
 5  чыгар  alarm/cancel_alarm  O
 
 # text EN: weather update Los Angeles
+# text TAT: Лос-Анджелеста һава торышы
 # intent: weather/find
-# slots: 0:7:weather/noun,15:26:location
-1	weather	weather/find	O
-2	update	weather/find	O
-3	Los	weather/find	B-location
-4	Angeles	weather/find	I-location
+# slots:
+1  Лос  weather/find  B-location
+2  -  weather/find  I-location
+3  Анджелеста  weather/find  I-location
+4  һава  weather/find  O
+5  торышы  weather/find  O
 
 # text EN: cancel all alarms
 # text TAT: барлык уяткыч сәгатьләрне гамәлдән чыгар
@@ -129,30 +131,30 @@
 5  чыгар  alarm/cancel_alarm  O
 
 # text EN: How many reminders do I have today?
+# text TAT: Бүген минем ничә искә төшерүләрем бар?
 # intent: reminder/show_reminders
-# slots: 9:18:reminder/noun,29:34:datetime
-1	How	reminder/show_reminders	O
-2	many	reminder/show_reminders	O
-3	reminders	reminder/show_reminders	O
-4	do	reminder/show_reminders	O
-5	I	reminder/show_reminders	O
-6	have	reminder/show_reminders	O
-7	today	reminder/show_reminders	B-datetime
-8	?	reminder/show_reminders	O
+# slots:
+1  Бүген  reminder/show_reminders  B-datetime
+2  минем	reminder/show_reminders  O
+3  ничә  reminder/show_reminders	O
+4  искә  reminder/show_reminders	O
+5  төшерүләрем	reminder/show_reminders  O
+6  бар	reminder/show_reminders  O
+7  ?	reminder/show_reminders  O
 
 # text EN: Remind me to get paper towels at the store tomorrow
+# text TAT: Миңа иртәгә кибеттә кәгазь сөлгеләр сатып алырга искә төшер
 # intent: reminder/set_reminder
-# slots: 13:42:reminder/todo,43:51:datetime
-1	Remind	reminder/set_reminder	O
-2	me	reminder/set_reminder	O
-3	to	reminder/set_reminder	O
-4	get	reminder/set_reminder	B-reminder/todo
-5	paper	reminder/set_reminder	I-reminder/todo
-6	towels	reminder/set_reminder	I-reminder/todo
-7	at	reminder/set_reminder	I-reminder/todo
-8	the	reminder/set_reminder	I-reminder/todo
-9	store	reminder/set_reminder	I-reminder/todo
-10	tomorrow	reminder/set_reminder	B-datetime
+# slots:
+1	Миңа	reminder/set_reminder  O
+2	иртәгә	reminder/set_reminder  B-datetime
+3	кибеттә  reminder/set_reminder  B-reminder/todo
+4	кәгазь	reminder/set_reminder  I-reminder/todo
+5	сөлгеләр	reminder/set_reminder  I-reminder/todo
+6	сатып  reminder/set_reminder	I-reminder/todo
+7	алырга	reminder/set_reminder  I-reminder/todo
+8	искә	reminder/set_reminder  O
+9	төшер  reminder/set_reminder  O
 
 # text EN: show me all my reminders
 # text TAT: Миңа минем барлык искә төшерүне күрсәт
