@@ -73,14 +73,14 @@
 15	.	reminder/set_reminder	O
 
 # text EN: What's the weather like today?
+# text TAT: Бүген һава торышы нинди?
 # intent: weather/find
-# slots: 11:18:weather/noun,24:29:datetime
-1	What's	weather/find	O
-2	the	weather/find	O
-3	weather	weather/find	O
-4	like	weather/find	O
-5	today	weather/find	B-datetime
-6	?	weather/find	O
+# slots:
+1  Бүген	weather/find	B-datetime
+2  һава  weather/find  O
+3  торышы  weather/find  O
+4  нинди  weather/find	O
+5  ?  weather/find	O
 
 # text EN: Remind me to make a doctor's appointment tomorrow.
 # intent: reminder/set_reminder
