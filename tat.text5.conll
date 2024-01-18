@@ -140,13 +140,10 @@
 9	?	weather/find	O
 
 # text EN: Is it going to be hot today?
+# text TAT: Бүген кызу булырмы?
 # intent: weather/find
-# slots: 18:21:weather/attribute,22:27:datetime
-1	Is	weather/find	O
-2	it	weather/find	O
-3	going	weather/find	O
-4	to	weather/find	O
-5	be	weather/find	O
-6	hot	weather/find	B-weather/attribute
-7	today	weather/find	B-datetime
-8	?	weather/find	O
+# slots: 
+1  Бүген  weather/find  B-datetime
+2  кызу  weather/find  B-weather/attribute
+3  булырмы  weather/find  O
+4  ?  weather/find  O
