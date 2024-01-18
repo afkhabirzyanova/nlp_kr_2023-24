@@ -69,21 +69,13 @@
 3	alarms	alarm/cancel_alarm	O
 
 # text EN: show my alarms
-# text TAT: Минем барлык хәбәрләмәне күрсәт
+# text TAT: Минем уяткыч сәгатьләрне күрсәт
 # intent: alarm/show_alarms
 # slots:
-1	show	alarm/show_alarms	O
-2	my	alarm/show_alarms	B-reference
-3	alarms	alarm/show_alarms	O
-
-# text EN: Show all alarms
-# text TAT: Минем барлык хәбәрләмәне күрсәт
-# intent: alarm/show_alarms
-# slots:
-1  Барлык  reminder/show_reminders  B-reference
-2  уяткыч  reminder/show_reminders  O
-3  сәгатьне  reminder/show_reminders  O
-4  күрсәт  reminder/show_reminders  O
+1  Минем	alarm/show_alarms  B-reference
+2  уяткыч  alarm/show_alarms	O
+3  сәгатьләрне	alarm/show_alarms  O
+4  күрсәт  alarm/show_alarms	O
 
 # text EN: dismiss alarm
 # intent: alarm/cancel_alarm
@@ -108,11 +100,13 @@
 2	alarm	alarm/cancel_alarm	O
 
 # text EN: show all alarms
+# text TAT: барлык уяткыч сәгатьләрне күрсәт
 # intent: alarm/show_alarms
 # slots:
-1	show	alarm/show_alarms	O
-2	all	alarm/show_alarms	B-reference
-3	alarms	alarm/show_alarms	O
+1  барлык  reminder/show_reminders  B-reference
+2  уяткыч  reminder/show_reminders  O
+3  сәгатьләрне  reminder/show_reminders  O
+4  күрсәт  reminder/show_reminders  O
 
 # text EN: set alarm for every 30 minutes
 # intent: alarm/set_alarm
