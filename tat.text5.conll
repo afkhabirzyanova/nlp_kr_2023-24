@@ -52,15 +52,16 @@
 5  ?  weather/find	O
 
 # text EN: remind me to set alarms for morning
+# text TAT: иртәнге уяткыч сәгатьләрне куерга миңа искә төшер
 # intent: reminder/set_reminder
-# slots: 13:23:reminder/todo,24:35:datetime
-1	remind	reminder/set_reminder	O
-2	me	reminder/set_reminder	O
-3	to	reminder/set_reminder	O
-4	set	reminder/set_reminder	B-reminder/todo
-5	alarms	reminder/set_reminder	I-reminder/todo
-6	for	reminder/set_reminder	O
-7	morning	reminder/set_reminder	B-datetime
+# slots:
+1  иртәнге	reminder/set_reminder  B-datetime
+2  уяткыч  reminder/set_reminder	B-reminder/todo
+3  сәгатьләрне	reminder/set_reminder  I-reminder/todo
+4  куерга  reminder/set_reminder	I-reminder/todo
+5  миңа  reminder/set_reminder	O
+6  искә  reminder/set_reminder	O
+7  төшер	reminder/set_reminder  O
 
 # text EN: delete all alarms
 # text TAT: барлык уяткыч сәгатьне бетер
