@@ -28,8 +28,9 @@
 5  төшер	reminder/set_reminder  O
 
 # text EN: cancel my reminders for next week
+# text TAT: киләсе атнада минем искәртмәләрне гамәлдән чыгар
 # intent: reminder/cancel_reminder
-# slots: 10:19:reminder/noun,20:33:datetime
+# slots:
 1	cancel	reminder/cancel_reminder	O
 2	my	reminder/cancel_reminder	B-reference
 3	reminders	reminder/cancel_reminder	O
