@@ -129,15 +129,16 @@
 6  ?	weather/find	O
 
 # text EN: remind me of next weeks doctor appointment
+# text TAT: киләсе атнада табиб кабул итүен искә төшер
 # intent: reminder/set_reminder
-# slots: 0:6:reminder/noun,13:23:datetime,24:42:reminder/todo
-1	remind	reminder/set_reminder	O
-2	me	reminder/set_reminder	O
-3	of	reminder/set_reminder	O
-4	next	reminder/set_reminder	B-datetime
-5	weeks	reminder/set_reminder	I-datetime
-6	doctor	reminder/set_reminder	B-reminder/todo
-7	appointment	reminder/set_reminder	I-reminder/todo
+# slots:
+1  киләсе  reminder/set_reminder	B-datetime
+2  атнада  reminder/set_reminder	I-datetime
+3  табиб	reminder/set_reminder  I-datetime
+4  кабул	reminder/set_reminder I-datetime
+5  итүен	reminder/set_reminder  I-datetime
+6  искә  reminder/set_reminder	O
+7	 төшер	reminder/set_reminder  O
 
 # text EN: set reminder to go to the store at 8am
 # intent: reminder/set_reminder
