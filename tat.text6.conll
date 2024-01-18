@@ -141,17 +141,16 @@
 7	 төшер	reminder/set_reminder  O
 
 # text EN: set reminder to go to the store at 8am
+# text TAT: иртәнге 8 кибеткә бару турында искә төшер
 # intent: reminder/set_reminder
-# slots: 4:12:reminder/noun,16:31:reminder/todo,32:38:datetime
-1	set	reminder/set_reminder	O
-2	reminder	reminder/set_reminder	O
-3	to	reminder/set_reminder	O
-4	go	reminder/set_reminder	B-reminder/todo
-5	to	reminder/set_reminder	I-reminder/todo
-6	the	reminder/set_reminder	I-reminder/todo
-7	store	reminder/set_reminder	I-reminder/todo
-8	at	reminder/set_reminder	O
-9	8am	reminder/set_reminder	B-datetime
+# slots:
+1	иртәнге	reminder/set_reminder	B-datetime
+2	8	reminder/set_reminder	I-datetime
+3	кибеткә	reminder/set_reminder	B-reminder/todo
+4	бару	reminder/set_reminder	I-reminder/todo
+5	турында	reminder/set_reminder	O
+6	искә	reminder/set_reminder	O
+7	төшер	reminder/set_reminder	O
 
 # text EN: Set reminder to get the dry cleaning.
 # intent: reminder/set_reminder
