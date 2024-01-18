@@ -1,0 +1,139 @@
+# text: set alarm for 6 am
+# intent: alarm/set_alarm
+# slots: 10:18:datetime
+1	set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	am	alarm/set_alarm	I-datetime
+
+# text: will it snow tomorrow
+# intent: weather/find
+# slots: 8:12:weather/attribute,13:21:datetime
+1	will	weather/find	O
+2	it	weather/find	O
+3	snow	weather/find	B-weather/attribute
+4	tomorrow	weather/find	B-datetime
+
+# text: cancel my alarm for tomorrow morning
+# intent: alarm/cancel_alarm
+# slots: 16:36:datetime
+1	cancel	alarm/cancel_alarm	O
+2	my	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+4	for	alarm/cancel_alarm	O
+5	tomorrow	alarm/cancel_alarm	B-datetime
+6	morning	alarm/cancel_alarm	I-datetime
+
+# text: Set the alarm for noon on Mondays only.
+# intent: alarm/set_alarm
+# slots: 14:33:datetime
+1	Set	alarm/set_alarm	O
+2	the	alarm/set_alarm	O
+3	alarm	alarm/set_alarm	O
+4	for	alarm/set_alarm	O
+5	noon	alarm/set_alarm	B-recurring_datetime
+6	on	alarm/set_alarm	I-recurring_datetime
+7	Mondays	alarm/set_alarm	I-recurring_datetime
+8	only	alarm/set_alarm	O
+9	.	alarm/set_alarm	O
+
+# text: How hot will it get today?
+# intent: weather/find
+# slots: 4:7:weather/attribute,20:25:datetime
+1	How	weather/find	O
+2	hot	weather/find	B-weather/attribute
+3	will	weather/find	O
+4	it	weather/find	O
+5	get	weather/find	O
+6	today	weather/find	B-datetime
+7	?	weather/find	O
+
+# text: remind me to set alarms for morning
+# intent: reminder/set_reminder
+# slots: 13:23:reminder/todo,24:35:datetime
+1	remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	set	reminder/set_reminder	B-reminder/todo
+5	alarms	reminder/set_reminder	I-reminder/todo
+6	for	reminder/set_reminder	O
+7	morning	reminder/set_reminder	B-datetime
+
+# text: delete all alarms
+# intent: alarm/cancel_alarm
+# slots:
+1	delete	alarm/cancel_alarm	O
+2	all	alarm/cancel_alarm	B-reference
+3	alarms	alarm/cancel_alarm	O
+
+# text: show my alarms
+# intent: alarm/show_alarms
+# slots:
+1	show	alarm/show_alarms	O
+2	my	alarm/show_alarms	B-reference
+3	alarms	alarm/show_alarms	O
+
+# text: dismiss alarm
+# intent: alarm/cancel_alarm
+# slots:
+1	dismiss	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# text: What is the temperature today?
+# intent: weather/find
+# slots: 12:23:weather/noun,24:29:datetime
+1	What	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	temperature	weather/find	B-weather/attribute
+5	today	weather/find	B-datetime
+6	?	weather/find	O
+
+# text: dismiss alarm
+# intent: alarm/cancel_alarm
+# slots:
+1	dismiss	alarm/cancel_alarm	O
+2	alarm	alarm/cancel_alarm	O
+
+# text: show all alarms
+# intent: alarm/show_alarms
+# slots:
+1	show	alarm/show_alarms	O
+2	all	alarm/show_alarms	B-reference
+3	alarms	alarm/show_alarms	O
+
+# text: set alarm for every 30 minutes
+# intent: alarm/set_alarm
+# slots: 10:30:datetime
+1	set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	every	alarm/set_alarm	B-recurring_datetime
+5	30	alarm/set_alarm	I-recurring_datetime
+6	minutes	alarm/set_alarm	I-recurring_datetime
+
+# text: What is the temperature going to be today?
+# intent: weather/find
+# slots: 12:23:weather/noun,36:41:datetime
+1	What	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	temperature	weather/find	B-weather/attribute
+5	going	weather/find	O
+6	to	weather/find	O
+7	be	weather/find	O
+8	today	weather/find	B-datetime
+9	?	weather/find	O
+
+# text: Is it going to be hot today?
+# intent: weather/find
+# slots: 18:21:weather/attribute,22:27:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	be	weather/find	O
+6	hot	weather/find	B-weather/attribute
+7	today	weather/find	B-datetime
+8	?	weather/find	O
