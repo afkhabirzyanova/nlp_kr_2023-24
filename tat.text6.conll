@@ -161,11 +161,9 @@
 8	.	reminder/set_reminder	O
 
 # text EN: when is it cool down
-# text TAT: кайчан ул суына?
+# text TAT: кайчан ул суына
 # intent: weather/find
-# slots: 11:15:weather/attribute
-1	when	weather/find	O
-2	is	weather/find	O
-3	it	weather/find	O
-4	cool	weather/find	B-weather/attribute
-5	down	weather/find	O
+# slots:
+1  кайчан  weather/find  O
+2  ул  weather/find  O
+3  суына	weather/find	B-weather/attribute
