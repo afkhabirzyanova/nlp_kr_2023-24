@@ -1,0 +1,170 @@
+# text: Is it going to rain tomorrow?
+# intent: weather/find
+# slots: 15:19:weather/attribute,20:28:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	rain	weather/find	B-weather/attribute
+6	tomorrow	weather/find	B-datetime
+7	?	weather/find	O
+
+# text: Cancel the next alarm
+# intent: alarm/cancel_alarm
+# slots:
+1	Cancel	alarm/cancel_alarm	O
+2	the	alarm/cancel_alarm	O
+3	next	alarm/cancel_alarm	B-reference
+4	alarm	alarm/cancel_alarm	O
+
+# text: Remind me to go to grocery store today
+# intent: reminder/set_reminder
+# slots: 13:32:reminder/todo,33:38:datetime
+1	Remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	go	reminder/set_reminder	B-reminder/todo
+5	to	reminder/set_reminder	I-reminder/todo
+6	grocery	reminder/set_reminder	I-reminder/todo
+7	store	reminder/set_reminder	I-reminder/todo
+8	today	reminder/set_reminder	B-datetime
+
+# text: cancel my reminders for next week
+# intent: reminder/cancel_reminder
+# slots: 10:19:reminder/noun,20:33:datetime
+1	cancel	reminder/cancel_reminder	O
+2	my	reminder/cancel_reminder	B-reference
+3	reminders	reminder/cancel_reminder	O
+4	for	reminder/cancel_reminder	O
+5	next	reminder/cancel_reminder	B-datetime
+6	week	reminder/cancel_reminder	I-datetime
+
+# text: remind me to take dog to groomer tuesday at 3pm
+# intent: reminder/set_reminder
+# slots: 13:32:reminder/todo,33:47:datetime
+1	remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	take	reminder/set_reminder	B-reminder/todo
+5	dog	reminder/set_reminder	I-reminder/todo
+6	to	reminder/set_reminder	I-reminder/todo
+7	groomer	reminder/set_reminder	I-reminder/todo
+8	tuesday	reminder/set_reminder	B-datetime
+9	at	reminder/set_reminder	I-datetime
+10	3pm	reminder/set_reminder	I-datetime
+
+# text: Remind me to pick up flowers for Jen for our anniversary on the 28th.
+# intent: reminder/set_reminder
+# slots: 13:56:reminder/todo,57:68:datetime
+1	Remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	pick	reminder/set_reminder	B-reminder/todo
+5	up	reminder/set_reminder	I-reminder/todo
+6	flowers	reminder/set_reminder	I-reminder/todo
+7	for	reminder/set_reminder	I-reminder/todo
+8	Jen	reminder/set_reminder	I-reminder/todo
+9	for	reminder/set_reminder	I-reminder/todo
+10	our	reminder/set_reminder	I-reminder/todo
+11	anniversary	reminder/set_reminder	I-reminder/todo
+12	on	reminder/set_reminder	O
+13	the	reminder/set_reminder	O
+14	28th	reminder/set_reminder	B-datetime
+15	.	reminder/set_reminder	O
+
+# text: What's the weather like today?
+# intent: weather/find
+# slots: 11:18:weather/noun,24:29:datetime
+1	What's	weather/find	O
+2	the	weather/find	O
+3	weather	weather/find	O
+4	like	weather/find	O
+5	today	weather/find	B-datetime
+6	?	weather/find	O
+
+# text: Remind me to make a doctor's appointment tomorrow.
+# intent: reminder/set_reminder
+# slots: 13:40:reminder/todo,41:49:datetime
+1	Remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	make	reminder/set_reminder	B-reminder/todo
+5	a	reminder/set_reminder	I-reminder/todo
+6	doctor's	reminder/set_reminder	I-reminder/todo
+7	appointment	reminder/set_reminder	I-reminder/todo
+8	tomorrow	reminder/set_reminder	B-datetime
+9	.	reminder/set_reminder	O
+
+# text: turn off all alarms
+# intent: alarm/cancel_alarm
+# slots:
+1	turn	alarm/cancel_alarm	O
+2	off	alarm/cancel_alarm	O
+3	all	alarm/cancel_alarm	B-reference
+4	alarms	alarm/cancel_alarm	O
+
+# text: Should I bring a raincoat?
+# intent: weather/find
+# slots: 17:25:weather/attribute
+1	Should	weather/find	O
+2	I	weather/find	O
+3	bring	weather/find	O
+4	a	weather/find	O
+5	raincoat	weather/find	B-weather/attribute
+6	?	weather/find	O
+
+# text: What is the severe weather forecast?
+# intent: weather/find
+# slots: 19:35:weather/noun
+1	What	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	severe	weather/find	B-weather/attribute
+5	weather	weather/find	O
+6	forecast	weather/find	O
+7	?	weather/find	O
+
+# text: remind me of next weeks doctor appointment
+# intent: reminder/set_reminder
+# slots: 0:6:reminder/noun,13:23:datetime,24:42:reminder/todo
+1	remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	of	reminder/set_reminder	O
+4	next	reminder/set_reminder	B-datetime
+5	weeks	reminder/set_reminder	I-datetime
+6	doctor	reminder/set_reminder	B-reminder/todo
+7	appointment	reminder/set_reminder	I-reminder/todo
+
+# text: set reminder to go to the store at 8am
+# intent: reminder/set_reminder
+# slots: 4:12:reminder/noun,16:31:reminder/todo,32:38:datetime
+1	set	reminder/set_reminder	O
+2	reminder	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	go	reminder/set_reminder	B-reminder/todo
+5	to	reminder/set_reminder	I-reminder/todo
+6	the	reminder/set_reminder	I-reminder/todo
+7	store	reminder/set_reminder	I-reminder/todo
+8	at	reminder/set_reminder	O
+9	8am	reminder/set_reminder	B-datetime
+
+# text: Set reminder to get the dry cleaning.
+# intent: reminder/set_reminder
+# slots: 4:12:reminder/noun,16:36:reminder/todo
+1	Set	reminder/set_reminder	O
+2	reminder	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	get	reminder/set_reminder	B-reminder/todo
+5	the	reminder/set_reminder	I-reminder/todo
+6	dry	reminder/set_reminder	I-reminder/todo
+7	cleaning	reminder/set_reminder	I-reminder/todo
+8	.	reminder/set_reminder	O
+
+# text: when is it cool down
+# intent: weather/find
+# slots: 11:15:weather/attribute
+1	when	weather/find	O
+2	is	weather/find	O
+3	it	weather/find	O
+4	cool	weather/find	B-weather/attribute
+5	down	weather/find	O
