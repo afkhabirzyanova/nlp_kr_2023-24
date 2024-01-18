@@ -28,15 +28,16 @@
 5  төшер	reminder/set_reminder  O
 
 # text EN: cancel my reminders for next week
-# text TAT: киләсе атнада минем искәртмәләрне гамәлдән чыгар
+# text TAT: киләсе атнада минем искә төшерүләрне гамәлдән чыгар
 # intent: reminder/cancel_reminder
 # slots:
-1	cancel	reminder/cancel_reminder	O
-2	my	reminder/cancel_reminder	B-reference
-3	reminders	reminder/cancel_reminder	O
-4	for	reminder/cancel_reminder	O
-5	next	reminder/cancel_reminder	B-datetime
-6	week	reminder/cancel_reminder	I-datetime
+1  киләсе  reminder/cancel_reminder  B-datetime
+2  атнада  reminder/cancel_reminder  I-datetime
+3  минем	reminder/cancel_reminder  B-reference
+4  искә  reminder/cancel_reminder  O
+5  төшерүләрне	reminder/cancel_reminder  O
+6  гамәлдән  reminder/cancel_reminder  O
+7  чыгар  reminder/cancel_reminder  O
 
 # text EN: remind me to take dog to groomer tuesday at 3pm
 # intent: reminder/set_reminder
