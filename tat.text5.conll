@@ -20,12 +20,13 @@
 # text TAT: иртәгә минем иртәнге уяткыч сәгатьне гамәлдән чыгар
 # intent: alarm/cancel_alarm
 # slots:
-1	cancel	alarm/cancel_alarm	O
-2	my	alarm/cancel_alarm	B-reference
-3	alarm	alarm/cancel_alarm	O
-4	for	alarm/cancel_alarm	O
-5	tomorrow	alarm/cancel_alarm	B-datetime
-6	morning	alarm/cancel_alarm	I-datetime
+1  иртәгә  alarm/cancel_alarm  B-datetime
+2  минем	alarm/cancel_alarm	B-reference
+3  иртәнге	alarm/cancel_alarm	I-datetime
+4  уяткыч  alarm/cancel_alarm  O
+5  сәгатьне  alarm/cancel_alarm  O
+6  гамәлдән  alarm/cancel_alarm  O
+7  чыгар  alarm/cancel_alarm	O
 
 # text EN: Set the alarm for noon on Mondays only.
 # intent: alarm/set_alarm
