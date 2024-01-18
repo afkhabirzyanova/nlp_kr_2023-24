@@ -40,18 +40,22 @@
 7  чыгар  reminder/cancel_reminder  O
 
 # text EN: remind me to take dog to groomer tuesday at 3pm
+# text TAT: исегезгә төшерегез миңа этне сишәмбе көнне көндезге сәгать 3 грумер янына алып барырга
 # intent: reminder/set_reminder
-# slots: 13:32:reminder/todo,33:47:datetime
-1	remind	reminder/set_reminder	O
-2	me	reminder/set_reminder	O
-3	to	reminder/set_reminder	O
-4	take	reminder/set_reminder	B-reminder/todo
-5	dog	reminder/set_reminder	I-reminder/todo
-6	to	reminder/set_reminder	I-reminder/todo
-7	groomer	reminder/set_reminder	I-reminder/todo
-8	tuesday	reminder/set_reminder	B-datetime
-9	at	reminder/set_reminder	I-datetime
-10	3pm	reminder/set_reminder	I-datetime
+# slots:
+1  исегезгә  reminder/set_reminder  O
+2  төшерегез	reminder/set_reminder  O
+3  миңа  reminder/set_reminder  O
+4  этне  reminder/set_reminder  B-reminder/todo
+5  сишәмбе	reminder/set_reminder  B-datetime
+6  көнне	reminder/set_reminder  I-datetime
+7  көндезге  reminder/set_reminder  I-datetime
+8  сәгать  reminder/set_reminder  I-datetime
+9  3  reminder/set_reminder  I-datetime
+10	грумер	reminder/set_reminder  I-reminder/todo
+11  янына  reminder/set_reminder	I-reminder/todo
+12  алып  reminder/set_reminder  I-reminder/todo
+13  барырга  reminder/set_reminder	I-reminder/todo
 
 # text EN: Remind me to pick up flowers for Jen for our anniversary on the 28th.
 # intent: reminder/set_reminder
