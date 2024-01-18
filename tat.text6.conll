@@ -105,14 +105,17 @@
 4  сүндер  alarm/cancel_alarm  O
 
 # text EN: Should I bring a raincoat?
+# text TAT: Мин үзем белән яңгыр чапаны алырга тиешме?
 # intent: weather/find
-# slots: 17:25:weather/attribute
-1	Should	weather/find	O
-2	I	weather/find	O
-3	bring	weather/find	O
-4	a	weather/find	O
-5	raincoat	weather/find	B-weather/attribute
-6	?	weather/find	O
+# slots:
+1  Мин	weather/find	O
+2  үзем  weather/find  O
+3  белән	weather/find	O
+4  яңгыр	weather/find	B-weather/attribute
+5  чапаны  weather/find  I-weather/attribute
+6  алырга  weather/find  O
+7  тиешме  weather/find  O
+8  ?  weather/find	O
 
 # text EN: What is the severe weather forecast?
 # intent: weather/find
