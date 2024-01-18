@@ -118,15 +118,15 @@
 8  ?  weather/find	O
 
 # text EN: What is the severe weather forecast?
+# text TAT: Каты һава торышы фаразы нинди?
 # intent: weather/find
-# slots: 19:35:weather/noun
-1	What	weather/find	O
-2	is	weather/find	O
-3	the	weather/find	O
-4	severe	weather/find	B-weather/attribute
-5	weather	weather/find	O
-6	forecast	weather/find	O
-7	?	weather/find	O
+# slots:
+1  Каты  weather/find  B-weather/attribute
+2  һава  weather/find  O
+3  торышы  weather/find  O
+4  фаразы  weather/find  O
+5  нинди	weather/find	O
+6  ?	weather/find	O
 
 # text EN: remind me of next weeks doctor appointment
 # intent: reminder/set_reminder
