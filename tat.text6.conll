@@ -7,22 +7,15 @@
 3  булырмы	weather/find	O
 4  ?	weather/find	O
 
-# text EN: Is it going to rain today?
-# text TAT: Бүген яңгыр булырмы?
-# intent: weather/find
-# slots:
-1  Бүген  reminder/show_reminders  B-datetime
-2  яңгыр  reminder/show_reminders  B-weather/attribute
-3  булырмы  reminder/show_reminders  O
-4  ?  reminder/show_reminders  O
-
 # text EN: Cancel the next alarm
+# text TAT: Киләсе уяткыч сәгатьне гамәлдән чыгар
 # intent: alarm/cancel_alarm
 # slots:
-1	Cancel	alarm/cancel_alarm	O
-2	the	alarm/cancel_alarm	O
-3	next	alarm/cancel_alarm	B-reference
-4	alarm	alarm/cancel_alarm	O
+1  Киләсе  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьне  alarm/cancel_alarm  O
+4  гамәлдән  alarm/cancel_alarm  O
+5  чыгар  alarm/cancel_alarm	O
 
 # text EN: Remind me to go to grocery store today
 # intent: reminder/set_reminder
