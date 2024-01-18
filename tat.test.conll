@@ -244,12 +244,12 @@
 3  күрсәт  reminder/show_reminders  O
 
 # text EN: Show all alarms
-# text TAT: Барлык хәбәрләмәне күрсәт
+# text TAT: Барлык уяткыч сәгатьләрне күрсәт
 # intent: alarm/show_alarms
 # slots:
 1  Барлык  reminder/show_reminders  B-reference
 2  уяткыч  reminder/show_reminders  O
-3  сәгатьне  reminder/show_reminders  O
+3  сәгатьләрне  reminder/show_reminders  O
 4  күрсәт  reminder/show_reminders  O
 
 # text EN: Remind me to talk to Ben about Georgia
