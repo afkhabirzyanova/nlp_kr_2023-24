@@ -18,16 +18,14 @@
 5  чыгар  alarm/cancel_alarm	O
 
 # text EN: Remind me to go to grocery store today
+# text TAT: Бүген кибеткә барырга искә төшер
 # intent: reminder/set_reminder
-# slots: 13:32:reminder/todo,33:38:datetime
-1	Remind	reminder/set_reminder	O
-2	me	reminder/set_reminder	O
-3	to	reminder/set_reminder	O
-4	go	reminder/set_reminder	B-reminder/todo
-5	to	reminder/set_reminder	I-reminder/todo
-6	grocery	reminder/set_reminder	I-reminder/todo
-7	store	reminder/set_reminder	I-reminder/todo
-8	today	reminder/set_reminder	B-datetime
+# slots:
+1  Бүген	reminder/set_reminder  B-datetime
+2  кибеткә	reminder/set_reminder  B-reminder/todo
+3  барырга	reminder/set_reminder  I-reminder/todo
+4  искә  reminder/set_reminder  O
+5  төшер	reminder/set_reminder  O
 
 # text EN: cancel my reminders for next week
 # intent: reminder/cancel_reminder
