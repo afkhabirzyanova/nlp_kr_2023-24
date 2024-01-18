@@ -78,10 +78,12 @@
 4  күрсәт  alarm/show_alarms	O
 
 # text EN: dismiss alarm
+# text TAT: уяткыч сәгатьне сүндер
 # intent: alarm/cancel_alarm
 # slots:
-1	dismiss	alarm/cancel_alarm	O
-2	alarm	alarm/cancel_alarm	O
+1  уяткыч  alarm/cancel_alarm  O
+2  сәгатьне  alarm/cancel_alarm  O
+3  сүндер  alarm/cancel_alarm  O
 
 # text EN: What is the temperature today?
 # intent: weather/find
@@ -94,10 +96,12 @@
 6	?	weather/find	O
 
 # text EN: dismiss alarm
+# text TAT: уяткыч сәгатьне сүндер
 # intent: alarm/cancel_alarm
 # slots:
-1	dismiss	alarm/cancel_alarm	O
-2	alarm	alarm/cancel_alarm	O
+1  уяткыч  alarm/cancel_alarm  O
+2  сәгатьне  alarm/cancel_alarm  O
+3  сүндер  alarm/cancel_alarm  O
 
 # text EN: show all alarms
 # text TAT: барлык уяткыч сәгатьләрне күрсәт
