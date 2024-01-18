@@ -16,15 +16,7 @@
 2  кар	weather/find  B-weather/attribute
 3  булырмы	weather/find	O
 
-# text EN: will it snow today
-# text TAT: бүген кар булырмы
-# intent: weather/find
-# slots:
-1  бүген  weather/find  B-datetime
-2  кар  weather/find  B-weather/attribute
-3  булырмы  weather/find  O
-
-# text: cancel my alarm for tomorrow morning
+# text EN: cancel my alarm for tomorrow morning
 # intent: alarm/cancel_alarm
 # slots: 16:36:datetime
 1	cancel	alarm/cancel_alarm	O
@@ -34,7 +26,7 @@
 5	tomorrow	alarm/cancel_alarm	B-datetime
 6	morning	alarm/cancel_alarm	I-datetime
 
-# text: Set the alarm for noon on Mondays only.
+# text EN: Set the alarm for noon on Mondays only.
 # intent: alarm/set_alarm
 # slots: 14:33:datetime
 1	Set	alarm/set_alarm	O
@@ -47,7 +39,7 @@
 8	only	alarm/set_alarm	O
 9	.	alarm/set_alarm	O
 
-# text: How hot will it get today?
+# text EN: How hot will it get today?
 # intent: weather/find
 # slots: 4:7:weather/attribute,20:25:datetime
 1	How	weather/find	O
@@ -58,7 +50,7 @@
 6	today	weather/find	B-datetime
 7	?	weather/find	O
 
-# text: remind me to set alarms for morning
+# text EN: remind me to set alarms for morning
 # intent: reminder/set_reminder
 # slots: 13:23:reminder/todo,24:35:datetime
 1	remind	reminder/set_reminder	O
@@ -69,27 +61,37 @@
 6	for	reminder/set_reminder	O
 7	morning	reminder/set_reminder	B-datetime
 
-# text: delete all alarms
+# text EN: delete all alarms
 # intent: alarm/cancel_alarm
 # slots:
 1	delete	alarm/cancel_alarm	O
 2	all	alarm/cancel_alarm	B-reference
 3	alarms	alarm/cancel_alarm	O
 
-# text: show my alarms
+# text EN: show my alarms
+# text TAT: Минем барлык хәбәрләмәне күрсәт
 # intent: alarm/show_alarms
 # slots:
 1	show	alarm/show_alarms	O
 2	my	alarm/show_alarms	B-reference
 3	alarms	alarm/show_alarms	O
 
-# text: dismiss alarm
+# text EN: Show all alarms
+# text TAT: Минем барлык хәбәрләмәне күрсәт
+# intent: alarm/show_alarms
+# slots:
+1  Барлык  reminder/show_reminders  B-reference
+2  уяткыч  reminder/show_reminders  O
+3  сәгатьне  reminder/show_reminders  O
+4  күрсәт  reminder/show_reminders  O
+
+# text EN: dismiss alarm
 # intent: alarm/cancel_alarm
 # slots:
 1	dismiss	alarm/cancel_alarm	O
 2	alarm	alarm/cancel_alarm	O
 
-# text: What is the temperature today?
+# text EN: What is the temperature today?
 # intent: weather/find
 # slots: 12:23:weather/noun,24:29:datetime
 1	What	weather/find	O
@@ -99,20 +101,20 @@
 5	today	weather/find	B-datetime
 6	?	weather/find	O
 
-# text: dismiss alarm
+# text EN: dismiss alarm
 # intent: alarm/cancel_alarm
 # slots:
 1	dismiss	alarm/cancel_alarm	O
 2	alarm	alarm/cancel_alarm	O
 
-# text: show all alarms
+# text EN: show all alarms
 # intent: alarm/show_alarms
 # slots:
 1	show	alarm/show_alarms	O
 2	all	alarm/show_alarms	B-reference
 3	alarms	alarm/show_alarms	O
 
-# text: set alarm for every 30 minutes
+# text EN: set alarm for every 30 minutes
 # intent: alarm/set_alarm
 # slots: 10:30:datetime
 1	set	alarm/set_alarm	O
@@ -122,7 +124,7 @@
 5	30	alarm/set_alarm	I-recurring_datetime
 6	minutes	alarm/set_alarm	I-recurring_datetime
 
-# text: What is the temperature going to be today?
+# text EN: What is the temperature going to be today?
 # intent: weather/find
 # slots: 12:23:weather/noun,36:41:datetime
 1	What	weather/find	O
@@ -135,7 +137,7 @@
 8	today	weather/find	B-datetime
 9	?	weather/find	O
 
-# text: Is it going to be hot today?
+# text EN: Is it going to be hot today?
 # intent: weather/find
 # slots: 18:21:weather/attribute,22:27:datetime
 1	Is	weather/find	O
