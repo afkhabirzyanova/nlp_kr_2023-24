@@ -83,17 +83,16 @@
 5  ?  weather/find	O
 
 # text EN: Remind me to make a doctor's appointment tomorrow.
+# text TAT: Иртәгә табибка язылырга миңа искә төшер.
 # intent: reminder/set_reminder
-# slots: 13:40:reminder/todo,41:49:datetime
-1	Remind	reminder/set_reminder	O
-2	me	reminder/set_reminder	O
-3	to	reminder/set_reminder	O
-4	make	reminder/set_reminder	B-reminder/todo
-5	a	reminder/set_reminder	I-reminder/todo
-6	doctor's	reminder/set_reminder	I-reminder/todo
-7	appointment	reminder/set_reminder	I-reminder/todo
-8	tomorrow	reminder/set_reminder	B-datetime
-9	.	reminder/set_reminder	O
+# slots:
+1  Иртәгә  reminder/set_reminder  B-datetime
+2  табибка	reminder/set_reminder  B-reminder/todo
+3  язылырга  reminder/set_reminder  I-reminder/todo
+4  миңа  reminder/set_reminder  O
+5  искә  reminder/set_reminder  O
+6  төшер	reminder/set_reminder  O
+7  .	reminder/set_reminder  O
 
 # text EN: turn off all alarms
 # text TAT: барлык уяткыч сәгатьләрне сүндер
