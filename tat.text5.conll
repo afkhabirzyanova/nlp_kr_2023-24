@@ -8,13 +8,21 @@
 4  6  alarm/set_alarm  I-datetime
 5  куй  alarm/set_alarm  O
 
-# text: will it snow tomorrow
+# text EN: will it snow tomorrow
+# text TAT: иртәгә кар булырмы
 # intent: weather/find
-# slots: 8:12:weather/attribute,13:21:datetime
-1	will	weather/find	O
-2	it	weather/find	O
-3	snow	weather/find	B-weather/attribute
-4	tomorrow	weather/find	B-datetime
+# slots:
+1  иртәгә  weather/find  B-datetime
+2  кар	weather/find  B-weather/attribute
+3  булырмы	weather/find	O
+
+# text EN: will it snow today
+# text TAT: бүген кар булырмы
+# intent: weather/find
+# slots:
+1  бүген  weather/find  B-datetime
+2  кар  weather/find  B-weather/attribute
+3  булырмы  weather/find  O
 
 # text: cancel my alarm for tomorrow morning
 # intent: alarm/cancel_alarm
