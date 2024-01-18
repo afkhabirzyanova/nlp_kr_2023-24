@@ -128,17 +128,14 @@
 6  куй  alarm/set_alarm  O
 
 # text EN: What is the temperature going to be today?
+# text TAT: Бүген нинди температура булачак?
 # intent: weather/find
-# slots: 12:23:weather/noun,36:41:datetime
-1	What	weather/find	O
-2	is	weather/find	O
-3	the	weather/find	O
-4	temperature	weather/find	B-weather/attribute
-5	going	weather/find	O
-6	to	weather/find	O
-7	be	weather/find	O
-8	today	weather/find	B-datetime
-9	?	weather/find	O
+# slots:
+1  Бүген	weather/find	B-datetime
+2  нинди	weather/find	O
+3  температура	weather/find	B-weather/attribute
+4  булачак	weather/find	O
+9  ?	weather/find	O
 
 # text EN: Is it going to be hot today?
 # text TAT: Бүген кызу булырмы?
