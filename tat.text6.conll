@@ -58,23 +58,19 @@
 13  барырга  reminder/set_reminder	I-reminder/todo
 
 # text EN: Remind me to pick up flowers for Jen for our anniversary on the 28th.
+# text TAT: Исегезгә төшерегез, 28 көнне Дженга чәчәкләр сатып алыгыз.
 # intent: reminder/set_reminder
-# slots: 13:56:reminder/todo,57:68:datetime
-1	Remind	reminder/set_reminder	O
-2	me	reminder/set_reminder	O
-3	to	reminder/set_reminder	O
-4	pick	reminder/set_reminder	B-reminder/todo
-5	up	reminder/set_reminder	I-reminder/todo
-6	flowers	reminder/set_reminder	I-reminder/todo
-7	for	reminder/set_reminder	I-reminder/todo
-8	Jen	reminder/set_reminder	I-reminder/todo
-9	for	reminder/set_reminder	I-reminder/todo
-10	our	reminder/set_reminder	I-reminder/todo
-11	anniversary	reminder/set_reminder	I-reminder/todo
-12	on	reminder/set_reminder	O
-13	the	reminder/set_reminder	O
-14	28th	reminder/set_reminder	B-datetime
-15	.	reminder/set_reminder	O
+# slots:
+1  Исегезгә  reminder/set_reminder  O
+2  төшерегез	reminder/set_reminder  O
+3  ,  reminder/set_reminder  O
+4  28  reminder/set_reminder  B-datetime
+5  көнне	reminder/set_reminder  I-datetime
+6  Дженга  reminder/set_reminder  B-reminder/todo
+7  чәчәкләр  reminder/set_reminder  I-reminder/todo
+8  сатып	reminder/set_reminder  I-reminder/todo
+9  алыгыз  reminder/set_reminder  I-reminder/todo
+10  .  reminder/set_reminder  O
 
 # text EN: What's the weather like today?
 # text TAT: Бүген һава торышы нинди?
