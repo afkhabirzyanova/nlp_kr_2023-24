@@ -90,15 +90,13 @@
 # text TAT: Уяткыч сәгатьне бер сәгать алга куй.
 # intent: alarm/set_alarm
 # slots:
-1	Set	alarm/set_alarm	O
-2	an	alarm/set_alarm	O
-3	alarm	alarm/set_alarm	O
-4	for	alarm/set_alarm	O
-5	an	alarm/set_alarm	B-datetime
-6	hour	alarm/set_alarm	I-datetime
-7	from	alarm/set_alarm	I-datetime
-8	now	alarm/set_alarm	I-datetime
-9	.	alarm/set_alarm	O
+1  Уяткыч  alarm/set_alarm	O
+2  сәгатьне  alarm/set_alarm	O
+3  бер	alarm/set_alarm  B-datetime
+4  сәгать  alarm/set_alarm  I-datetime
+5  алга  alarm/set_alarm  I-datetime
+6  куй  alarm/set_alarm  O
+7  .  alarm/set_alarm  O
 
 # text EN: cancel all alarms
 # text TAT: барлык уяткыч сәгатьләрне гамәлдән чыгар
