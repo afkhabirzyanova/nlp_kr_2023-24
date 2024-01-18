@@ -29,28 +29,27 @@
 7  чыгар  alarm/cancel_alarm	O
 
 # text EN: Set the alarm for noon on Mondays only.
+# text TAT: Дүшәмбе көнне төшке ашка уяткыч сәгать куй.
 # intent: alarm/set_alarm
-# slots: 14:33:datetime
-1	Set	alarm/set_alarm	O
-2	the	alarm/set_alarm	O
-3	alarm	alarm/set_alarm	O
-4	for	alarm/set_alarm	O
-5	noon	alarm/set_alarm	B-recurring_datetime
-6	on	alarm/set_alarm	I-recurring_datetime
-7	Mondays	alarm/set_alarm	I-recurring_datetime
-8	only	alarm/set_alarm	O
-9	.	alarm/set_alarm	O
+# slots:
+1  Дүшәмбе	alarm/set_alarm  B-recurring_datetime
+2  көнне	alarm/set_alarm  I-recurring_datetime
+3  төшке	alarm/set_alarm  I-recurring_datetime
+4  ашка  alarm/set_alarm  I-recurring_datetime
+5  уяткыч  alarm/set_alarm	O
+6  сәгать  alarm/set_alarm	O
+7  куй	alarm/set_alarm  O
+8  .  alarm/set_alarm  O
 
 # text EN: How hot will it get today?
+# text TAT: Бүген нинди эссе булачак?
 # intent: weather/find
-# slots: 4:7:weather/attribute,20:25:datetime
-1	How	weather/find	O
-2	hot	weather/find	B-weather/attribute
-3	will	weather/find	O
-4	it	weather/find	O
-5	get	weather/find	O
-6	today	weather/find	B-datetime
-7	?	weather/find	O
+# slots:
+1  Бүген	weather/find	B-datetime
+2  нинди	weather/find	O
+3  эссе  weather/find  B-weather/attribute
+4  булачак	weather/find	O
+5  ?  weather/find	O
 
 # text EN: remind me to set alarms for morning
 # intent: reminder/set_reminder
