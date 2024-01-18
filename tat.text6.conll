@@ -153,16 +153,15 @@
 7	төшер	reminder/set_reminder	O
 
 # text EN: Set reminder to get the dry cleaning.
+# text TAT: Биреге химчисткага искә төшерү яса.
 # intent: reminder/set_reminder
-# slots: 4:12:reminder/noun,16:36:reminder/todo
-1	Set	reminder/set_reminder	O
-2	reminder	reminder/set_reminder	O
-3	to	reminder/set_reminder	O
-4	get	reminder/set_reminder	B-reminder/todo
-5	the	reminder/set_reminder	I-reminder/todo
-6	dry	reminder/set_reminder	I-reminder/todo
-7	cleaning	reminder/set_reminder	I-reminder/todo
-8	.	reminder/set_reminder	O
+# slots:
+1	Биреге	reminder/set_reminder  B-reminder/todo
+2	химчисткага	reminder/set_reminder  I-reminder/todo
+3	искә	reminder/set_reminder  O
+4	төшерү	reminder/set_reminder  O
+5	яса	reminder/set_reminder  O
+6	.	reminder/set_reminder	O
 
 # text EN: when is it cool down
 # text TAT: кайчан ул суына
