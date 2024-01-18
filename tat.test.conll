@@ -389,3 +389,988 @@
 2  минем  reminder/show_reminders  B-reference
 3  хәтерләтүләрне  reminder/show_reminders  O
 4  күрсәт  reminder/show_reminders  O
+
+# text EN: How much time is left on alarm
+# text TAT: Уяткыч сәгать эшләтеп җибәргәнче күпме вакыт калды
+# intent: alarm/time_left_on_alarm
+# slots:
+1  Уяткыч  alarm/time_left_on_alarm  O
+2  сәгать  alarm/time_left_on_alarm  O
+3  эшләтеп	alarm/time_left_on_alarm	O
+4  җибәргәнче  alarm/time_left_on_alarm  O
+5  күпме	alarm/time_left_on_alarm	O
+6  вакыт	alarm/time_left_on_alarm	O
+7  калды	alarm/time_left_on_alarm	O
+
+# text EN: What are my reminders?
+# text TAT: Минем нинди искә төшерүләрем бар?
+# intent:  reminder/show_reminders
+# slots:
+1  Минем	reminder/show_reminders  B-reference
+2  нинди	reminder/show_reminders  O
+3  искә  reminder/show_reminders  O
+4  төшерүләрем	reminder/show_reminders  O
+5  бар	reminder/show_reminders  O
+6  ?  reminder/show_reminders  O
+
+# text EN: Set an alarm for 8am daily
+# text TAT: Уяткыч сәгатьне көн саен иртәнге 8 яса
+# intent: alarm/set_alarm
+# slots:
+1  Уяткыч  alarm/set_alarm  O
+2  сәгатьне  alarm/set_alarm  O
+3  көн	alarm/set_alarm  O
+4  саен  alarm/set_alarm	O
+5  иртәнге  alarm/set_alarm  B-recurring_datetime
+6  8  alarm/set_alarm  I-recurring_datetime
+7  яса	alarm/set_alarm  I-recurring_datetime
+
+# text EN: can you show me the alarms?
+# text TAT: син миңа уяткыч сәгатьләрне күрсәтә аласыңмы?
+# intent: alarm/show_alarms
+# slots:
+1  син	alarm/show_alarms  O
+2  миңа  alarm/show_alarms  O
+3  уяткыч  alarm/show_alarms  O
+4  сәгатьләрне	alarm/show_alarms  O
+5  күрсәтә	alarm/show_alarms  O
+6  аласыңмы  alarm/show_alarms  O
+7  ?	alarm/show_alarms  O
+
+# text EN: Is Disney world expecting storms today?
+# text TAT: Бүген Диснейуорлд бураннар көтәме?
+# intent: weather/find
+# slots:
+1  Бүген  weather/find	B-datetime
+2  Диснейуорлд  weather/find	B-location
+3  бураннар  weather/find  B-weather/attribute
+4  көтәме  weather/find  O
+5  ?	weather/find	O
+
+# text EN: will it snow today
+# text TAT: бүген кар булырмы
+# intent: weather/find
+# slots:
+1  бүген	weather/find	B-datetime
+2  кар	weather/find	B-weather/attribute
+3  булырмы	weather/find	O
+
+# text EN: show all alarms
+# text TAT: барлык уяткыч сәгатьне күрсәт
+# intent: alarm/show_alarms
+# slots:
+1  барлык  reminder/show_reminders  B-reference
+2  уяткыч  reminder/show_reminders  O
+3  сәгатьне  reminder/show_reminders  O
+4  күрсәт  reminder/show_reminders  O
+
+# text EN: Is it cold today?
+# text TAT: Бүген салкынмы?
+# intent: weather/find
+# slots:
+1  Бүген	weather/find	B-datetime
+2  салкынмы	weather/find	B-weather/attribute
+3  ?	weather/find	O
+
+# text EN: Please cancel the alarm for Thursday morning.
+# text TAT: Зинһар, пәнҗешәмбе иртәсендә уяткыч сәгатьне гамәлдән чыгарыгыз.
+# intent: alarm/cancel_alarm
+# slots:
+1  Зинһар  alarm/cancel_alarm  O
+2  ,  alarm/cancel_alarm	O
+2  пәнҗешәмбе  alarm/cancel_alarm  B-datetime
+3  иртәсендә	alarm/cancel_alarm	I-datetime
+4  уяткыч  alarm/cancel_alarm  O
+5  сәгатьне  alarm/cancel_alarm  O
+6  гамәлдән  alarm/cancel_alarm  B-datetime
+7  чыгарыгыз	alarm/cancel_alarm	I-datetime
+8  .	alarm/cancel_alarm	O 
+
+# text EN: Is it going to rain today?
+# text TAT: Бүген яңгыр булырмы?
+# intent: weather/find
+# slots:
+1  Бүген  reminder/show_reminders  B-datetime
+2  яңгыр  reminder/show_reminders  B-weather/attribute
+3  булырмы  reminder/show_reminders  O
+4  ?  reminder/show_reminders  O
+
+# text EN: is it snowing in canada
+# text TAT: канадада кар явармы
+# intent: weather/find
+# slots:
+1  канадада	weather/find	B-location
+2  кар  weather/find	B-weather/attribute
+3  явармы	weather/find	I-weather/attribute
+
+# text EN: What will the high be today?
+# text TAT: Бүген нинди югары температура булачак?
+# intent: weather/find
+# slots:
+1  Бүген	weather/find	B-datetime
+2  нинди	weather/find	O
+3  югары	weather/find	B-weather/attribute
+4  температура	weather/find	I-weather/attribute
+5  булачак	weather/find	O
+6  ?	weather/find	O
+
+# text EN: Will it snow enough tonight to make travelling hazardous?
+# text TAT: Төнлә шулкадәр кар яуармы ки, сәяхәт куркыныч булыр?
+# intent: weather/find
+# slots:
+1  Төнлә  weather/find	B-datetime
+2  шулкадәр  weather/find  O
+3  кар  weather/find	B-weather/attribute
+4  яуармы  weather/find	I-weather/attribute
+5  ки  weather/find  O
+6  ,  weather/find	O
+7  сәяхәт  weather/find  O
+8  куркыныч  weather/find  O
+9  булыр	weather/find	O
+10  ?  weather/find  O
+
+# text EN: show all reminders
+# text TAT: барлык хәтерләтүләрне  күрсәт
+# intent: reminder/show_reminders
+# slots:
+1  барлык  reminder/show_reminders  B-reference
+2  хәтерләтүләрне  reminder/show_reminders  O
+3  күрсәт  reminder/show_reminders  O
+
+# text EN: delete all alarms
+# text TAT: барлык уяткыч сәгатьне бетер
+# intent: alarm/cancel_alarm
+# slots:
+1  барлык  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьне  alarm/cancel_alarm  O
+4  бетер  alarm/cancel_alarm  O
+
+# text EN: will i need a jacket tomorrow?
+# text TAT: миңа иртәгә куртка кирәкме?
+# intent: weather/find
+# slots:
+1  миңа	weather/find	O
+2  иртәгә	weather/find	B-datetime
+3  куртка	weather/find	B-weather/attribute
+4  кирәкме	weather/find	O
+5  ?	weather/find	O
+
+# text EN: How much time is left on alarm
+# text TAT: Уяткыч сәгать эшләтеп җибәргәнче күпме вакыт калды
+# intent: alarm/time_left_on_alarm
+# slots:
+1  Уяткыч  alarm/time_left_on_alarm  O
+2  сәгать  alarm/time_left_on_alarm  O
+3  эшләтеп	alarm/time_left_on_alarm	O
+4  җибәргәнче  alarm/time_left_on_alarm  O
+5  күпме	alarm/time_left_on_alarm	O
+6  вакыт	alarm/time_left_on_alarm	O
+7  калды	alarm/time_left_on_alarm	O
+
+# text EN: Pause the alarm
+# text TAT: Уяткыч сәгатьне туктат
+# intent: alarm/snooze_alarm
+# slots:
+1  Уяткыч  alarm/snooze_alarm  O
+2  сәгатьне  alarm/snooze_alarm  O
+3  туктат  alarm/snooze_alarm  O
+
+# text EN: Show me all the alarms
+# text TAT: Миңа барлык уяткыч сәгатьләрне күрсәт
+# intent: reminder/show_reminders
+# slots:
+1  Миңа  reminder/show_reminders  O
+2  барлык  reminder/show_reminders  B-reference
+3  уяткыч  reminder/show_reminders  O
+4  сәгатьләрне  reminder/show_reminders  O
+5  күрсәт  reminder/show_reminders  O
+
+# text EN: What's the weather like in yellowstone?
+# text TAT: Йеллоустондагы һава торышы нинди?
+# intent: weather/find
+# slots:
+1  Йеллоустондагы  weather/find  B-location
+2  һава  weather/find  O
+3  торышы  weather/find  O
+4  нинди	weather/find	O
+5  ?	weather/find	O
+
+# text EN: What's the weather like today?
+# text TAT: Бүген һава торышы нинди?
+# intent: weather/find
+# slots:
+1  Бүген	weather/find	B-datetime
+2  һава  weather/find  O
+3  торышы  weather/find  O
+4  нинди  weather/find  O
+5  ?  weather/find  O
+
+# text EN: Delete my reminder for picking up Patrick from school tomorrow.
+# text TAT: Иртәгә Патрикны мәктәптән алырга минем искә төшерүдән алып бетер.
+# intent: reminder/cancel_reminder
+# slots:
+1  Иртәгә  reminder/cancel_reminder  O
+2  Патрикны  reminder/cancel_reminder  B-reference
+3  мәктәптән  reminder/cancel_reminder  O
+4  алырга  reminder/cancel_reminder  O
+5  минем  reminder/cancel_reminder  B-reminder/todo
+6  искә  reminder/cancel_reminder  I-reminder/todo
+7  төшерүдән  reminder/cancel_reminder  I-reminder/todo
+8  алып  reminder/cancel_reminder  I-reminder/todo
+9  бетер  reminder/cancel_reminder  I-reminder/todo
+10  .  reminder/cancel_reminder  O
+
+# text EN: Remind me tomorrow at this time to schedule a doctor appointment
+# text TAT: Миңа иртәгә шул ук вакытта табибка язылырга искә төшер
+# intent: reminder/set_reminder
+# slots:
+1  Миңа  reminder/set_reminder	O
+2  иртәгә  reminder/set_reminder	B-datetime
+3  шул	reminder/set_reminder  I-datetime
+4  ук  reminder/set_reminder	I-datetime
+5  вакытта	reminder/set_reminder  I-datetime
+6  табибка	reminder/set_reminder  B-reminder/todo
+7  язылырга  reminder/set_reminder  I-reminder/todo
+8  искә  reminder/set_reminder  O
+9  төшер  reminder/set_reminder  O
+
+# text EN: Remind me to drop off rent
+# text TAT: Миңа аренда түләргә искә төшер
+# intent: reminder/set_reminder
+# slots:
+1  Миңа  reminder/set_reminder	O
+2  аренда  reminder/set_reminder  B-reminder/todo
+3  түләргә	reminder/set_reminder  I-reminder/todo
+4  искә  reminder/set_reminder	O
+5  төшер  reminder/set_reminder  O
+
+# text EN: when will the rain end?
+# text TAT: яңгыр кайчан бетәчәк?
+# intent: weather/find
+# slots:
+1  яңгыр	weather/find	B-weather/attribute
+2  кайчан  weather/find  O
+3  бетәчәк	weather/find	O
+4  ?	weather/find	O
+
+# text EN: cancel alarms
+# text TAT: уяткыч сәгатьләрне гамәлдән чыгар
+# intent: alarm/cancel_alarm
+# slots:
+1  уяткыч  alarm/cancel_alarm  O
+2  сәгатьләрне	alarm/cancel_alarm	O
+3  гамәлдән  alarm/cancel_alarm  O
+4  чыгар  alarm/cancel_alarm	O
+
+# text EN: Remind me to call Stephanie on Tuesday
+# text TAT: Сишәмбе көнне миңа Стефанига шалтыратырга искә төшер
+# intent: reminder/set_reminder
+# slots:
+1  Сишәмбе  reminder/set_reminder  B-datetime
+2  көнне  reminder/set_reminder  I-datetime
+3  миңа  reminder/set_reminder  O
+4  Стефанига  reminder/set_reminder  B-reminder/todo
+5  шалтыратырга  reminder/set_reminder  I-reminder/todo
+6  искә  reminder/set_reminder  O
+7  төшер  reminder/set_reminder  O
+
+# text EN: show all my alarms
+# text TAT: барлык минем уяткыч сәгатьләрне күрсәт
+# intent: alarm/show_alarms
+# slots:
+1  барлык  alarm/show_alarms  B-reference
+2  минем	alarm/show_alarms  I-reference
+3  уяткыч  alarm/show_alarms	O
+4  сәгатьләрне	alarm/show_alarms  O
+5  күрсәт  alarm/show_alarms	O
+
+# text EN: How hot will it get today?
+# text TAT: Бүген нинди кызу булачак?
+# intent: weather/find
+# slots:
+1  Бүген	weather/find	B-datetime
+2  нинди	weather/find	O
+3  кызу  weather/find  B-weather/attribute
+4  булачак	weather/find	O
+5  ?	weather/find	O
+
+# text EN: Set alarm for 5 pm tonight
+# text TAT: Бүген уяткыч сәгатьне кичке 5 куй
+# intent: alarm/set_alarm
+# slots:
+1  Бүген	alarm/set_alarm  B-datetime
+2  уяткыч  alarm/set_alarm	O
+3  сәгатьне  alarm/set_alarm	O
+4  кичке	alarm/set_alarm  B-datetime
+5	 5  alarm/set_alarm  I-datetime
+6  куй	alarm/set_alarm  O
+
+# text EN: remind me to go to the doctors on august 21st 3 pm
+# text TAT: 21 августта көндезге 3 табибларга барырга искә төшер
+# intent: reminder/set_reminder
+# slots:
+1  21  reminder/set_reminder	O
+2  августта  reminder/set_reminder	O
+3  көндезге  reminder/set_reminder	O
+4  3	reminder/set_reminder	B-reminder/todo
+5  табибларга  reminder/set_reminder	I-reminder/todo
+6  барырга	reminder/set_reminder  I-reminder/todo
+7  искә  reminder/set_reminder	I-reminder/todo
+8  төшер	reminder/set_reminder  O
+
+# text EN: cancel my recurring reminder to take meds daily at 7 am
+# text TAT: көн саен иртәнге сәгать 7 дарулар эчәргә турында минем даими искә төшерүне юкка чыгар 
+# intent: reminder/cancel_reminder
+# slots:
+1  көн	reminder/cancel_reminder	B-recurring_datetime
+2  саен  reminder/cancel_reminder  I-recurring_datetime
+3  иртәнге	reminder/cancel_reminder	I-recurring_datetime
+4  сәгать	reminder/cancel_reminder	I-recurring_datetime
+5  7	reminder/cancel_reminder	I-recurring_datetime
+6  дарулар	reminder/cancel_reminder	B-reminder/todo
+7  эчәргә	reminder/cancel_reminder	I-reminder/todo
+8  турында	reminder/cancel_reminder	O
+9  минем	reminder/cancel_reminder	O
+10  даими	reminder/cancel_reminder	O
+11  искә	reminder/cancel_reminder	O
+12	төшерүне	reminder/cancel_reminder	O
+13  юкка  reminder/cancel_reminder  O
+14  чыгар  reminder/cancel_reminder  O
+
+# text EN: when does the forecast next show rain
+# text TAT: кайчан киләсе тапкыр фараз яңгырны күрсәтә
+# intent: weather/find
+# slots:
+1  кайчан  weather/find  O
+2  киләсе  weather/find  O
+3  тапкыр  weather/find  O
+4  фараз	weather/find	O
+5  яңгырны	weather/find	B-weather/attribute
+6  күрсәтә	weather/find	O
+
+# text EN: What time is my alarm set for tomorrow morning?
+# text TAT: Иртәгә иртә белән минем уяткыч сәгать нинди вакытка куелган?
+# intent: alarm/show_alarms
+# slots:
+1  Иртәгә  alarm/show_alarms	B-datetime
+2  иртә  alarm/show_alarms	I-datetime
+3  белән	alarm/show_alarms  O
+4  минем	alarm/show_alarms  B-reference
+5  уяткыч  alarm/show_alarms	O
+6  сәгать  alarm/show_alarms	O
+7  нинди	alarm/show_alarms  O
+8  вакытка	alarm/show_alarms  O
+9  куелган	alarm/show_alarms  O
+10  ?  alarm/show_alarms  O
+
+# text EN: will it snow today
+# text TAT: бүген кар булырмы
+# intent: weather/find
+# slots:
+1  бүген	weather/find	B-datetime
+2  кар	weather/find	B-weather/attribute
+3  булырмы	weather/find	O
+
+# text EN: Turn off my alarm.
+# text TAT: Минем уяткыч сәгатьне сүндер.
+# intent: alarm/cancel_alarm
+# slots:
+1  Минем	alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьне  alarm/cancel_alarm  O
+4  сүндер  alarm/cancel_alarm  O
+5  .  alarm/cancel_alarm  O
+
+# text EN: Cancel all alarms
+# text TAT: Барлык уяткыч сәгатьләрне гамәлдән чыгар
+# intent: alarm/cancel_alarm
+# slots:
+1  Барлык  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьләрне	alarm/cancel_alarm	O
+4  гамәлдән  alarm/cancel_alarm  O
+5  чыгар  alarm/cancel_alarm  O
+
+# text EN: remind me to buy groceries
+# text TAT: миңа продуктларне алырга искә төшер
+# intent: reminder/set_reminder
+# slots:
+1  миңа  reminder/set_reminder	O
+2  продуктларне  reminder/set_reminder	B-reminder/todo
+3  алырга  reminder/set_reminder	I-reminder/todo
+4  искә  reminder/set_reminder	O
+5  төшер	reminder/set_reminder  O
+
+# text EN: I need an alarm set for a 9 am breakfast
+# text TAT: Миңа иртәнге сәгать 9 иртәнге аш өчен уяткыч сәгать кирәк
+# intent: alarm/set_alarm
+# slots:
+1  Миңа  alarm/set_alarm	O
+2  иртәнге	alarm/set_alarm  B-datetime
+3  сәгать  alarm/set_alarm	I-datetime
+4  9	alarm/set_alarm	I-datetime
+5  иртәнге	alarm/set_alarm  O
+6  аш  alarm/set_alarm	O
+7  өчен  alarm/set_alarm	O
+8  уяткыч  alarm/set_alarm	O
+9  сәгать  alarm/set_alarm	O
+10  кирәк  alarm/set_alarm	O
+
+# text EN: set reminder to watch the Colts one hour before game starts
+# text TAT: уен башланганчы бер сәгать алдан Кольтларны карау турында искә төшерүне куй
+# intent: reminder/set_reminder
+# slots:
+1  уен	reminder/set_reminder  B-datetime
+2  башланганчы	reminder/set_reminder  I-datetime
+3  бер	reminder/set_reminder  I-datetime
+4  сәгать  reminder/set_reminder  I-datetime
+5  алдан	reminder/set_reminder  I-datetime
+6  Кольтларны  reminder/set_reminder  B-reminder/todo
+7  карау  reminder/set_reminder  I-reminder/todo
+8  турында	reminder/set_reminder  O
+9  искә  reminder/set_reminder  O
+10  төшерүне	reminder/set_reminder  O
+11  куй  reminder/set_reminder  O
+
+# text EN: cancel all alarms
+# text TAT: барлык уяткыч сәгатьләрне гамәлдән чыгар
+# intent: alarm/cancel_alarm
+# slots:
+1  барлык  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьләрне	alarm/cancel_alarm	O
+4  гамәлдән  alarm/cancel_alarm  O
+5  чыгар  alarm/cancel_alarm  O
+
+# text EN: Cancel my third reminder on this list.
+# text TAT: Бу исемлектән минем өченче искә төшерүне юкка чыгарыгыз.
+# intent: reminder/cancel_reminder
+# slots:
+1  Бу  reminder/cancel_reminder  O
+2  исемлектән  reminder/cancel_reminder  O
+3  минем	reminder/cancel_reminder  B-reference
+4  өченче  reminder/cancel_reminder  I-reference
+5  искә  reminder/cancel_reminder  O
+6  төшерүне  reminder/cancel_reminder  O
+7  юкка  reminder/cancel_reminder  O
+8  чыгарыгыз  reminder/cancel_reminder  O
+8  .  reminder/cancel_reminder  O
+
+# text EN: set alarm for 6 am
+# text TAT: Уяткыч сәгатьне иртәнге 6 куй
+# intent: alarm/set_alarm
+# slots:
+1  Уяткыч  alarm/set_alarm  O
+2  сәгатьне  alarm/set_alarm  O
+3  иртәнге  alarm/set_alarm  B-datetime
+4  6  alarm/set_alarm  I-datetime
+5  куй  alarm/set_alarm  O
+
+# text EN: Reset this alarm now and start at 2 pm
+# text TAT: Бу уяткыч сәгатьне хәзер ташла һәм көндезге 2 башлап җибәр
+# intent: alarm/cancel_alarm
+# slots:
+1  Бу  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьне  alarm/cancel_alarm  O
+4  хәзер	alarm/cancel_alarm	B-datetime
+5  ташла	alarm/cancel_alarm	O
+6  һәм	alarm/cancel_alarm	O
+7  көндезге  alarm/cancel_alarm  B-datetime
+8  2	alarm/cancel_alarm	I-datetime
+9  башлап  alarm/cancel_alarm  O
+10  җибәр  alarm/cancel_alarm  O
+
+# text EN: Is it going to snow?
+# text TAT: Кар булырмы?
+# intent: weather/find
+# slots:
+1  Кар	weather/find	B-weather/attribute
+2  булырмы	weather/find	O
+3  ?  weather/find	O
+
+# text EN: Remind me to pay rent.
+# text TAT: Миңа фатир өчен түләргә искә төшер.
+# intent: reminder/set_reminder
+# slots:
+1  Миңа  reminder/set_reminder	O
+2  фатир	reminder/set_reminder  B-reminder/todo
+3  өчен  reminder/set_reminder	I-reminder/todo
+4  түләргә	reminder/set_reminder  I-reminder/todo
+5  искә  reminder/set_reminder	O
+6  төшер  reminder/set_reminder  O
+7  .  reminder/set_reminder  O
+
+# text EN: whats the low for tomorrow
+# text TAT: нинди иртәгә иң түбән температура
+# intent: weather/find
+# slots:
+1  нинди  weather/find	O
+2  иртәгә  weather/find  B-datetime
+3  иң  weather/find  B-weather/attribute
+4  түбән  weather/find  I-weather/attribute
+5  температура  weather/find  O
+
+# text EN: Is it going to be sunny today?
+# text TAT: Бүген кояшлы булырмы?
+# intent: weather/find
+# slots:
+1  Бүген	weather/find	B-datetime
+2  кояшлы  weather/find  B-weather/attribute
+3  булырмы	weather/find	O
+4  ?	weather/find	O
+
+# text EN: How many reminders do I have today?
+# text TAT: Бүген минем ничә искә төшерүләрем бар?
+# intent: reminder/show_reminders
+# slots:
+1  Бүген  reminder/show_reminders  B-datetime
+2  минем	reminder/show_reminders  O
+3  ничә  reminder/show_reminders	O
+4  искә  reminder/show_reminders	O
+5  төшерүләрем	reminder/show_reminders  O
+6  бар	reminder/show_reminders  O
+7  ?	reminder/show_reminders  O
+
+# text EN: What are my reminders for tomorrow?
+# text TAT: Минем иртәгә нинди искә төшерүләрем бар?
+# intent: reminder/show_reminders
+# slots:
+1  Минем	reminder/show_reminders  B-reference
+2  иртәгә  reminder/show_reminders	B-datetime
+3  нинди	reminder/show_reminders  O
+4  искә  reminder/show_reminders	O
+5  төшерүләрем	reminder/show_reminders  O
+6  бар	reminder/show_reminders  O
+7  ?	reminder/show_reminders  O
+
+# text EN: Cancel all my reminders.
+# text TAT: Минем барлык искә төшерүләрне гамәлдән чыгар.
+# intent: reminder/cancel_reminder
+# slots:
+1  Минем  reminder/cancel_reminder  B-reference
+2  барлык  reminder/cancel_reminder  I-reference
+3  искә  reminder/cancel_reminder  O
+4  төшерүләрне  reminder/cancel_reminder  O
+5  гамәлдән  reminder/cancel_reminder  O
+6  чыгар  reminder/cancel_reminder  O
+7  .	reminder/cancel_reminder	O
+
+# text EN: set alarm for 6am tomorrow
+# text TAT: иртәге уяткыч сәгатьне иртәнге 6 куй
+# intent: alarm/set_alarm
+# slots:
+1  иртәге  alarm/set_alarm  B-datetime
+2  уяткыч  alarm/set_alarm  O
+3  сәгатьне  alarm/set_alarm  O
+4  иртәнге  alarm/set_alarm  I-datetime
+5  6  alarm/set_alarm  I-datetime
+6  куй  alarm/set_alarm  O
+
+# text EN: Set alarm for 30 minutes
+# text TAT: Уяткыч сәгатьне 30 минутка куй
+# intent: alarm/set_alarm
+# slots:
+1  Уяткыч  alarm/set_alarm	O
+2  сәгатьне  alarm/set_alarm	O
+3  30  alarm/set_alarm	B-datetime
+4  минутка	alarm/set_alarm  I-datetime
+5  куй	alarm/set_alarm  O
+
+# text EN: Set an alarm for an hour from now.
+# text TAT: Уяткыч сәгатьне бер сәгать алга куй.
+# intent: alarm/set_alarm
+# slots:
+1  Уяткыч  alarm/set_alarm	O
+2  сәгатьне  alarm/set_alarm	O
+3  бер	alarm/set_alarm  B-datetime
+4  сәгать  alarm/set_alarm  I-datetime
+5  алга  alarm/set_alarm  I-datetime
+6  куй  alarm/set_alarm  O
+7  .  alarm/set_alarm  O
+
+# text EN: cancel all alarms
+# text TAT: барлык уяткыч сәгатьләрне гамәлдән чыгар
+# intent: alarm/cancel_alarm
+# slots:
+1  барлык  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьләрне	alarm/cancel_alarm	O
+4  гамәлдән  alarm/cancel_alarm  O
+5  чыгар  alarm/cancel_alarm  O
+
+# text EN: weather update Los Angeles
+# text TAT: Лос-Анджелеста һава торышы
+# intent: weather/find
+# slots:
+1  Лос  weather/find  B-location
+2  -  weather/find  I-location
+3  Анджелеста  weather/find  I-location
+4  һава  weather/find  O
+5  торышы  weather/find  O
+
+# text EN: cancel all alarms
+# text TAT: барлык уяткыч сәгатьләрне гамәлдән чыгар
+# intent: alarm/cancel_alarm
+# slots:
+1  барлык  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьләрне	alarm/cancel_alarm	O
+4  гамәлдән  alarm/cancel_alarm  O
+5  чыгар  alarm/cancel_alarm  O
+
+# text EN: How many reminders do I have today?
+# text TAT: Бүген минем ничә искә төшерүләрем бар?
+# intent: reminder/show_reminders
+# slots:
+1  Бүген  reminder/show_reminders  B-datetime
+2  минем	reminder/show_reminders  O
+3  ничә  reminder/show_reminders	O
+4  искә  reminder/show_reminders	O
+5  төшерүләрем	reminder/show_reminders  O
+6  бар	reminder/show_reminders  O
+7  ?	reminder/show_reminders  O
+
+# text EN: Remind me to get paper towels at the store tomorrow
+# text TAT: Миңа иртәгә кибеттә кәгазь сөлгеләр сатып алырга искә төшер
+# intent: reminder/set_reminder
+# slots:
+1	Миңа	reminder/set_reminder  O
+2	иртәгә	reminder/set_reminder  B-datetime
+3	кибеттә  reminder/set_reminder  B-reminder/todo
+4	кәгазь	reminder/set_reminder  I-reminder/todo
+5	сөлгеләр	reminder/set_reminder  I-reminder/todo
+6	сатып  reminder/set_reminder	I-reminder/todo
+7	алырга	reminder/set_reminder  I-reminder/todo
+8	искә	reminder/set_reminder  O
+9	төшер  reminder/set_reminder  O
+
+# text EN: show me all my reminders
+# text TAT: Миңа минем барлык искә төшерүне күрсәт
+# intent: reminder/show_reminders
+# slots:
+1  Миңа  reminder/show_reminders  O
+2  минем  reminder/show_reminders  B-reference
+2  барлык  reminder/show_reminders  I-reference
+3  хәтерләтүләрне  reminder/show_reminders  O
+4  күрсәт  reminder/show_reminders  O
+
+# text EN: set alarm for 6 am
+# text TAT: Уяткыч сәгатьне иртәнге 6 куй
+# intent: alarm/set_alarm
+# slots:
+1  Уяткыч  alarm/set_alarm  O
+2  сәгатьне  alarm/set_alarm  O
+3  иртәнге  alarm/set_alarm  B-datetime
+4  6  alarm/set_alarm  I-datetime
+5  куй  alarm/set_alarm  O
+
+# text EN: will it snow tomorrow
+# text TAT: иртәгә кар булырмы
+# intent: weather/find
+# slots:
+1  иртәгә  weather/find  B-datetime
+2  кар	weather/find  B-weather/attribute
+3  булырмы	weather/find	O
+
+# text EN: cancel my alarm for tomorrow morning
+# text TAT: иртәгә минем иртәнге уяткыч сәгатьне гамәлдән чыгар
+# intent: alarm/cancel_alarm
+# slots:
+1  иртәгә  alarm/cancel_alarm  B-datetime
+2  минем	alarm/cancel_alarm	B-reference
+3  иртәнге	alarm/cancel_alarm	I-datetime
+4  уяткыч  alarm/cancel_alarm  O
+5  сәгатьне  alarm/cancel_alarm  O
+6  гамәлдән  alarm/cancel_alarm  O
+7  чыгар  alarm/cancel_alarm	O
+
+# text EN: Set the alarm for noon on Mondays only.
+# text TAT: Дүшәмбе көнне төшке ашка уяткыч сәгать куй.
+# intent: alarm/set_alarm
+# slots:
+1  Дүшәмбе	alarm/set_alarm  B-recurring_datetime
+2  көнне	alarm/set_alarm  I-recurring_datetime
+3  төшке	alarm/set_alarm  I-recurring_datetime
+4  ашка  alarm/set_alarm  I-recurring_datetime
+5  уяткыч  alarm/set_alarm	O
+6  сәгать  alarm/set_alarm	O
+7  куй	alarm/set_alarm  O
+8  .  alarm/set_alarm  O
+
+# text EN: How hot will it get today?
+# text TAT: Бүген нинди эссе булачак?
+# intent: weather/find
+# slots:
+1  Бүген	weather/find	B-datetime
+2  нинди	weather/find	O
+3  эссе  weather/find  B-weather/attribute
+4  булачак	weather/find	O
+5  ?  weather/find	O
+
+# text EN: remind me to set alarms for morning
+# text TAT: иртәнге уяткыч сәгатьләрне куерга миңа искә төшер
+# intent: reminder/set_reminder
+# slots:
+1  иртәнге	reminder/set_reminder  B-datetime
+2  уяткыч  reminder/set_reminder	B-reminder/todo
+3  сәгатьләрне	reminder/set_reminder  I-reminder/todo
+4  куерга  reminder/set_reminder	I-reminder/todo
+5  миңа  reminder/set_reminder	O
+6  искә  reminder/set_reminder	O
+7  төшер	reminder/set_reminder  O
+
+# text EN: delete all alarms
+# text TAT: барлык уяткыч сәгатьне бетер
+# intent: alarm/cancel_alarm
+# slots:
+1  барлык  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьне  alarm/cancel_alarm  O
+4  бетер  alarm/cancel_alarm  O
+
+# text EN: show my alarms
+# text TAT: Минем уяткыч сәгатьләрне күрсәт
+# intent: alarm/show_alarms
+# slots:
+1  Минем	alarm/show_alarms  B-reference
+2  уяткыч  alarm/show_alarms	O
+3  сәгатьләрне	alarm/show_alarms  O
+4  күрсәт  alarm/show_alarms	O
+
+# text EN: dismiss alarm
+# text TAT: уяткыч сәгатьне сүндер
+# intent: alarm/cancel_alarm
+# slots:
+1  уяткыч  alarm/cancel_alarm  O
+2  сәгатьне  alarm/cancel_alarm  O
+3  сүндер  alarm/cancel_alarm  O
+
+# text EN: What is the temperature today?
+# text TAT: Бүген температура нинди?
+# intent: weather/find
+# slots:
+1  Бүген	weather/find	B-datetime
+2  температура	weather/find	B-weather/attribute
+3  нинди	weather/find	O
+4  ?	weather/find	O
+
+# text EN: dismiss alarm
+# text TAT: уяткыч сәгатьне сүндер
+# intent: alarm/cancel_alarm
+# slots:
+1  уяткыч  alarm/cancel_alarm  O
+2  сәгатьне  alarm/cancel_alarm  O
+3  сүндер  alarm/cancel_alarm  O
+
+# text EN: show all alarms
+# text TAT: барлык уяткыч сәгатьләрне күрсәт
+# intent: alarm/show_alarms
+# slots:
+1  барлык  reminder/show_reminders  B-reference
+2  уяткыч  reminder/show_reminders  O
+3  сәгатьләрне  reminder/show_reminders  O
+4  күрсәт  reminder/show_reminders  O
+
+# text EN: set alarm for every 30 minutes
+# text TAT: Уяткыч сәгатьне 30 минут саен куй
+# intent: alarm/set_alarm
+# slots:
+1  Уяткыч  alarm/set_alarm	O
+2  сәгатьне  alarm/set_alarm	O
+3  30  alarm/set_alarm  B-recurring_datetime
+4  минут	alarm/set_alarm  I-recurring_datetime
+5  саен  alarm/set_alarm	I-recurring_datetime
+6  куй  alarm/set_alarm  O
+
+# text EN: What is the temperature going to be today?
+# text TAT: Бүген нинди температура булачак?
+# intent: weather/find
+# slots:
+1  Бүген	weather/find	B-datetime
+2  нинди	weather/find	O
+3  температура	weather/find	B-weather/attribute
+4  булачак	weather/find	O
+9  ?	weather/find	O
+
+# text EN: Is it going to be hot today?
+# text TAT: Бүген кызу булырмы?
+# intent: weather/find
+# slots: 
+1  Бүген  weather/find  B-datetime
+2  кызу  weather/find  B-weather/attribute
+3  булырмы  weather/find  O
+4  ?  weather/find  O
+
+# text EN: Is it going to rain tomorrow?
+# text TAT: Иртәгә яңгыр булырмы?
+# intent: weather/find
+# slots:
+1  Иртәгә  weather/find  B-datetime
+2  яңгыр	weather/find	B-weather/attribute
+3  булырмы	weather/find	O
+4  ?	weather/find	O
+
+# text EN: Cancel the next alarm
+# text TAT: Киләсе уяткыч сәгатьне гамәлдән чыгар
+# intent: alarm/cancel_alarm
+# slots:
+1  Киләсе  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьне  alarm/cancel_alarm  O
+4  гамәлдән  alarm/cancel_alarm  O
+5  чыгар  alarm/cancel_alarm	O
+
+# text EN: Remind me to go to grocery store today
+# text TAT: Бүген кибеткә барырга искә төшер
+# intent: reminder/set_reminder
+# slots:
+1  Бүген	reminder/set_reminder  B-datetime
+2  кибеткә	reminder/set_reminder  B-reminder/todo
+3  барырга	reminder/set_reminder  I-reminder/todo
+4  искә  reminder/set_reminder  O
+5  төшер	reminder/set_reminder  O
+
+# text EN: cancel my reminders for next week
+# text TAT: киләсе атнада минем искә төшерүләрне гамәлдән чыгар
+# intent: reminder/cancel_reminder
+# slots:
+1  киләсе  reminder/cancel_reminder  B-datetime
+2  атнада  reminder/cancel_reminder  I-datetime
+3  минем	reminder/cancel_reminder  B-reference
+4  искә  reminder/cancel_reminder  O
+5  төшерүләрне	reminder/cancel_reminder  O
+6  гамәлдән  reminder/cancel_reminder  O
+7  чыгар  reminder/cancel_reminder  O
+
+# text EN: remind me to take dog to groomer tuesday at 3pm
+# text TAT: исегезгә төшерегез миңа этне сишәмбе көнне көндезге сәгать 3 грумер янына алып барырга
+# intent: reminder/set_reminder
+# slots:
+1  исегезгә  reminder/set_reminder  O
+2  төшерегез	reminder/set_reminder  O
+3  миңа  reminder/set_reminder  O
+4  этне  reminder/set_reminder  B-reminder/todo
+5  сишәмбе	reminder/set_reminder  B-datetime
+6  көнне	reminder/set_reminder  I-datetime
+7  көндезге  reminder/set_reminder  I-datetime
+8  сәгать  reminder/set_reminder  I-datetime
+9  3  reminder/set_reminder  I-datetime
+10	грумер	reminder/set_reminder  I-reminder/todo
+11  янына  reminder/set_reminder	I-reminder/todo
+12  алып  reminder/set_reminder  I-reminder/todo
+13  барырга  reminder/set_reminder	I-reminder/todo
+
+# text EN: Remind me to pick up flowers for Jen for our anniversary on the 28th.
+# text TAT: Исегезгә төшерегез, 28 көнне Дженга чәчәкләр сатып алыгыз.
+# intent: reminder/set_reminder
+# slots:
+1  Исегезгә  reminder/set_reminder  O
+2  төшерегез	reminder/set_reminder  O
+3  ,  reminder/set_reminder  O
+4  28  reminder/set_reminder  B-datetime
+5  көнне	reminder/set_reminder  I-datetime
+6  Дженга  reminder/set_reminder  B-reminder/todo
+7  чәчәкләр  reminder/set_reminder  I-reminder/todo
+8  сатып	reminder/set_reminder  I-reminder/todo
+9  алыгыз  reminder/set_reminder  I-reminder/todo
+10  .  reminder/set_reminder  O
+
+# text EN: What's the weather like today?
+# text TAT: Бүген һава торышы нинди?
+# intent: weather/find
+# slots:
+1  Бүген	weather/find	B-datetime
+2  һава  weather/find  O
+3  торышы  weather/find  O
+4  нинди  weather/find	O
+5  ?  weather/find	O
+
+# text EN: Remind me to make a doctor's appointment tomorrow.
+# text TAT: Иртәгә табибка язылырга миңа искә төшер.
+# intent: reminder/set_reminder
+# slots:
+1  Иртәгә  reminder/set_reminder  B-datetime
+2  табибка	reminder/set_reminder  B-reminder/todo
+3  язылырга  reminder/set_reminder  I-reminder/todo
+4  миңа  reminder/set_reminder  O
+5  искә  reminder/set_reminder  O
+6  төшер	reminder/set_reminder  O
+7  .	reminder/set_reminder  O
+
+# text EN: turn off all alarms
+# text TAT: барлык уяткыч сәгатьләрне сүндер
+# intent: alarm/cancel_alarm
+# slots:
+1  барлык  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьләрне	alarm/cancel_alarm	O
+4  сүндер  alarm/cancel_alarm  O
+
+# text EN: Should I bring a raincoat?
+# text TAT: Мин үзем белән яңгыр чапаны алырга тиешме?
+# intent: weather/find
+# slots:
+1  Мин	weather/find	O
+2  үзем  weather/find  O
+3  белән	weather/find	O
+4  яңгыр	weather/find	B-weather/attribute
+5  чапаны  weather/find  I-weather/attribute
+6  алырга  weather/find  O
+7  тиешме  weather/find  O
+8  ?  weather/find	O
+
+# text EN: What is the severe weather forecast?
+# text TAT: Каты һава торышы фаразы нинди?
+# intent: weather/find
+# slots:
+1  Каты  weather/find  B-weather/attribute
+2  һава  weather/find  O
+3  торышы  weather/find  O
+4  фаразы  weather/find  O
+5  нинди	weather/find	O
+6  ?	weather/find	O
+
+# text EN: remind me of next weeks doctor appointment
+# text TAT: киләсе атнада табиб кабул итүен искә төшер
+# intent: reminder/set_reminder
+# slots:
+1  киләсе  reminder/set_reminder	B-datetime
+2  атнада  reminder/set_reminder	I-datetime
+3  табиб	reminder/set_reminder  I-datetime
+4  кабул	reminder/set_reminder I-datetime
+5  итүен	reminder/set_reminder  I-datetime
+6  искә  reminder/set_reminder	O
+7	 төшер	reminder/set_reminder  O
+
+# text EN: set reminder to go to the store at 8am
+# text TAT: иртәнге 8 кибеткә бару турында искә төшер
+# intent: reminder/set_reminder
+# slots:
+1	иртәнге	reminder/set_reminder	B-datetime
+2	8	reminder/set_reminder	I-datetime
+3	кибеткә	reminder/set_reminder	B-reminder/todo
+4	бару	reminder/set_reminder	I-reminder/todo
+5	турында	reminder/set_reminder	O
+6	искә	reminder/set_reminder	O
+7	төшер	reminder/set_reminder	O
+
+# text EN: Set reminder to get the dry cleaning.
+# text TAT: Биреге химчисткага искә төшерү яса.
+# intent: reminder/set_reminder
+# slots:
+1	Биреге	reminder/set_reminder  B-reminder/todo
+2	химчисткага	reminder/set_reminder  I-reminder/todo
+3	искә	reminder/set_reminder  O
+4	төшерү	reminder/set_reminder  O
+5	яса	reminder/set_reminder  O
+6	.	reminder/set_reminder	O
+
+# text EN: when is it cool down
+# text TAT: кайчан ул суына
+# intent: weather/find
+# slots:
+1  кайчан  weather/find  O
+2  ул  weather/find  O
+3  суына	weather/find	B-weather/attribute
