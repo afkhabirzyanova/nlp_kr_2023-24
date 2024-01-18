@@ -17,8 +17,9 @@
 3  булырмы	weather/find	O
 
 # text EN: cancel my alarm for tomorrow morning
+# text TAT: иртәгә минем иртәнге уяткыч сәгатьне гамәлдән чыгар
 # intent: alarm/cancel_alarm
-# slots: 16:36:datetime
+# slots:
 1	cancel	alarm/cancel_alarm	O
 2	my	alarm/cancel_alarm	B-reference
 3	alarm	alarm/cancel_alarm	O
