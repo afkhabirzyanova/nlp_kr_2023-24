@@ -72,12 +72,14 @@
 7	get	weather/find	O
 8	today	weather/find	B-datetime
 
-# text: Reset all alarms
+# text EN: Reset all alarms
+# text TAT: Барлык уяткыч сәгатьне ташла
 # intent: alarm/cancel_alarm
 # slots:
-1	Reset	alarm/cancel_alarm	O
-2	all	alarm/cancel_alarm	B-reference
-3	alarms	alarm/cancel_alarm	O
+1  Барлык  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьне  alarm/cancel_alarm  O
+4  ташла  alarm/cancel_alarm  O
 
 # text: Weather in Tahoe this weekend?
 # intent: weather/find
