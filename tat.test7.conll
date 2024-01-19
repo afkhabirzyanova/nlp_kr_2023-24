@@ -16,11 +16,14 @@
 3  сәгатьне  alarm/cancel_alarm  O
 4  бетер  alarm/cancel_alarm  O
 
-# text: cancel alarms
+# text EN: cancel alarms
+# text TAT: уяткыч сәгатьләрне гамәлдән чыгар
 # intent: alarm/cancel_alarm
 # slots:
-1	cancel	alarm/cancel_alarm	O
-2	alarms	alarm/cancel_alarm	O
+1  уяткыч  alarm/cancel_alarm  O
+2  сәгатьләрне	alarm/cancel_alarm	O
+3  гамәлдән  alarm/cancel_alarm  O
+4  чыгар  alarm/cancel_alarm	O
 
 # text: show me my alarms
 # intent: alarm/show_alarms
