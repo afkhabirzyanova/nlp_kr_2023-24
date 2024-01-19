@@ -102,14 +102,13 @@
 5  ?  weather/find  O
 
 # text: When will the rain stop?
+# text TAT: Яңгыр кайчан туктар?
 # intent: weather/find
-# slots: 14:18:weather/attribute
-1	When	weather/find	O
-2	will	weather/find	O
-3	the	weather/find	O
-4	rain	weather/find	B-weather/attribute
-5	stop	weather/find	O
-6	?	weather/find	O
+# slots:
+1  Яңгыр  weather/find	B-weather/attribute
+2  кайчан  weather/find  O
+3  туктар  weather/find  O
+4  ?  weather/find  O
 
 # text: Set a reminder to call my school on Monday at 4 PM
 # intent: reminder/set_reminder
