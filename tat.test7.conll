@@ -91,16 +91,15 @@
 5	weekend	weather/find	I-datetime
 6	?	weather/find	O
 
-# text: Do I need a coat today?
+# text EN: Do I need a coat today?
+# text TAT: Бүген миңа пәлтә кирәкме?
 # intent: weather/find
-# slots: 12:16:weather/attribute,17:22:datetime
-1	Do	weather/find	O
-2	I	weather/find	O
-3	need	weather/find	O
-4	a	weather/find	O
-5	coat	weather/find	B-weather/attribute
-6	today	weather/find	B-datetime
-7	?	weather/find	O
+# slots:
+1  Бүген	weather/find	B-datetime
+2  миңа  weather/find  O
+3  пәлтә	weather/find  B-weather/attribute
+4  кирәкме	weather/find  O
+5  ?  weather/find  O
 
 # text: When will the rain stop?
 # intent: weather/find
