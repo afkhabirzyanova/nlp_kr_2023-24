@@ -7,12 +7,14 @@
 3  яңгыр  weather/find  B-weather/attribute
 4  булырмы  weather/find  O
 
-# text: delete all alarms
+# text EN: delete all alarms
+# text TAT: барлык уяткыч сәгатьне бетер
 # intent: alarm/cancel_alarm
 # slots:
-1	delete	alarm/cancel_alarm	O
-2	all	alarm/cancel_alarm	B-reference
-3	alarms	alarm/cancel_alarm	O
+1  барлык  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьне  alarm/cancel_alarm  O
+4  бетер  alarm/cancel_alarm  O
 
 # text: cancel alarms
 # intent: alarm/cancel_alarm
