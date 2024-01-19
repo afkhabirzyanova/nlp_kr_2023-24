@@ -75,15 +75,17 @@
 3  сәгатьне  alarm/cancel_alarm  O
 4  ташла  alarm/cancel_alarm  O
 
-# text: Weather in Tahoe this weekend?
+# text EN: Weather in Tahoe this weekend?
+# text TAT: Бу ял көннәрендә Тахода һава торышы?
 # intent: weather/find
-# slots: 0:7:weather/noun,11:16:location,17:29:datetime
-1	Weather	weather/find	O
-2	in	weather/find	O
-3	Tahoe	weather/find	B-location
-4	this	weather/find	B-datetime
-5	weekend	weather/find	I-datetime
-6	?	weather/find	O
+# slots:
+1  Бу  weather/find  B-datetime
+2  ял  weather/find  I-datetime
+3  көннәрендә  weather/find  I-datetime
+4  Тахода  weather/find  B-location
+5  һава  weather/find  O
+6  торышы  weather/find  O
+6  ?  weather/find  O
 
 # text EN: Do I need a coat today?
 # text TAT: Бүген миңа пәлтә кирәкме?
