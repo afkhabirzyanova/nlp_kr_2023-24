@@ -25,13 +25,15 @@
 3  гамәлдән  alarm/cancel_alarm  O
 4  чыгар  alarm/cancel_alarm	O
 
-# text: show me my alarms
+# text EN: show me my alarms
+# text TAT: Миңа минем уяткыч сәгатьләрне күрсәт
 # intent: alarm/show_alarms
 # slots:
-1	show	alarm/show_alarms	O
-2	me	alarm/show_alarms	O
-3	my	alarm/show_alarms	B-reference
-4	alarms	alarm/show_alarms	O
+1  Миңа  reminder/show_reminders  O
+2  минем  reminder/show_reminders  B-reference
+3  уяткыч  reminder/show_reminders  O
+4  сәгатьләрне  reminder/show_reminders  O
+5  күрсәт  reminder/show_reminders  O
 
 # text: What time do I have an alarm set for?
 # intent: alarm/show_alarms
