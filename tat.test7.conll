@@ -51,24 +51,20 @@
 # text TAT: Шимбә көнне яңгыр булырмы?
 # intent: weather/find
 # slots:
-# slots:
 1  Шимбә  weather/find  B-datetime
 2  көнне  weather/find  I-datetime
 2  яңгыр	weather/find	B-weather/attribute
 3  булырмы	weather/find	O
 4  ?	weather/find	O
 
-# text: how hot is it going to get today
+# text EN: how hot is it going to get today
+# text TAT: бүген нихәтле эссе булыр
 # intent: weather/find
-# slots: 4:7:weather/attribute,27:32:datetime
-1	how	weather/find	O
-2	hot	weather/find	B-weather/attribute
-3	is	weather/find	O
-4	it	weather/find	O
-5	going	weather/find	O
-6	to	weather/find	O
-7	get	weather/find	O
-8	today	weather/find	B-datetime
+# slots:
+1  бүген	weather/find	B-datetime
+2  нихәтле	weather/find	O
+3  эссе  weather/find  B-weather/attribute
+4  булыр	weather/find	O
 
 # text EN: Reset all alarms
 # text TAT: Барлык уяткыч сәгатьне ташла
