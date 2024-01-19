@@ -146,13 +146,12 @@
 6	tonight	weather/find	B-datetime
 7	?	weather/find	O
 
-# text: Set alarm for 7 am tomorrow.
+# text EN: set alarm for 7 am
+# text TAT: Уяткыч сәгатьне иртәнге 6 куй
 # intent: alarm/set_alarm
-# slots: 10:27:datetime
-1	Set	alarm/set_alarm	O
-2	alarm	alarm/set_alarm	O
-3	for	alarm/set_alarm	O
-4	7	alarm/set_alarm	B-datetime
-5	am	alarm/set_alarm	I-datetime
-6	tomorrow	alarm/set_alarm	I-datetime
-7	.	alarm/set_alarm	O
+# slots:
+1  Уяткыч  alarm/set_alarm  O
+2  сәгатьне  alarm/set_alarm  O
+3  иртәнге  alarm/set_alarm  B-datetime
+4  7  alarm/set_alarm  I-datetime
+5  куй  alarm/set_alarm  O
