@@ -129,11 +129,11 @@
 # text: Turn off my alarm.
 # intent: alarm/cancel_alarm
 # slots:
-1	Turn	alarm/cancel_alarm	O
-2	off	alarm/cancel_alarm	O
-3	my	alarm/cancel_alarm	B-reference
-4	alarm	alarm/cancel_alarm	O
-5	.	alarm/cancel_alarm	O
+1  минем  alarm/cancel_alarm  B-reference
+2  уяткыч  alarm/cancel_alarm  O
+3  сәгатьләрне	alarm/cancel_alarm	O
+4  сүндер  alarm/cancel_alarm  O
+5  .	alarm/cancel_alarm	O
 
 # text: How cold will it be tonight?
 # intent: weather/find
