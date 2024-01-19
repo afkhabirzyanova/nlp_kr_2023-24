@@ -104,21 +104,19 @@
 3  туктар  weather/find  O
 4  ?  weather/find  O
 
-# text: Set a reminder to call my school on Monday at 4 PM
+# text EN: Set a reminder to call my school on Monday at 4 PM
+# text TAT: Дүшәмбе көнне кичке 4 минем мәктәпкә шалтыратуны искә төшер
 # intent: reminder/set_reminder
-# slots: 6:14:reminder/noun,18:32:reminder/todo,33:50:datetime
-1	Set	reminder/set_reminder	O
-2	a	reminder/set_reminder	O
-3	reminder	reminder/set_reminder	O
-4	to	reminder/set_reminder	O
-5	call	reminder/set_reminder	B-reminder/todo
-6	my	reminder/set_reminder	I-reminder/todo
-7	school	reminder/set_reminder	I-reminder/todo
-8	on	reminder/set_reminder	O
-9	Monday	reminder/set_reminder	B-datetime
-10	at	reminder/set_reminder	I-datetime
-11	4	reminder/set_reminder	I-datetime
-12	PM	reminder/set_reminder	I-datetime
+# slots:
+1  Дүшәмбе	reminder/set_reminder  B-datetime
+2  көнне	reminder/set_reminder  I-datetime
+3  кичке	reminder/set_reminder  I-datetime
+4  4	reminder/set_reminder  I-datetime
+5  минем	reminder/set_reminder  O
+6  мәктәпкә  reminder/set_reminder  B-reminder/todo
+7  шалтыратуны	reminder/set_reminder  I-reminder/todo
+8  искә  reminder/set_reminder  O
+9  төшер	reminder/set_reminder  O
 
 # text EN: Turn off my alarm.
 # text TAT: Минем уяткыч сәгатьне сүндер.
