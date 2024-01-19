@@ -127,7 +127,8 @@
 11	4	reminder/set_reminder	I-datetime
 12	PM	reminder/set_reminder	I-datetime
 
-# text: Turn off my alarm.
+# text EN: Turn off my alarm.
+# text TAT: Минем уяткыч сәгатьне сүндер.
 # intent: alarm/cancel_alarm
 # slots:
 1  минем  alarm/cancel_alarm  B-reference
