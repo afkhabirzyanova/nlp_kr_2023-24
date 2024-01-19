@@ -60,15 +60,6 @@
 3  булырмы	weather/find	O
 4  ?	weather/find	O
 
-# text EN: Is it going to rain tomorrow?
-# text TAT: Иртәгә яңгыр булырмы?
-# intent: weather/find
-# slots:
-1  Иртәгә  weather/find  B-datetime
-2  яңгыр	weather/find	B-weather/attribute
-3  булырмы	weather/find	O
-4  ?	weather/find	O
-
 # text: how hot is it going to get today
 # intent: weather/find
 # slots: 4:7:weather/attribute,27:32:datetime
@@ -146,16 +137,16 @@
 4  сүндер  alarm/cancel_alarm  O
 5  .	alarm/cancel_alarm	O
 
-# text: How cold will it be tonight?
+# text EN: How cold will it be tonight?
+# text TAT: Бүген кич никадәр салкын булыр?
 # intent: weather/find
-# slots: 4:8:weather/attribute,20:27:datetime
-1	How	weather/find	O
-2	cold	weather/find	B-weather/attribute
-3	will	weather/find	O
-4	it	weather/find	O
-5	be	weather/find	O
-6	tonight	weather/find	B-datetime
-7	?	weather/find	O
+# slots:
+1  Бүген	weather/find	B-datetime
+2  кич	weather/find  O
+3  никадәр	weather/find	O
+4  салкын  weather/find	B-weather/attribute
+5  булыр	weather/find	O
+7  ?	weather/find	O
 
 # text EN: set alarm for 7 am
 # text TAT: Уяткыч сәгатьне иртәнге 6 куй
