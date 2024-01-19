@@ -1,11 +1,11 @@
-# text: will it rain this week
+# text EN: will it rain this week
+# text TAT: бу атнада яңгыр булырмы
 # intent: weather/find
-# slots: 8:12:weather/attribute,13:22:datetime
-1	will	weather/find	O
-2	it	weather/find	O
-3	rain	weather/find	B-weather/attribute
-4	this	weather/find	B-datetime
-5	week	weather/find	I-datetime
+# slots:
+1  бу  weather/find  B-datetime
+2  атнада  weather/find  I-datetime
+3  яңгыр  weather/find  B-weather/attribute
+4  булырмы  weather/find  O
 
 # text: delete all alarms
 # intent: alarm/cancel_alarm
