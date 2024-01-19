@@ -1,1 +1,151 @@
+# text: will it rain this week
+# intent: weather/find
+# slots: 8:12:weather/attribute,13:22:datetime
+1	will	weather/find	O
+2	it	weather/find	O
+3	rain	weather/find	B-weather/attribute
+4	this	weather/find	B-datetime
+5	week	weather/find	I-datetime
 
+# text: delete all alarms
+# intent: alarm/cancel_alarm
+# slots:
+1	delete	alarm/cancel_alarm	O
+2	all	alarm/cancel_alarm	B-reference
+3	alarms	alarm/cancel_alarm	O
+
+# text: cancel alarms
+# intent: alarm/cancel_alarm
+# slots:
+1	cancel	alarm/cancel_alarm	O
+2	alarms	alarm/cancel_alarm	O
+
+# text: show me my alarms
+# intent: alarm/show_alarms
+# slots:
+1	show	alarm/show_alarms	O
+2	me	alarm/show_alarms	O
+3	my	alarm/show_alarms	B-reference
+4	alarms	alarm/show_alarms	O
+
+# text: What time do I have an alarm set for?
+# intent: alarm/show_alarms
+# slots:
+1	What	alarm/show_alarms	O
+2	time	alarm/show_alarms	O
+3	do	alarm/show_alarms	O
+4	I	alarm/show_alarms	O
+5	have	alarm/show_alarms	O
+6	an	alarm/show_alarms	O
+7	alarm	alarm/show_alarms	O
+8	set	alarm/show_alarms	O
+9	for	alarm/show_alarms	O
+10	?	alarm/show_alarms	O
+
+# text: Is it going to rain Saturday?
+# intent: weather/find
+# slots: 15:19:weather/attribute,20:28:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	rain	weather/find	B-weather/attribute
+6	Saturday	weather/find	B-datetime
+7	?	weather/find	O
+
+# text: how hot is it going to get today
+# intent: weather/find
+# slots: 4:7:weather/attribute,27:32:datetime
+1	how	weather/find	O
+2	hot	weather/find	B-weather/attribute
+3	is	weather/find	O
+4	it	weather/find	O
+5	going	weather/find	O
+6	to	weather/find	O
+7	get	weather/find	O
+8	today	weather/find	B-datetime
+
+# text: Reset all alarms
+# intent: alarm/cancel_alarm
+# slots:
+1	Reset	alarm/cancel_alarm	O
+2	all	alarm/cancel_alarm	B-reference
+3	alarms	alarm/cancel_alarm	O
+
+# text: Weather in Tahoe this weekend?
+# intent: weather/find
+# slots: 0:7:weather/noun,11:16:location,17:29:datetime
+1	Weather	weather/find	O
+2	in	weather/find	O
+3	Tahoe	weather/find	B-location
+4	this	weather/find	B-datetime
+5	weekend	weather/find	I-datetime
+6	?	weather/find	O
+
+# text: Do I need a coat today?
+# intent: weather/find
+# slots: 12:16:weather/attribute,17:22:datetime
+1	Do	weather/find	O
+2	I	weather/find	O
+3	need	weather/find	O
+4	a	weather/find	O
+5	coat	weather/find	B-weather/attribute
+6	today	weather/find	B-datetime
+7	?	weather/find	O
+
+# text: When will the rain stop?
+# intent: weather/find
+# slots: 14:18:weather/attribute
+1	When	weather/find	O
+2	will	weather/find	O
+3	the	weather/find	O
+4	rain	weather/find	B-weather/attribute
+5	stop	weather/find	O
+6	?	weather/find	O
+
+# text: Set a reminder to call my school on Monday at 4 PM
+# intent: reminder/set_reminder
+# slots: 6:14:reminder/noun,18:32:reminder/todo,33:50:datetime
+1	Set	reminder/set_reminder	O
+2	a	reminder/set_reminder	O
+3	reminder	reminder/set_reminder	O
+4	to	reminder/set_reminder	O
+5	call	reminder/set_reminder	B-reminder/todo
+6	my	reminder/set_reminder	I-reminder/todo
+7	school	reminder/set_reminder	I-reminder/todo
+8	on	reminder/set_reminder	O
+9	Monday	reminder/set_reminder	B-datetime
+10	at	reminder/set_reminder	I-datetime
+11	4	reminder/set_reminder	I-datetime
+12	PM	reminder/set_reminder	I-datetime
+
+# text: Turn off my alarm.
+# intent: alarm/cancel_alarm
+# slots:
+1	Turn	alarm/cancel_alarm	O
+2	off	alarm/cancel_alarm	O
+3	my	alarm/cancel_alarm	B-reference
+4	alarm	alarm/cancel_alarm	O
+5	.	alarm/cancel_alarm	O
+
+# text: How cold will it be tonight?
+# intent: weather/find
+# slots: 4:8:weather/attribute,20:27:datetime
+1	How	weather/find	O
+2	cold	weather/find	B-weather/attribute
+3	will	weather/find	O
+4	it	weather/find	O
+5	be	weather/find	O
+6	tonight	weather/find	B-datetime
+7	?	weather/find	O
+
+# text: Set alarm for 7 am tomorrow.
+# intent: alarm/set_alarm
+# slots: 10:27:datetime
+1	Set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	7	alarm/set_alarm	B-datetime
+5	am	alarm/set_alarm	I-datetime
+6	tomorrow	alarm/set_alarm	I-datetime
+7	.	alarm/set_alarm	O
