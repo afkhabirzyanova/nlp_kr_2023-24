@@ -37,14 +37,15 @@
 
 # id: test_205
 # annotator: Alsu
-# text: cancel reminder for tonight's game
+# text EN: cancel reminder for tonight's game
+# text TAT: бүгенге уен турында искәртүне бетер
 # intent: reminder/cancel_reminder
-# slots: 7:15:reminder/noun,16:27:datetime,30:34:reminder/todo
-1	cancel	reminder/cancel_reminder	O
-2	reminder	reminder/cancel_reminder	O
-3	for	reminder/cancel_reminder	O
-4	tonight's	reminder/cancel_reminder	B-datetime
-5	game	reminder/cancel_reminder	B-reminder/todo
+# slots:
+1  бүгенге	reminder/cancel_reminder	B-datetime
+2  уен	reminder/cancel_reminder	B-reminder/todo
+3  турында	reminder/cancel_reminder	O
+4  искәртүне	reminder/cancel_reminder	O
+5  бетер	reminder/cancel_reminder	O
 
 # id: test_206
 # annotator: Alsu
