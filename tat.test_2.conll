@@ -24,17 +24,16 @@
 # id: test_204
 # annotator: Alsu
 # text EN: Cancel my alarm for 5:15am on Tuesday
-# text TAT: минем будильнигымны сишәмбе көнне иртәнге 5:15 бетер
+# text TAT: Сишәмбе көнне иртәнге 5:15 минем будильнигымны бетер
 # intent: alarm/cancel_alarm
 # slots:
-1	Cancel	alarm/cancel_alarm	O
-2	my	alarm/cancel_alarm	B-reference
-3	alarm	alarm/cancel_alarm	O
-4	for	alarm/cancel_alarm	O
-5	5:15	alarm/cancel_alarm	B-datetime
-6	am	alarm/cancel_alarm	I-datetime
-7	on	alarm/cancel_alarm	I-datetime
-8	Tuesday	alarm/cancel_alarm	I-datetime
+1  Сишәмбе	alarm/cancel_alarm	B-datetime
+2  көнне	alarm/cancel_alarm	I-datetime
+3  иртәнге	alarm/cancel_alarm	I-datetime
+4  5:15	alarm/cancel_alarm	I-datetime
+5  минем	alarm/cancel_alarm	B-reference
+6  будильнигымны	alarm/cancel_alarm	O
+7  бетер	alarm/cancel_alarm	O
 
 # id: test_205
 # annotator: Alsu
