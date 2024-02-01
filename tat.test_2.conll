@@ -1,8 +1,9 @@
 # id: test_202
 # annotator: Alsu
-# text: What's the weather like today?
+# text EN: What's the weather like today?
+# text TAT:
 # intent: weather/find
-# slots: 11:18:weather/noun,24:29:datetime
+# slots:
 1	What's	weather/find	O
 2	the	weather/find	O
 3	weather	weather/find	O
@@ -12,9 +13,10 @@
 
 # id: test_203
 # annotator: Alsu
-# text: Will it rain tomorrow?
+# text EN: Will it rain tomorrow?
+# text TAT:
 # intent: weather/find
-# slots: 8:12:weather/attribute,13:21:datetime
+# slots:
 1	Will	weather/find	O
 2	it	weather/find	O
 3	rain	weather/find	B-weather/attribute
