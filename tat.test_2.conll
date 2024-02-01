@@ -1,15 +1,14 @@
 # id: test_202
 # annotator: Alsu
 # text EN: What's the weather like today?
-# text TAT:
+# text TAT: Бүген һава торышы нинди?
 # intent: weather/find
 # slots:
-1	What's	weather/find	O
-2	the	weather/find	O
-3	weather	weather/find	O
-4	like	weather/find	O
-5	today	weather/find	B-datetime
-6	?	weather/find	O
+1  Бүген	weather/find	B-datetime
+2  һава  weather/find  O
+3  торышы  weather/find  O
+4  нинди  weather/find  O
+5  ?  weather/find  O
 
 # id: test_203
 # annotator: Alsu
