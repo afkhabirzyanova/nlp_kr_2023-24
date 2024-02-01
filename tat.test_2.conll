@@ -61,14 +61,15 @@
 
 # id: test_207
 # annotator: Alsu
-# text: cancel all alarms for saturday
+# text EN: cancel all alarms for saturday
+# text TAT: шимбә көнне бутэн будильникларны бетер
 # intent: alarm/cancel_alarm
-# slots: 18:30:datetime
-1	cancel	alarm/cancel_alarm	O
-2	all	alarm/cancel_alarm	B-reference
-3	alarms	alarm/cancel_alarm	O
-4	for	alarm/cancel_alarm	O
-5	saturday	alarm/cancel_alarm	B-datetime
+# slots:
+1  шимбә	alarm/cancel_alarm	B-datetime
+2  көнне	alarm/cancel_alarm	I-datetime
+3  бутэн	alarm/cancel_alarm	B-reference
+4  будильникларны  alarm/cancel_alarm  O
+5  бетер  alarm/cancel_alarm	O
 
 # id: test_208
 # annotator: Alsu
