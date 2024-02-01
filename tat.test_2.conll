@@ -24,7 +24,7 @@
 # id: test_204
 # annotator: Alsu
 # text EN: Cancel my alarm for 5:15am on Tuesday
-# text TAT: минем будильнигымны сишәмбе иртәнге 5:15 өчен бетер
+# text TAT: минем будильнигымны сишәмбе көнне иртәнге 5:15 бетер
 # intent: alarm/cancel_alarm
 # slots:
 1	Cancel	alarm/cancel_alarm	O
