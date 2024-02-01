@@ -94,32 +94,29 @@
 2  нинди	weather/find	O
 3  югары	weather/find	B-weather/attribute
 4  температура	weather/find	O
-6  ?	weather/find	O
+5  ?	weather/find	O
 
 # id: test_210
 # annotator: Alsu
-# text: Is it going to be cloudy today in Grindstone?
+# text EN: Is it going to be cloudy today in Grindstone?
+# text TAT: Бүген Гринстоунда болытлы булырмы?
 # intent: weather/find
-# slots: 18:24:weather/attribute,25:30:datetime,34:44:location
-1	Is	weather/find	O
-2	it	weather/find	O
-3	going	weather/find	O
-4	to	weather/find	O
-5	be	weather/find	O
-6	cloudy	weather/find	B-weather/attribute
-7	today	weather/find	B-datetime
-8	in	weather/find	O
-9	Grindstone	weather/find	B-location
-10	?	weather/find	O
+# slots:
+1  Бүген	weather/find	B-datetime
+2  Гринстоунда	weather/find	B-location
+3  болытлы	weather/find	B-weather/attribute
+4  булырмы	weather/find	O
+5  ?	weather/find	O
 
 # id: test_211
 # annotator: Alsu
-# text: Remind me later
+# text EN: Remind me later
+# text TAT: Соңрак искә төшер
 # intent: reminder/set_reminder
-# slots: 10:15:datetime
-1	Remind	reminder/set_reminder	O
-2	me	reminder/set_reminder	O
-3	later	reminder/set_reminder	B-datetime
+# slots:
+1  Соңрак  reminder/set_reminder	B-datetime
+2  искә  reminder/set_reminder	O
+3  төшер	reminder/set_reminder  O
 
 # id: test_212
 # annotator: Alsu
