@@ -13,12 +13,12 @@
 # id: test_203
 # annotator: Alsu
 # text EN: Will it rain tomorrow?
-# text TAT: Иртәгә яңгыр буламы?
+# text TAT: Иртәгә яңгыр явармы?
 # intent: weather/find
 # slots:
 1  Иртәгә  weather/find  B-datetime
 2  яңгыр  weather/find  B-weather/attribute
-3  буламы  weather/find  O
+3  явармы  weather/find  O
 4  ?  weather/find  O
 
 # id: test_204
