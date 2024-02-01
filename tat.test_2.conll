@@ -49,13 +49,15 @@
 
 # id: test_206
 # annotator: Alsu
-# text: set alarm for 3am
+# text EN: set alarm for 3pm
+# text TAT: уяткыч сәгатьне көндезге 3 яса
 # intent: alarm/set_alarm
-# slots: 10:17:datetime
-1	set	alarm/set_alarm	O
-2	alarm	alarm/set_alarm	O
-3	for	alarm/set_alarm	O
-4	3am	alarm/set_alarm	B-datetime
+# slots:
+1  уяткыч  alarm/set_alarm  O
+2  сәгатьне  alarm/set_alarm  O
+3  көндезге  alarm/set_alarm  B-datetime
+4  3  alarm/set_alarm  I-datetime
+5  яса  alarm/set_alarm  O
 
 # id: test_207
 # annotator: Alsu
