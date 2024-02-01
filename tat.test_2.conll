@@ -73,17 +73,16 @@
 
 # id: test_208
 # annotator: Alsu
-# text: i need a reminder to pick Lisa up
+# text EN: i need a reminder to pick Lisa up
+# text TAT: Миңа Лизаны алу турында искәртү кирәк
 # intent: reminder/set_reminder
-# slots: 9:17:reminder/noun,21:33:reminder/todo
-1	i	reminder/set_reminder	O
-2	need	reminder/set_reminder	O
-3	a	reminder/set_reminder	O
-4	reminder	reminder/set_reminder	O
-5	to	reminder/set_reminder	O
-6	pick	reminder/set_reminder	B-reminder/todo
-7	Lisa	reminder/set_reminder	I-reminder/todo
-8	up	reminder/set_reminder	I-reminder/todo
+# slots:
+1  Миңа	reminder/set_reminder  O
+2  Лизаны	reminder/set_reminder  B-reminder/todo
+3  алу	reminder/set_reminder  I-reminder/todo
+4  турында	reminder/set_reminder  O
+5  искәртү	reminder/set_reminder  O
+6  кирәк	reminder/set_reminder  O
 
 # id: test_209
 # annotator: Alsu
