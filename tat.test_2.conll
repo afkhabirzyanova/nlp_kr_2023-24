@@ -1,0 +1,595 @@
+# id: test_202
+# annotator: Alsu
+# text: What's the weather like today?
+# intent: weather/find
+# slots: 11:18:weather/noun,24:29:datetime
+1	What's	weather/find	O
+2	the	weather/find	O
+3	weather	weather/find	O
+4	like	weather/find	O
+5	today	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: test_203
+# annotator: Alsu
+# text: Will it rain tomorrow?
+# intent: weather/find
+# slots: 8:12:weather/attribute,13:21:datetime
+1	Will	weather/find	O
+2	it	weather/find	O
+3	rain	weather/find	B-weather/attribute
+4	tomorrow	weather/find	B-datetime
+5	?	weather/find	O
+
+# id: test_204
+# annotator: Alsu
+# text: Cancel my alarm for 5:15am on Tuesday
+# intent: alarm/cancel_alarm
+# slots: 16:37:datetime
+1	Cancel	alarm/cancel_alarm	O
+2	my	alarm/cancel_alarm	B-reference
+3	alarm	alarm/cancel_alarm	O
+4	for	alarm/cancel_alarm	O
+5	5:15	alarm/cancel_alarm	B-datetime
+6	am	alarm/cancel_alarm	I-datetime
+7	on	alarm/cancel_alarm	I-datetime
+8	Tuesday	alarm/cancel_alarm	I-datetime
+
+# id: test_205
+# annotator: Alsu
+# text: cancel reminder for tonight's game
+# intent: reminder/cancel_reminder
+# slots: 7:15:reminder/noun,16:27:datetime,30:34:reminder/todo
+1	cancel	reminder/cancel_reminder	O
+2	reminder	reminder/cancel_reminder	O
+3	for	reminder/cancel_reminder	O
+4	tonight's	reminder/cancel_reminder	B-datetime
+5	game	reminder/cancel_reminder	B-reminder/todo
+
+# id: test_206
+# annotator: Alsu
+# text: set alarm for 3am
+# intent: alarm/set_alarm
+# slots: 10:17:datetime
+1	set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	3am	alarm/set_alarm	B-datetime
+
+# id: test_207
+# annotator: Alsu
+# text: cancel all alarms for saturday
+# intent: alarm/cancel_alarm
+# slots: 18:30:datetime
+1	cancel	alarm/cancel_alarm	O
+2	all	alarm/cancel_alarm	B-reference
+3	alarms	alarm/cancel_alarm	O
+4	for	alarm/cancel_alarm	O
+5	saturday	alarm/cancel_alarm	B-datetime
+
+# id: test_208
+# annotator: Alsu
+# text: i need a reminder to pick Lisa up
+# intent: reminder/set_reminder
+# slots: 9:17:reminder/noun,21:33:reminder/todo
+1	i	reminder/set_reminder	O
+2	need	reminder/set_reminder	O
+3	a	reminder/set_reminder	O
+4	reminder	reminder/set_reminder	O
+5	to	reminder/set_reminder	O
+6	pick	reminder/set_reminder	B-reminder/todo
+7	Lisa	reminder/set_reminder	I-reminder/todo
+8	up	reminder/set_reminder	I-reminder/todo
+
+# id: test_209
+# annotator: Alsu
+# text: What is the high today?
+# intent: weather/find
+# slots: 17:22:datetime
+1	What	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	high	weather/find	B-weather/attribute
+5	today	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: test_210
+# annotator: Alsu
+# text: Is it going to be cloudy today in Grindstone?
+# intent: weather/find
+# slots: 18:24:weather/attribute,25:30:datetime,34:44:location
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	be	weather/find	O
+6	cloudy	weather/find	B-weather/attribute
+7	today	weather/find	B-datetime
+8	in	weather/find	O
+9	Grindstone	weather/find	B-location
+10	?	weather/find	O
+
+# id: test_211
+# annotator: Alsu
+# text: Remind me later
+# intent: reminder/set_reminder
+# slots: 10:15:datetime
+1	Remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	later	reminder/set_reminder	B-datetime
+
+# id: test_212
+# annotator: Alsu
+# text: what is the weather in france today
+# intent: weather/find
+# slots: 12:19:weather/noun,23:29:location,30:35:datetime
+1	what	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	weather	weather/find	O
+5	in	weather/find	O
+6	france	weather/find	B-location
+7	today	weather/find	B-datetime
+
+# id: test_213
+# annotator: Alsu
+# text: Will it be sunny for the party on Saturday?
+# intent: weather/find
+# slots: 11:16:weather/attribute,31:42:datetime
+1	Will	weather/find	O
+2	it	weather/find	O
+3	be	weather/find	O
+4	sunny	weather/find	B-weather/attribute
+5	for	weather/find	O
+6	the	weather/find	O
+7	party	weather/find	O
+8	on	weather/find	O
+9	Saturday	weather/find	B-datetime
+10	?	weather/find	O
+
+# id: test_214
+# annotator: Alsu
+# text: Is it going to rain tomorrow?
+# intent: weather/find
+# slots: 15:19:weather/attribute,20:28:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	rain	weather/find	B-weather/attribute
+6	tomorrow	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: test_215
+# annotator: Alsu
+# text: Can I wear shorts today?
+# intent: weather/find
+# slots: 11:17:weather/attribute,18:23:datetime
+1	Can	weather/find	O
+2	I	weather/find	O
+3	wear	weather/find	O
+4	shorts	weather/find	B-weather/attribute
+5	today	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: test_216
+# annotator: Alsu
+# text: Show my reminder
+# intent: reminder/show_reminders
+# slots: 5:7:reminder/reference,8:16:reminder/noun
+1	Show	reminder/show_reminders	O
+2	my	reminder/show_reminders	B-reference
+3	reminder	reminder/show_reminders	O
+
+# id: test_217
+# annotator: Alsu
+# text: what is the average forecast for september
+# intent: weather/find
+# slots: 20:28:weather/noun,29:42:datetime
+1	what	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	average	weather/find	O
+5	forecast	weather/find	O
+6	for	weather/find	O
+7	september	weather/find	B-datetime
+
+# id: test_218
+# annotator: Alsu
+# text: Is it cold today?
+# intent: weather/find
+# slots: 6:10:weather/attribute,11:16:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	cold	weather/find	B-weather/attribute
+4	today	weather/find	B-datetime
+5	?	weather/find	O
+
+# id: test_219
+# annotator: Alsu
+# text: Cancel all reminders
+# intent: reminder/cancel_reminder
+# slots: 11:20:reminder/noun
+1	Cancel	reminder/cancel_reminder	O
+2	all	reminder/cancel_reminder	B-reference
+3	reminders	reminder/cancel_reminder	O
+
+# id: test_220
+# annotator: Alsu
+# text: is it hot?
+# intent: weather/find
+# slots: 6:9:weather/attribute
+1	is	weather/find	O
+2	it	weather/find	O
+3	hot	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id: test_221
+# annotator: Alsu
+# text: Make alarm for weekends at 2pm
+# intent: alarm/set_alarm
+# slots: 11:30:datetime
+1	Make	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	weekends	alarm/set_alarm	B-recurring_datetime
+5	at	alarm/set_alarm	I-recurring_datetime
+6	2pm	alarm/set_alarm	I-recurring_datetime
+
+# id: test_222
+# annotator: Alsu
+# text: Set alarm for 2 am
+# intent: alarm/set_alarm
+# slots: 10:18:datetime
+1	Set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	2	alarm/set_alarm	B-datetime
+5	am	alarm/set_alarm	I-datetime
+
+# id: test_223
+# annotator: Alsu
+# text: What is the humidity today?
+# intent: weather/find
+# slots: 12:20:weather/attribute,21:26:datetime
+1	What	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	humidity	weather/find	B-weather/attribute
+5	today	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: test_224
+# annotator: Alsu
+# text: show all my alarms
+# intent: alarm/show_alarms
+# slots:
+1	show	alarm/show_alarms	O
+2	all	alarm/show_alarms	B-reference
+3	my	alarm/show_alarms	I-reference
+4	alarms	alarm/show_alarms	O
+
+# id: test_225
+# annotator: Alsu
+# text: Show me all my reminders
+# intent: reminder/show_reminders
+# slots: 8:11:reminder/reference,15:24:reminder/noun
+1	Show	reminder/show_reminders	O
+2	me	reminder/show_reminders	O
+3	all	reminder/show_reminders	B-reference
+4	my	reminder/show_reminders	I-reference
+5	reminders	reminder/show_reminders	O
+
+# id: test_226
+# annotator: Alsu
+# text: cancel all alarms
+# intent: alarm/cancel_alarm
+# slots:
+1	cancel	alarm/cancel_alarm	O
+2	all	alarm/cancel_alarm	B-reference
+3	alarms	alarm/cancel_alarm	O
+
+# id: test_227
+# annotator: Alsu
+# text: Is there a storm headed for my area?
+# intent: weather/find
+# slots: 11:16:weather/attribute,28:35:location
+1	Is	weather/find	O
+2	there	weather/find	O
+3	a	weather/find	O
+4	storm	weather/find	B-weather/attribute
+5	headed	weather/find	O
+6	for	weather/find	O
+7	my	weather/find	B-location
+8	area	weather/find	I-location
+9	?	weather/find	O
+
+# id: test_228
+# annotator: Alsu
+# text: what's the weather today
+# intent: weather/find
+# slots: 11:18:weather/noun,19:24:datetime
+1	what's	weather/find	O
+2	the	weather/find	O
+3	weather	weather/find	O
+4	today	weather/find	B-datetime
+
+# id: test_229
+# annotator: Alsu
+# text: delete last reminder
+# intent: reminder/cancel_reminder
+# slots: 7:11:reminder/reference,12:20:reminder/noun
+1	delete	reminder/cancel_reminder	O
+2	last	reminder/cancel_reminder	B-reference
+3	reminder	reminder/cancel_reminder	O
+
+# id: test_230
+# annotator: Alsu
+# text: What time is left on the alarm.
+# intent: alarm/time_left_on_alarm
+# slots:
+1	What	alarm/time_left_on_alarm	O
+2	time	alarm/time_left_on_alarm	O
+3	is	alarm/time_left_on_alarm	O
+4	left	alarm/time_left_on_alarm	O
+5	on	alarm/time_left_on_alarm	O
+6	the	alarm/time_left_on_alarm	O
+7	alarm	alarm/time_left_on_alarm	O
+8	.	alarm/time_left_on_alarm	O
+
+# id: test_231
+# annotator: Alsu
+# text: Cancel all my alarms for Sunday.
+# intent: alarm/cancel_alarm
+# slots: 21:31:datetime
+1	Cancel	alarm/cancel_alarm	O
+2	all	alarm/cancel_alarm	B-reference
+3	my	alarm/cancel_alarm	I-reference
+4	alarms	alarm/cancel_alarm	O
+5	for	alarm/cancel_alarm	O
+6	Sunday	alarm/cancel_alarm	B-datetime
+7	.	alarm/cancel_alarm	O
+
+# id: test_232
+# annotator: Alsu
+# text: How hot will it get today?
+# intent: weather/find
+# slots: 4:7:weather/attribute,20:25:datetime
+1	How	weather/find	O
+2	hot	weather/find	B-weather/attribute
+3	will	weather/find	O
+4	it	weather/find	O
+5	get	weather/find	O
+6	today	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: test_233
+# annotator: Alsu
+# text: I'd like you to create a new alarm for 8:45 tomorrow morning
+# intent: alarm/set_alarm
+# slots: 35:52:datetime
+1	I'd	alarm/set_alarm	O
+2	like	alarm/set_alarm	O
+3	you	alarm/set_alarm	O
+4	to	alarm/set_alarm	O
+5	create	alarm/set_alarm	O
+6	a	alarm/set_alarm	O
+7	new	alarm/set_alarm	O
+8	alarm	alarm/set_alarm	O
+9	for	alarm/set_alarm	O
+10	8:45	alarm/set_alarm	B-datetime
+11	tomorrow	alarm/set_alarm	I-datetime
+12	morning	alarm/set_alarm	I-datetime
+
+# id: test_234
+# annotator: Alsu
+# text: cancel all alarms
+# intent: alarm/cancel_alarm
+# slots:
+1	cancel	alarm/cancel_alarm	O
+2	all	alarm/cancel_alarm	B-reference
+3	alarms	alarm/cancel_alarm	O
+
+# id: test_235
+# annotator: Alsu
+# text: Is it going to snow today?
+# intent: weather/find
+# slots: 15:19:weather/attribute,20:25:datetime
+1	Is	weather/find	O
+2	it	weather/find	O
+3	going	weather/find	O
+4	to	weather/find	O
+5	snow	weather/find	B-weather/attribute
+6	today	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: test_236
+# annotator: Alsu
+# text: remind me to buy ice
+# intent: reminder/set_reminder
+# slots: 13:20:reminder/todo
+1	remind	reminder/set_reminder	O
+2	me	reminder/set_reminder	O
+3	to	reminder/set_reminder	O
+4	buy	reminder/set_reminder	B-reminder/todo
+5	ice	reminder/set_reminder	I-reminder/todo
+
+# id: test_237
+# annotator: Alsu
+# text: show all reminders
+# intent: reminder/show_reminders
+# slots: 5:8:reminder/reference,9:18:reminder/noun
+1	show	reminder/show_reminders	O
+2	all	reminder/show_reminders	B-reference
+3	reminders	reminder/show_reminders	O
+
+# id: test_238
+# annotator: Alsu
+# text: show all alarms
+# intent: alarm/show_alarms
+# slots:
+1	show	alarm/show_alarms	O
+2	all	alarm/show_alarms	B-reference
+3	alarms	alarm/show_alarms	O
+
+# id: test_239
+# annotator: Alsu
+# text: What's the weather in San Francisco?
+# intent: weather/find
+# slots: 11:18:weather/noun,22:35:location
+1	What's	weather/find	O
+2	the	weather/find	O
+3	weather	weather/find	O
+4	in	weather/find	O
+5	San	weather/find	B-location
+6	Francisco	weather/find	I-location
+7	?	weather/find	O
+
+# id: test_240
+# annotator: Alsu
+# text: Cancel all reminders
+# intent: reminder/cancel_reminder
+# slots: 11:20:reminder/noun
+1	Cancel	reminder/cancel_reminder	O
+2	all	reminder/cancel_reminder	B-reference
+3	reminders	reminder/cancel_reminder	O
+
+# id: test_241
+# annotator: Alsu
+# text: Cancel reminder for concert
+# intent: reminder/cancel_reminder
+# slots: 7:15:reminder/noun,20:27:reminder/todo
+1	Cancel	reminder/cancel_reminder	O
+2	reminder	reminder/cancel_reminder	O
+3	for	reminder/cancel_reminder	O
+4	concert	reminder/cancel_reminder	B-reminder/todo
+
+# id: test_242
+# annotator: Alsu
+# text: Cancel the alarm for tomorrow morning
+# intent: alarm/cancel_alarm
+# slots: 17:37:datetime
+1	Cancel	alarm/cancel_alarm	O
+2	the	alarm/cancel_alarm	O
+3	alarm	alarm/cancel_alarm	O
+4	for	alarm/cancel_alarm	O
+5	tomorrow	alarm/cancel_alarm	B-datetime
+6	morning	alarm/cancel_alarm	I-datetime
+
+# id: test_243
+# annotator: Alsu
+# text: will it rain this week
+# intent: weather/find
+# slots: 8:12:weather/attribute,13:22:datetime
+1	will	weather/find	O
+2	it	weather/find	O
+3	rain	weather/find	B-weather/attribute
+4	this	weather/find	B-datetime
+5	week	weather/find	I-datetime
+
+# id: test_244
+# annotator: Alsu
+# text: What is the weather like on Wednesday for golfing?
+# intent: weather/find
+# slots: 12:19:weather/noun,25:37:datetime
+1	What	weather/find	O
+2	is	weather/find	O
+3	the	weather/find	O
+4	weather	weather/find	O
+5	like	weather/find	O
+6	on	weather/find	O
+7	Wednesday	weather/find	B-datetime
+8	for	weather/find	O
+9	golfing	weather/find	O
+10	?	weather/find	O
+
+# id: test_245
+# annotator: Alsu
+# text: show all alarms
+# intent: alarm/show_alarms
+# slots:
+1	show	alarm/show_alarms	O
+2	all	alarm/show_alarms	B-reference
+3	alarms	alarm/show_alarms	O
+
+# id: test_246
+# annotator: Alsu
+# text: turn off all alarms for tomorrow
+# intent: alarm/cancel_alarm
+# slots: 20:32:datetime
+1	turn	alarm/cancel_alarm	O
+2	off	alarm/cancel_alarm	O
+3	all	alarm/cancel_alarm	B-reference
+4	alarms	alarm/cancel_alarm	O
+5	for	alarm/cancel_alarm	O
+6	tomorrow	alarm/cancel_alarm	B-datetime
+
+# id: test_247
+# annotator: Alsu
+# text: Set alarm for 5pm tonight
+# intent: alarm/set_alarm
+# slots: 10:25:datetime
+1	Set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	5pm	alarm/set_alarm	B-datetime
+5	tonight	alarm/set_alarm	I-datetime
+
+# id: test_248
+# annotator: Alsu
+# text: set alarm for 7 tomorrow
+# intent: alarm/set_alarm
+# slots: 10:24:datetime
+1	set	alarm/set_alarm	O
+2	alarm	alarm/set_alarm	O
+3	for	alarm/set_alarm	O
+4	7	alarm/set_alarm	B-datetime
+5	tomorrow	alarm/set_alarm	I-datetime
+
+# id: test_249
+# annotator: Alsu
+# text: Will it be sunny tomorrow?
+# intent: weather/find
+# slots: 11:16:weather/attribute,17:25:datetime
+1	Will	weather/find	O
+2	it	weather/find	O
+3	be	weather/find	O
+4	sunny	weather/find	B-weather/attribute
+5	tomorrow	weather/find	B-datetime
+6	?	weather/find	O
+
+# id: test_250
+# annotator: Alsu
+# text: how hot will it be today
+# intent: weather/find
+# slots: 4:7:weather/attribute,19:24:datetime
+1	how	weather/find	O
+2	hot	weather/find	B-weather/attribute
+3	will	weather/find	O
+4	it	weather/find	O
+5	be	weather/find	O
+6	today	weather/find	B-datetime
+
+# id: test_251
+# annotator: Alsu
+# text: Give zero stars to Halo: Ghosts of Onyx
+# intent: RateBook
+1	Give	RateBook	O
+2	zero	RateBook	B-rating_value
+3	stars	RateBook	B-rating_unit
+4	to	RateBook	O
+5	Halo:	RateBook	B-object_name
+6	Ghosts	RateBook	I-object_name
+7	of	RateBook	I-object_name
+8	Onyx	RateBook	I-object_name
+
+# id: test_252
+# annotator: Alsu
+# text: Play music by Joy Nilo .
+# intent: PlayMusic
+1	Play	PlayMusic	O
+2	music	PlayMusic	O
+3	by	PlayMusic	O
+4	Joy	PlayMusic	B-artist
+5	Nilo	PlayMusic	I-artist
+6	.	PlayMusic	O
