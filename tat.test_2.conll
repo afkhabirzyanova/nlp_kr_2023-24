@@ -234,25 +234,25 @@
 
 # id: test_222
 # annotator: Alsu
-# text: Set alarm for 2 am
+# text EN: Set alarm for 2 am
+# text TAT: Будильнигымны иртәнге 2 яса
 # intent: alarm/set_alarm
-# slots: 10:18:datetime
-1	Set	alarm/set_alarm	O
-2	alarm	alarm/set_alarm	O
-3	for	alarm/set_alarm	O
-4	2	alarm/set_alarm	B-datetime
-5	am	alarm/set_alarm	I-datetime
+# slots:
+1  Будильнигымны  alarm/set_alarm  O
+2  иртәнге  alarm/set_alarm  B-datetime
+3  2  alarm/set_alarm  I-datetime
+4  яса  alarm/set_alarm  O
 
 # id: test_223
 # annotator: Alsu
-# text: What is the humidity today?
+# text EN: What is the humidity today?
+# text TAT: Бүген һаваның дымлылыгы нинди?
 # intent: weather/find
-# slots: 12:20:weather/attribute,21:26:datetime
-1	What	weather/find	O
-2	is	weather/find	O
-3	the	weather/find	O
-4	humidity	weather/find	B-weather/attribute
-5	today	weather/find	B-datetime
+# slots:
+1	Бүген	weather/find	B-datetime
+2	һаваның	weather/find	B-weather/attribute
+3	дымлылыгы	weather/find	I-weather/attribute
+4	нинди	weather/find	O
 6	?	weather/find	O
 
 # id: test_224
