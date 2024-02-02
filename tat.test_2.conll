@@ -201,22 +201,23 @@
 
 # id: test_219
 # annotator: Alsu
-# text: Cancel all reminders
+# text EN: Cancel all reminders
+# text TAT: бөтен искәртүләремне бетер
 # intent: reminder/cancel_reminder
-# slots: 11:20:reminder/noun
-1	Cancel	reminder/cancel_reminder	O
-2	all	reminder/cancel_reminder	B-reference
-3	reminders	reminder/cancel_reminder	O
+# slots:
+1  бөтен	reminder/cancel_reminder	B-reference
+2  искәртүләремне  reminder/cancel_reminder  O
+3  бетер	reminder/cancel_reminder	O
 
 # id: test_220
 # annotator: Alsu
-# text: is it hot?
+# text EN: is it hot?
+# text TAT: монда эссеме?
 # intent: weather/find
-# slots: 6:9:weather/attribute
-1	is	weather/find	O
-2	it	weather/find	O
-3	hot	weather/find	B-weather/attribute
-4	?	weather/find	O
+# slots:
+1  монда	weather/find	O
+2  эссеме  weather/find  B-weather/attribute
+3  ?	weather/find	O
 
 # id: test_221
 # annotator: Alsu
