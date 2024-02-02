@@ -191,14 +191,13 @@
 
 # id: test_218
 # annotator: Alsu
-# text: Is it cold today?
+# text EN: Is it cold today?
+# text TAT: Бүген салкынмы?
 # intent: weather/find
-# slots: 6:10:weather/attribute,11:16:datetime
-1	Is	weather/find	O
-2	it	weather/find	O
-3	cold	weather/find	B-weather/attribute
-4	today	weather/find	B-datetime
-5	?	weather/find	O
+# slots:
+1  Бүген	weather/find	B-datetime
+2  салкынмы	weather/find	B-weather/attribute
+3  ?	weather/find	O
 
 # id: test_219
 # annotator: Alsu
