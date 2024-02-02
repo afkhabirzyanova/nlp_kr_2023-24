@@ -323,10 +323,10 @@
 # id: test_230
 # annotator: Alsu
 # text EN: What time is left on the alarm.
-# text TAT: будильникка күпме вакыт калды.
+# text TAT: Будильникка күпме вакыт калды.
 # intent: alarm/time_left_on_alarm
 # slots:
-1  будильникка	alarm/time_left_on_alarm	O
+1  Будильникка	alarm/time_left_on_alarm	O
 2  күпме	alarm/time_left_on_alarm	O
 3  вакыт	alarm/time_left_on_alarm	O
 4  калды	alarm/time_left_on_alarm	O
@@ -348,9 +348,10 @@
 
 # id: test_232
 # annotator: Alsu
-# text: How hot will it get today?
+# text EN: How hot will it get today?
+# text TAT: 
 # intent: weather/find
-# slots: 4:7:weather/attribute,20:25:datetime
+# slots: 
 1	How	weather/find	O
 2	hot	weather/find	B-weather/attribute
 3	will	weather/find	O
