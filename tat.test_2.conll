@@ -289,64 +289,62 @@
 
 # id: test_227
 # annotator: Alsu
-# text: Is there a storm headed for my area?
+# text EN: Is there a storm headed for my area?
+# text TAT: Давыл минем районыма якынлашамы?
 # intent: weather/find
-# slots: 11:16:weather/attribute,28:35:location
-1	Is	weather/find	O
-2	there	weather/find	O
-3	a	weather/find	O
-4	storm	weather/find	B-weather/attribute
-5	headed	weather/find	O
-6	for	weather/find	O
-7	my	weather/find	B-location
-8	area	weather/find	I-location
-9	?	weather/find	O
+# slots:
+1  Давыл	weather/find	B-weather/attribute
+2  минем	weather/find	B-location
+3  районыма  weather/find  I-location
+4  якынлашамы  weather/find  O
+5  ?	weather/find	O
 
 # id: test_228
 # annotator: Alsu
-# text: what's the weather today
+# text EN: what's the weather today
+# text TAT: бүген һава торышы нинди
 # intent: weather/find
-# slots: 11:18:weather/noun,19:24:datetime
-1	what's	weather/find	O
-2	the	weather/find	O
-3	weather	weather/find	O
-4	today	weather/find	B-datetime
+# slots:
+1  бүген	weather/find	B-datetime
+2  һава  weather/find  O
+3  торышы  weather/find  O
+4  нинди	weather/find	O
 
 # id: test_229
 # annotator: Alsu
-# text: delete last reminder
+# text EN: delete last reminder
+# text TAT: соңгы искәртүемне бетер
 # intent: reminder/cancel_reminder
-# slots: 7:11:reminder/reference,12:20:reminder/noun
-1	delete	reminder/cancel_reminder	O
-2	last	reminder/cancel_reminder	B-reference
-3	reminder	reminder/cancel_reminder	O
+# slots:
+1  соңгы	reminder/cancel_reminder	B-reference
+2  искәртүемне	reminder/cancel_reminder	O
+3  бетер	reminder/cancel_reminder	O
 
 # id: test_230
 # annotator: Alsu
-# text: What time is left on the alarm.
+# text EN: What time is left on the alarm.
+# text TAT: будильникка күпме вакыт калды.
 # intent: alarm/time_left_on_alarm
 # slots:
-1	What	alarm/time_left_on_alarm	O
-2	time	alarm/time_left_on_alarm	O
-3	is	alarm/time_left_on_alarm	O
-4	left	alarm/time_left_on_alarm	O
-5	on	alarm/time_left_on_alarm	O
-6	the	alarm/time_left_on_alarm	O
-7	alarm	alarm/time_left_on_alarm	O
-8	.	alarm/time_left_on_alarm	O
+1  будильникка	alarm/time_left_on_alarm	O
+2  күпме	alarm/time_left_on_alarm	O
+3  вакыт	alarm/time_left_on_alarm	O
+4  калды	alarm/time_left_on_alarm	O
+5  .	alarm/time_left_on_alarm	O
 
 # id: test_231
 # annotator: Alsu
-# text: Cancel all my alarms for Sunday.
+# text EN: Cancel all my alarms for Sunday.
+# text TAT: Якшәмбе көнне минем бөтен будильнигымны бетер.
 # intent: alarm/cancel_alarm
-# slots: 21:31:datetime
-1	Cancel	alarm/cancel_alarm	O
-2	all	alarm/cancel_alarm	B-reference
-3	my	alarm/cancel_alarm	I-reference
-4	alarms	alarm/cancel_alarm	O
-5	for	alarm/cancel_alarm	O
-6	Sunday	alarm/cancel_alarm	B-datetime
-7	.	alarm/cancel_alarm	O
+# slots:
+1  Якшәмбе	alarm/cancel_alarm	B-datetime
+2  көнне	alarm/cancel_alarm	I-datetime
+3  минем	alarm/cancel_alarm	B-reference
+4  бөтен	alarm/cancel_alarm	I-reference
+5  будильнигымны	alarm/cancel_alarm	O
+6  бетер	alarm/cancel_alarm  O
+7  .	alarm/cancel_alarm	O
 
 # id: test_232
 # annotator: Alsu
