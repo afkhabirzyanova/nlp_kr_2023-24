@@ -132,59 +132,57 @@
 
 # id: test_213
 # annotator: Alsu
-# text: Will it be sunny for the party on Saturday?
+# text EN: Will it be sunny for the party on Saturday?
+# text TAT: Шимбә кичәсендә кояшлы булырмы?
 # intent: weather/find
-# slots: 11:16:weather/attribute,31:42:datetime
-1	Will	weather/find	O
-2	it	weather/find	O
-3	be	weather/find	O
-4	sunny	weather/find	B-weather/attribute
-5	for	weather/find	O
-6	the	weather/find	O
-7	party	weather/find	O
-8	on	weather/find	O
-9	Saturday	weather/find	B-datetime
-10	?	weather/find	O
+# slots:
+1  Шимбә	weather/find	B-datetime
+2  кичәсендә	weather/find	O
+3  кояшлы  weather/find  B-weather/attribute
+4  булырмы	weather/find	O
+5  ?	weather/find	O
 
 # id: test_214
 # annotator: Alsu
-# text: Is it going to rain tomorrow?
+# text EN: Is it going to rain tomorrow?
+# text TAT: Иртәгә яңгыр явармы?
 # intent: weather/find
-# slots: 15:19:weather/attribute,20:28:datetime
-1	Is	weather/find	O
-2	it	weather/find	O
-3	going	weather/find	O
-4	to	weather/find	O
-5	rain	weather/find	B-weather/attribute
-6	tomorrow	weather/find	B-datetime
-7	?	weather/find	O
+# slots:
+1  Иртәгә  weather/find  B-datetime
+2  яңгыр  weather/find  B-weather/attribute
+3  явармы  weather/find  O
+4  ?  weather/find  O
 
 # id: test_215
 # annotator: Alsu
-# text: Can I wear shorts today?
+# text EN: Can I wear shorts today?
+# text TAT: Мин бүген шортне киеп йөри аламмы?
 # intent: weather/find
-# slots: 11:17:weather/attribute,18:23:datetime
-1	Can	weather/find	O
-2	I	weather/find	O
-3	wear	weather/find	O
-4	shorts	weather/find	B-weather/attribute
-5	today	weather/find	B-datetime
-6	?	weather/find	O
+# slots:
+1  Мин  weather/find  O
+2  бүген  weather/find  B-datetime
+3  шортне  weather/find  B-weather/attribute
+4  киеп  weather/find  O
+5  йөри  weather/find  O
+6  аламмы  weather/find  O
+7  ?  weather/find  O
 
 # id: test_216
 # annotator: Alsu
-# text: Show my reminder
+# text EN: Show my reminder
+# text TAT: Минем искәртүемне күрсәт
 # intent: reminder/show_reminders
-# slots: 5:7:reminder/reference,8:16:reminder/noun
-1	Show	reminder/show_reminders	O
-2	my	reminder/show_reminders	B-reference
-3	reminder	reminder/show_reminders	O
+# slots:
+1  Минем  reminder/show_reminders  B-reference
+2  искәртүемне  reminder/show_reminders  O
+3  күрсәт  reminder/show_reminders  O
 
 # id: test_217
 # annotator: Alsu
-# text: what is the average forecast for september
+# text EN: what is the average forecast for september
+# text TAT: 
 # intent: weather/find
-# slots: 20:28:weather/noun,29:42:datetime
+# slots:
 1	what	weather/find	O
 2	is	weather/find	O
 3	the	weather/find	O
