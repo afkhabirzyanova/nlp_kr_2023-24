@@ -180,16 +180,14 @@
 # id: test_217
 # annotator: Alsu
 # text EN: what is the average forecast for september
-# text TAT: 
+# text TAT: Сентябрьдә уртача һава торышы нинди
 # intent: weather/find
 # slots:
-1	what	weather/find	O
-2	is	weather/find	O
-3	the	weather/find	O
-4	average	weather/find	O
-5	forecast	weather/find	O
-6	for	weather/find	O
-7	september	weather/find	B-datetime
+1  Сентябрьдә  weather/find  B-datetime
+2  уртача  weather/find  O
+3  һава  weather/find  O
+4  торышы  weather/find  O
+5  нинди	weather/find	O
 
 # id: test_218
 # annotator: Alsu
