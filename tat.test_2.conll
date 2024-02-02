@@ -221,15 +221,16 @@
 
 # id: test_221
 # annotator: Alsu
-# text: Make alarm for weekends at 2pm
+# text EN: Make alarm for weekends at 2pm
+# text TAT: Ял көннәрендә көндезге 2 будильнигымны яса
 # intent: alarm/set_alarm
-# slots: 11:30:datetime
-1	Make	alarm/set_alarm	O
-2	alarm	alarm/set_alarm	O
-3	for	alarm/set_alarm	O
-4	weekends	alarm/set_alarm	B-recurring_datetime
-5	at	alarm/set_alarm	I-recurring_datetime
-6	2pm	alarm/set_alarm	I-recurring_datetime
+# slots:
+1  Ял  alarm/set_alarm	B-recurring_datetime
+2  көннәрендә  alarm/set_alarm	I-recurring_datetime
+3  көндезге	alarm/set_alarm  I-recurring_datetime
+4  2	alarm/set_alarm  I-recurring_datetime
+5  будильнигымны	alarm/set_alarm  O
+6  яса	alarm/set_alarm  O
 
 # id: test_222
 # annotator: Alsu
