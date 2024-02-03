@@ -387,16 +387,14 @@
 
 # id: test_235
 # annotator: Alsu
-# text: Is it going to snow today?
+# text EN: Is it going to snow today?
+# text TAT: Бүген кар явармы?
 # intent: weather/find
-# slots: 15:19:weather/attribute,20:25:datetime
-1	Is	weather/find	O
-2	it	weather/find	O
-3	going	weather/find	O
-4	to	weather/find	O
-5	snow	weather/find	B-weather/attribute
-6	today	weather/find	B-datetime
-7	?	weather/find	O
+# slots:
+1  Бүген  weather/find  B-datetime
+2  кар	weather/find	B-weather/attribute
+3  явармы  weather/find  O
+4  ?  weather/find	O
 
 # id: test_236
 # annotator: Alsu
