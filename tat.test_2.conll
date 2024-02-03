@@ -454,52 +454,51 @@
 
 # id: test_241
 # annotator: Alsu
-# text: Cancel reminder for concert
+# text EN: Cancel reminder for concert
+# text TAT: Концерт турында искәртүне бетер
 # intent: reminder/cancel_reminder
-# slots: 7:15:reminder/noun,20:27:reminder/todo
-1	Cancel	reminder/cancel_reminder	O
-2	reminder	reminder/cancel_reminder	O
-3	for	reminder/cancel_reminder	O
-4	concert	reminder/cancel_reminder	B-reminder/todo
+# slots:
+1  Концерт	reminder/cancel_reminder	B-reminder/todo
+2  турында	reminder/cancel_reminder	O
+3  искәртүне	reminder/cancel_reminder	O
+4  бетер	reminder/cancel_reminder	O
 
 # id: test_242
 # annotator: Alsu
-# text: Cancel the alarm for tomorrow morning
+# text EN: Cancel the alarm for tomorrow morning
+# text TAT: Иртәгә иртәнге будильникны бетер
 # intent: alarm/cancel_alarm
-# slots: 17:37:datetime
-1	Cancel	alarm/cancel_alarm	O
-2	the	alarm/cancel_alarm	O
-3	alarm	alarm/cancel_alarm	O
-4	for	alarm/cancel_alarm	O
-5	tomorrow	alarm/cancel_alarm	B-datetime
-6	morning	alarm/cancel_alarm	I-datetime
+# slots:
+1  Иртәгә  alarm/cancel_alarm  B-datetime
+2  иртәнге	alarm/cancel_alarm	I-datetime
+3  будильникны	alarm/cancel_alarm	O
+4  бетер	alarm/cancel_alarm	O
 
 # id: test_243
 # annotator: Alsu
-# text: will it rain this week
+# text EN: will it rain this week
+# text TAT: бу атнада яңгыр явармы
 # intent: weather/find
-# slots: 8:12:weather/attribute,13:22:datetime
-1	will	weather/find	O
-2	it	weather/find	O
-3	rain	weather/find	B-weather/attribute
-4	this	weather/find	B-datetime
-5	week	weather/find	I-datetime
+# slots:
+1  бу  weather/find  B-datetime
+2  атнада  weather/find  I-datetime
+3  яңгыр	weather/find	B-weather/attribute
+4  явармы  weather/find  O
 
 # id: test_244
 # annotator: Alsu
-# text: What is the weather like on Wednesday for golfing?
+# text EN: What is the weather like on Wednesday for golfing?
+# text TAT: Гольф уйнау өчен чәршәмбе һава торышы нинди?
 # intent: weather/find
-# slots: 12:19:weather/noun,25:37:datetime
-1	What	weather/find	O
-2	is	weather/find	O
-3	the	weather/find	O
-4	weather	weather/find	O
-5	like	weather/find	O
-6	on	weather/find	O
-7	Wednesday	weather/find	B-datetime
-8	for	weather/find	O
-9	golfing	weather/find	O
-10	?	weather/find	O
+# slots:
+1	Гольф	weather/find	O
+2	уйнау	weather/find	O
+3	өчен	weather/find	O
+4	чәршәмбе	weather/find	B-datetime
+5	һава	weather/find	O
+6	торышы	weather/find	O
+7	нинди	weather/find	O
+8	?	weather/find	O
 
 # id: test_245
 # annotator: Alsu
