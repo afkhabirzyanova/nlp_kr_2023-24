@@ -269,7 +269,7 @@
 # id: test_225
 # annotator: Alsu
 # text EN: Show me all my reminders
-# text TAT: Минем бөтен будильникларымны күрсәт
+# text TAT: Минем бөтен искәртүләремне күрсәт
 # intent: alarm/show_alarms
 # slots:
 1  Минем  alarm/show_alarms  B-reference
@@ -411,11 +411,11 @@
 # id: test_237
 # annotator: Alsu
 # text EN: show all reminders
-# text TAT: бөтен искәртүләрне күрсәт
+# text TAT: бөтен искәртүләремне күрсәт
 # intent: reminder/show_reminders
 # slots:
 1  барлык  reminder/show_reminders  B-reference
-2  искәртүләрне  reminder/show_reminders  O
+2  искәртүләремне  reminder/show_reminders  O
 3  күрсәт  reminder/show_reminders  O
 
 # id: test_238
@@ -444,12 +444,13 @@
 
 # id: test_240
 # annotator: Alsu
-# text: Cancel all reminders
+# text EN: Cancel all reminders
+# text TAT: Бөтен искәртүләремне бетер
 # intent: reminder/cancel_reminder
-# slots: 11:20:reminder/noun
-1	Cancel	reminder/cancel_reminder	O
-2	all	reminder/cancel_reminder	B-reference
-3	reminders	reminder/cancel_reminder	O
+# slots:
+1  Бөтен	reminder/cancel_reminder	B-reference
+2  искәртүләремне  reminder/cancel_reminder  O
+3  бетер	reminder/cancel_reminder	O
 
 # id: test_241
 # annotator: Alsu
