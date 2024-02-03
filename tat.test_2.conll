@@ -410,12 +410,13 @@
 
 # id: test_237
 # annotator: Alsu
-# text: show all reminders
+# text EN: show all reminders
+# text TAT: бөтен искәртүләрне күрсәт
 # intent: reminder/show_reminders
-# slots: 5:8:reminder/reference,9:18:reminder/noun
-1	show	reminder/show_reminders	O
-2	all	reminder/show_reminders	B-reference
-3	reminders	reminder/show_reminders	O
+# slots:
+1  барлык  reminder/show_reminders  B-reference
+2  искәртүләрне  reminder/show_reminders  O
+3  күрсәт  reminder/show_reminders  O
 
 # id: test_238
 # annotator: Alsu
