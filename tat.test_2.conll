@@ -335,36 +335,35 @@
 # id: test_231
 # annotator: Alsu
 # text EN: Cancel all my alarms for Sunday.
-# text TAT: Якшәмбе көнне минем бөтен будильнигымны бетер.
+# text TAT: Якшәмбе көнне минем бөтен будильникларымны бетер.
 # intent: alarm/cancel_alarm
 # slots:
 1  Якшәмбе	alarm/cancel_alarm	B-datetime
 2  көнне	alarm/cancel_alarm	I-datetime
 3  минем	alarm/cancel_alarm	B-reference
 4  бөтен	alarm/cancel_alarm	I-reference
-5  будильнигымны	alarm/cancel_alarm	O
+5  будильникларымны	alarm/cancel_alarm	O
 6  бетер	alarm/cancel_alarm  O
 7  .	alarm/cancel_alarm	O
 
 # id: test_232
 # annotator: Alsu
 # text EN: How hot will it get today?
-# text TAT: 
+# text TAT: Бүген нихәтлегә эссе булачак?/Бүген нинди эссе булачак?
 # intent: weather/find
 # slots: 
-1	How	weather/find	O
-2	hot	weather/find	B-weather/attribute
-3	will	weather/find	O
-4	it	weather/find	O
-5	get	weather/find	O
-6	today	weather/find	B-datetime
-7	?	weather/find	O
+1  Бүген	weather/find	B-datetime
+2  нинди	weather/find	O
+3  эссе  weather/find  B-weather/attribute
+4  булачак	weather/find	O
+5  ?	weather/find	O
 
 # id: test_233
 # annotator: Alsu
-# text: I'd like you to create a new alarm for 8:45 tomorrow morning
+# text EN: I'd like you to create a new alarm for 8:45 tomorrow morning
+# text TAT: Иртәгә иртәнге 8:45тә Яңа сигнализация урнаштыруыгызны теләр идем
 # intent: alarm/set_alarm
-# slots: 35:52:datetime
+# slots:
 1	I'd	alarm/set_alarm	O
 2	like	alarm/set_alarm	O
 3	you	alarm/set_alarm	O
