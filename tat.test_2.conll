@@ -420,25 +420,27 @@
 
 # id: test_238
 # annotator: Alsu
-# text: show all alarms
+# text EN: show all alarms
+# text TAT: бөтен будильникларымны күрсәт
 # intent: alarm/show_alarms
 # slots:
-1	show	alarm/show_alarms	O
-2	all	alarm/show_alarms	B-reference
-3	alarms	alarm/show_alarms	O
+1  бөтен  reminder/show_reminders  B-reference
+2  будильникларымны  reminder/show_reminders  O
+3  күрсәт  reminder/show_reminders  O
 
 # id: test_239
 # annotator: Alsu
-# text: What's the weather in San Francisco?
+# text EN: What's the weather in San Francisco?
+# text TAT: Сан-Францискода һава торышы нинди?
 # intent: weather/find
-# slots: 11:18:weather/noun,22:35:location
-1	What's	weather/find	O
-2	the	weather/find	O
-3	weather	weather/find	O
-4	in	weather/find	O
-5	San	weather/find	B-location
-6	Francisco	weather/find	I-location
-7	?	weather/find	O
+# slots:
+1  Сан	weather/find	B-location
+2  -	weather/find	I-location
+3  Францискода	weather/find	I-location
+4  һава  weather/find  O
+5  торышы  weather/find  O
+6  нинди	weather/find	O
+7  ?	weather/find	O
 
 # id: test_240
 # annotator: Alsu
