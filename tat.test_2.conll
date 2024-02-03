@@ -502,12 +502,13 @@
 
 # id: test_245
 # annotator: Alsu
-# text: show all alarms
+# text EN: show all alarms
+# text TAT: бөтен будильникларымны күрсәт
 # intent: alarm/show_alarms
 # slots:
-1	show	alarm/show_alarms	O
-2	all	alarm/show_alarms	B-reference
-3	alarms	alarm/show_alarms	O
+1  бөтен  reminder/show_reminders  B-reference
+2  будильникларымны  reminder/show_reminders  O
+3  күрсәт  reminder/show_reminders  O
 
 # id: test_246
 # annotator: Alsu
