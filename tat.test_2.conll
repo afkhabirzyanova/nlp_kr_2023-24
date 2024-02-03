@@ -541,33 +541,30 @@
 # slots:
 1  иртәге  alarm/set_alarm  B-datetime
 2  будильнигымны  alarm/set_alarm  O
-5  6  alarm/set_alarm  I-datetime
+5  7  alarm/set_alarm  I-datetime
 6  куй  alarm/set_alarm  O
 
 # id: test_249
 # annotator: Alsu
 # text EN: Will it be sunny tomorrow?
-# text TAT:
+# text TAT: Иртәгә кояшлы булырмы?
 # intent: weather/find
-# slots: 11:16:weather/attribute,17:25:datetime
-1	Will	weather/find	O
-2	it	weather/find	O
-3	be	weather/find	O
-4	sunny	weather/find	B-weather/attribute
-5	tomorrow	weather/find	B-datetime
-6	?	weather/find	O
+# slots:
+1  Иртәгә  weather/find  B-datetime
+2  кояшлы  weather/find  B-weather/attribute
+3  булырмы	weather/find	O
+4  ?	weather/find	O
 
 # id: test_250
 # annotator: Alsu
-# text: how hot will it be today
+# text EN: how hot will it be today
+# text TAT: бүген нинди эссе булыр
 # intent: weather/find
-# slots: 4:7:weather/attribute,19:24:datetime
-1	how	weather/find	O
-2	hot	weather/find	B-weather/attribute
-3	will	weather/find	O
-4	it	weather/find	O
-5	be	weather/find	O
-6	today	weather/find	B-datetime
+# slots:
+1  бүген	weather/find	B-datetime
+2  нинди	weather/find	O
+3  эссе  weather/find  B-weather/attribute
+4  булыр	weather/find	O
 
 # id: test_251
 # annotator: Alsu
