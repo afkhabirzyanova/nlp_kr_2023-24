@@ -516,38 +516,38 @@
 # text TAT: бөтен иртәгә будильникларны сүндер
 # intent: alarm/cancel_alarm
 # slots:
-1	бөтен	alarm/cancel_alarm	B-reference
-2	иртәгә	alarm/cancel_alarm	B-datetime
-3	будильникларны	alarm/cancel_alarm	
-4	сүндер	alarm/cancel_alarm	O	
+1  бөтен	alarm/cancel_alarm	B-reference
+2  иртәгә  alarm/cancel_alarm  B-datetime
+3  будильникларны  alarm/cancel_alarm  O
+4  сүндер  alarm/cancel_alarm  O	
 
 # id: test_247
 # annotator: Alsu
 # text EN: Set alarm for 5pm tonight
-# text TAT: Бүген уяткыч сәгатьне кичке 5 куй
+# text TAT: Бүген будильнигымны кичке 5 куй
 # intent: alarm/set_alarm
 # slots:
 1  Бүген	alarm/set_alarm  B-datetime
-2  уяткыч  alarm/set_alarm	O
-3  сәгатьне  alarm/set_alarm	O
-4  кичке	alarm/set_alarm  B-datetime
-5	 5  alarm/set_alarm  I-datetime
-6  куй	alarm/set_alarm  O
+2  будильнигымны  alarm/set_alarm	O
+3  кичке	alarm/set_alarm  I-datetime
+4	 5  alarm/set_alarm  I-datetime
+5  куй	alarm/set_alarm  O
 
 # id: test_248
 # annotator: Alsu
-# text: set alarm for 7 tomorrow
+# text EN: set alarm for 7 tomorrow
+# text TAT: иртәге будильнигымны 7 куй
 # intent: alarm/set_alarm
-# slots: 10:24:datetime
-1	set	alarm/set_alarm	O
-2	alarm	alarm/set_alarm	O
-3	for	alarm/set_alarm	O
-4	7	alarm/set_alarm	B-datetime
-5	tomorrow	alarm/set_alarm	I-datetime
+# slots:
+1  иртәге  alarm/set_alarm  B-datetime
+2  будильнигымны  alarm/set_alarm  O
+5  6  alarm/set_alarm  I-datetime
+6  куй  alarm/set_alarm  O
 
 # id: test_249
 # annotator: Alsu
-# text: Will it be sunny tomorrow?
+# text EN: Will it be sunny tomorrow?
+# text TAT:
 # intent: weather/find
 # slots: 11:16:weather/attribute,17:25:datetime
 1	Will	weather/find	O
