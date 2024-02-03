@@ -62,7 +62,7 @@
 # id: test_207
 # annotator: Alsu
 # text EN: cancel all alarms for saturday
-# text TAT: шимбә көнне бутэн будильникларны бетер
+# text TAT: шимбә көнне бөтен будильникларны бетер
 # intent: alarm/cancel_alarm
 # slots:
 1  шимбә	alarm/cancel_alarm	B-datetime
@@ -361,30 +361,29 @@
 # id: test_233
 # annotator: Alsu
 # text EN: I'd like you to create a new alarm for 8:45 tomorrow morning
-# text TAT: Иртәгә иртәнге 8:45тә Яңа сигнализация урнаштыруыгызны теләр идем
+# text TAT: Мин сине иртәгә иртәнге 8:45 яңа будильникны ясага теләр идем
 # intent: alarm/set_alarm
 # slots:
-1	I'd	alarm/set_alarm	O
-2	like	alarm/set_alarm	O
-3	you	alarm/set_alarm	O
-4	to	alarm/set_alarm	O
-5	create	alarm/set_alarm	O
-6	a	alarm/set_alarm	O
-7	new	alarm/set_alarm	O
-8	alarm	alarm/set_alarm	O
-9	for	alarm/set_alarm	O
-10	8:45	alarm/set_alarm	B-datetime
-11	tomorrow	alarm/set_alarm	I-datetime
-12	morning	alarm/set_alarm	I-datetime
+1  Мин	alarm/set_alarm  O
+2  сине  alarm/set_alarm	O
+3  иртәгә  alarm/set_alarm	B-datetime
+4  иртәнге	alarm/set_alarm  I-datetime
+5  8:45  alarm/set_alarm	I-datetime
+6  яңа  alarm/set_alarm  O
+7  будильникны	alarm/set_alarm  O
+8  ясага	alarm/set_alarm  O
+9  теләр	alarm/set_alarm  O
+10	идем	alarm/set_alarm  O
 
 # id: test_234
 # annotator: Alsu
-# text: cancel all alarms
+# text EN: cancel all alarms
+# text TAT: бөтен будильникларны бетер
 # intent: alarm/cancel_alarm
 # slots:
-1	cancel	alarm/cancel_alarm	O
-2	all	alarm/cancel_alarm	B-reference
-3	alarms	alarm/cancel_alarm	O
+1  бөтен  alarm/cancel_alarm  B-reference
+2  будильникларны  alarm/cancel_alarm  O
+3  бетер	alarm/cancel_alarm	O
 
 # id: test_235
 # annotator: Alsu
