@@ -398,14 +398,15 @@
 
 # id: test_236
 # annotator: Alsu
-# text: remind me to buy ice
+# text EN: remind me to buy ice
+# text TAT: миңа бозны алырга искә төшер
 # intent: reminder/set_reminder
-# slots: 13:20:reminder/todo
-1	remind	reminder/set_reminder	O
-2	me	reminder/set_reminder	O
-3	to	reminder/set_reminder	O
-4	buy	reminder/set_reminder	B-reminder/todo
-5	ice	reminder/set_reminder	I-reminder/todo
+# slots:
+1  миңа  reminder/set_reminder	O
+2  бозны  reminder/set_reminder	B-reminder/todo
+3  алырга  reminder/set_reminder	I-reminder/todo
+4  искә  reminder/set_reminder	O
+5  төшер	reminder/set_reminder  O
 
 # id: test_237
 # annotator: Alsu
